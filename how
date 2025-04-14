@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vedanta - My personal take. Shivani  Mathur</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+            background-color: #4c4c4c;
+            margin: 0;
+            font-size: 24px;
+            color: #929292;
+            padding: 0;
+        }
+
+        /* Style header and footer */
+        header {
+            background-color: #4c4c4c;
+            color: #929292;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px; /* Adjust the font size to your preference */
+        }
+@media (max-width: 7680px) {
+    .page-container, .slideshow-container, .event-container {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+        max-width: 100%; /* Allow the containers to fill their parent width */
+    }
+}
+
+/* Styles for slideshow and event containers */
+.slideshow-container,  {
+    margin: 0 auto; /* This centers the content if necessary, might be redundant */
+    padding: 0 20px; /* This ensures spacing from the edges */
+    margin-bottom: 20px; /* Adjust the value as needed */
+    box-sizing: border-box; /* Ensure padding does not expand the box */
+}
+        
+
+
+        .event-container {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    margin-bottom: 20px; /* Optional: Adjusts spacing between each event-container */
+}
+
+
+        /* Ensure that the menu icon is visible at smaller screen sizes */
+        @media (max-width: 7680px) {
+              .menu-icon {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: 2;
+            font-size: 10px;
+            cursor: pointer;
+            margin: 0px auto;
+            padding-top: 0px;
+            background-color: #4c4c4c;
+        }
+
+        .menu-container {
+            position: fixed;
+            top: 10;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(76, 76, 76, 0.85); /* Adjust the alpha value (0.8 in this example) for transparency */
+            color: #929292;
+            display: none;
+            z-index: 1;
+        }
+
+        .menu-content {
+            text-align: center;
+            padding: 50px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #929292;
+        }
+
+        .menu-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-content li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu-content a {
+        text-decoration: none;
+        color: #929292;
+        display: block; /* Add this line to make the entire area clickable */
+        padding: 10px; /* Add padding for better clickability */
+        }
+       .menu-content li.active a {
+        color: white;
+        text-decoration: none;
+        }
+
+    .close {
+    position: absolute;
+    top: 85%; /* Adjust this value to your preference */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+    .close-details {
+    color: #929292;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+
+
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+
+        /* Style header and footer */
+        header {
+            background-color: #4c4c4c;
+            color: #929292;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #4c4c4c;
+            color: #929292;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        /* Add CSS for the Font Awesome icons here */
+        .footer-icons {
+            font-size: 16px;
+        }
+
+        .footer-icons a {
+            color: #929292;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Style the icons on hover (optional) */
+        .footer-icons a:hover {
+            color: #07BFF;
+        }
+
+
+      /* Center the header content */
+          .header-content {
+            text-align: center;
+        }
+
+
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+             margin: 0 10px;
+        }
+            h2 {
+               text-align: center;
+            font-size: 24px;
+                 margin: 0 10px;
+        }
+
+          /* Style for the additional text */
+          .header-description {
+            font-size: 24px; /* Adjust the font size as needed */
+            margin-top: 10px; /* Add margin to separate it from the title */
+            color: #929292; /* Set the text color */
+          }
+
+
+          /* Center-align the text box */
+          .slideshow-text-center {
+              text-align: center;
+              padding: 20px; /* Add padding for spacing */
+          }
+
+          /* Left-align the text inside the text box */
+          .slideshow-text-left {
+              display: inline-block; /* Ensure inline block for left alignment */
+              text-align: left; /* Left-align the text inside the box */
+          }
+
+
+/* Adjust the CSS for individual sections if needed */
+.header {
+    text-align: center;
+    padding: 10px;
+}
+}
+
+/* Adjust the CSS for individual sections if needed */
+.header {
+    text-align: center;
+    padding: 10px;
+}
+    
+/* Other existing CSS styles... */
+
+/* Adjust the CSS for individual sections if needed */
+.header {
+    text-align: center;
+    padding: 10px;
+}
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Set a fixed height for the slideshow container */
+}
+
+/* Hide slides by default */
+    .mySlides {
+      display: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .mySlides1 {
+        display: none;
+        height: 600px; /* Set your desired fixed height */
+    }
+
+    .mySlides1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+
+/* Style for prev/next buttons */
+.prev, .next {
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #4c4c4c;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}width */
+}
+
+    .prev:hover, .next:hover {
+      background-color: #4c4c4c;
+    }
+.mySlides1 {
+    position: relative; /* Ensure this container is positioned to allow more controlled positioning within it */
+    /* Other styles for .mySlides1 */
+}
+
+.caption {
+    background-color: #4c4c4c; /* Dark gray background */
+    color: #929292; /* Light gray text */
+    padding: 5px;
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the caption takes the full width */
+     margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    /* Remove position absolute and related properties */
+}
+
+/* No need for hover effect since captions are always visible */  
+
+/* Adjust the CSS for individual sections if needed */
+.header {
+    text-align: center;
+    padding: 10px;
+}
+  }
+  .life-story-section{
+    max-width: 100%; /* Set max-width to 100% for responsiveness */
+    margin: 0 auto;
+    padding: 0 20px;
+     text-align: center;
+}
+
+
+   .tribute-section{
+      max-width: 100%; /* Set max-width to 100% for responsiveness */
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+        
+            /* Adjust the CSS for the image wrapper */
+.image-wrapper {
+    max-width: 100%; /* Ensure images don't exceed their natural size */
+    height: auto; /* Allow images to scale proportionally */
+    display: flex; /* Use flexbox to align images horizontally */
+    justify-content: center; /* Center-align images */
+    align-items: center; /* Center-align images */
+    flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+/* Adjust the CSS for individual images */
+.image-wrapper img {
+    max-width: 100%; /* Ensure images don't exceed their natural size */
+    height: auto; /* Allow images to scale proportionally */
+    margin: 5px; /* Add margin between images */
+}
+.event-details {
+    display: none;
+    background-color: #4c4c4c; /* Set the background color to match your design */
+    color: white; /* Set the text color for event details */
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the total width/height */
+}
+
+/* Adjust the CSS for the content within the event details */
+.event-details p {
+    margin-bottom: 5px; /* Add margin at the bottom of each paragraph for spacing */
+}
+/* Style for open state */
+.event-details.open {
+    display: block;
+}
+
+/* Style for closed state */
+.event-details.closed {
+    display: none;
+    /* Add other styles for closed state if needed */
+}
+
+
+
+            
+
+    .event-button {
+        background-color: transparent;
+        color: #929292;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0;
+        text-align: center; /* Add this line to align the text to the left */
+    
+}
+
+
+    .close-details {
+        color: #929292;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+.spacer {
+    height: 40px; /* Adjust the height as needed to create space */
+}
+
+.content {
+    display: none;
+    color: white; /* Set the text color for content */
+}
+
+
+    .event-image {
+        max-width: 100%; /* Ensure images don't exceed their natural size */
+        height: 400px; /* Maintain aspect ratio */
+        display: block; /* Remove extra space below images */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+
+    .video-container {
+        position: relative;
+        max-width: 100%;
+    }
+
+    .video-container video {
+        width: 100%;
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    </style>
+    <!-- Include the Font Awesome CSS stylesheet -->
+    <style>
+    /* Basic CSS styling */
+    /* ... (your existing CSS code) ... */
+
+    /* Add CSS for the Font Awesome icons here */
+    .fa {
+        font-family: FontAwesome, sans-serif;
+    }
+</style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="icon.jpg" alt="Menu" style="width: 50px; height: 50px;">
+    </div>
+
+    <div class="menu-container" id="menuContainer">
+        <span class="close" onclick="closeMenu()">&times;</span>
+        <div class="menu-content">
+            <ul>
+                <li  class="active"><a href="./index.html">Tributes for Kalpana</a></li><br>
+               <li><a href="./lucknow/lucknow.html">Lucknow days</a></li>
+                <li><a href="Comments.html">Please leave a comment</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+     <div class="page-container">
+        
+          
+           <header>
+               <h1>Vedanta<br><br>Three Words<br></h1>
+       <p class="header-description">
+ <br><br>Vedanta is an ancient Indian framework, a practical methodology for acquiring knowledge. The word ved itself means “knowledge”—not ordinary knowledge, but the most intimate kind: knowledge of the Self.
+The purpose of history is to understand the past, and the purpose of science is to explore the universe.
+But the purpose of Vedanta is not to understand the content of the Vedas, but the one who studies them—the Self.
+Vedanta is not about learning more about our body or even our mind.It is about knowing the very core of our being—directly, immediately.
+You might think that knowing the Self should be simple. After all, the Self is what’s closest to us. And yet, just as we may miss the forest for the trees, our true nature often escapes us precisely because it is so close, so ever-present.
+That’s why Vedanta offers not just ideas, but a methodology—a structured means of inquiry to reveal what is already true. In that sense, it is a discovery.
+<br>And when this knowledge arises, it’s not abstract. It has real consequences: it transforms how we see the world, how we make decisions, how we relate to others, and how we live—right here, right now.
+<br><br>They say the essence of all the Vedas can be distilled into just three words:
+<br><br>Tat Tvam Asi
+<br><br>Chandogya Upanishad, Chapter 6, Verses 8.8–15
+<br><br>Translated: You are that
+         <br><br>  What does it mean?
+<br><br>“The essence that gives you (tvam) life is the same infinite power (tat) that animates the entire cosmos.”
+The words are simple; the implications are far-reaching.
+If the essence in us, our "self"  is the same as the essence that creates everything in the universe, <br>then:
+<br>It means that the power and potential to create the entire universe lies within us.
+<br>Clearly very empowering. Then why is there pain and inadequacy in the first place?
+<br>How can we stop our suffering?
+What knowledge will alleviate this?
+
+
+<br><br> <br>
+ </p>
+     
+        
+    </header>
+
+
+<!-- Slideshow Container -->
+<div class="slideshow-container">
+    
+    
+        <!-- Slide 1 -->
+        <div class="mySlides1 fade">
+            <img src="Cover.jpg" alt="Slide 1">
+            <div class="caption">Aitareya Upanishad 3.1.3, Rig Veda. </div>
+        </div>
+
+
+          <!-- Slide 2 -->
+          <div class="mySlides1 fade">
+              <img src="50anniv.jpg" alt="Slide 2">
+              <div class="caption"> Brihadaranyaka Upanishad, 1.4.10, Shukla Yajur Veda</div>
+          </div>
+
+
+            <!-- Slide 3 -->
+              <div class="mySlides1 fade">
+                  <img src="Sari.jpg" alt="Slide 3">
+                  <div class="caption">Chandogya Upanishad, 6.8.7, Sama Veda</div>
+            </div>
+
+
+
+          <!-- Slide 4 -->
+          <div class="mySlides1 fade">
+              <img src="mummyalone.jpg" alt="Slide 4">
+              <div class="caption">Mandukya Upanishad, Verse 2, Atharva Veda</div>
+          </div>
+
+         
+        <!-- Add more slides as needed -->
+<!-- Next and Previous Buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+     </div>
+    
+    <!-- Additional text below the picture -->
+  
+<div class="spacer"></div>
+<div class="life-story-section">
+    <h2><br><br>The Methodology of Vedanta</h2>
+    <p>
+       <br> Vedanta has a goal—to gain self-knowledge. It teaches us how to think, not what to think.
+    </p>
+
+    <!-- Event 1 -->
+  <div class="event-container">
+     <button class="event-button" onclick="toggleEvent('event-details-1')">Shravan: Listening and learning under the guidance and mentorship of a guru.</button>
+     <div class="event-details" id="event-details-1">
+     <span class="close-details" onclick="closeEvent('event-details-1')">&times;</span>
+               <p>
+                     </p>
+              <div class="image-wrapper">
+                
+                  <img src="Gaurs.jpg" alt="Letter Image">
+                
+              </div>
+             
+              <p>
+                    </p>
+               <div class="image-wrapper">
+                
+                 
+                  <img src="./family/chacha.jpg" alt="Chacha Image">
+              </div>
+          </div>
+      </div>
+   <!-- Event 2 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-2')">Manan:Reasoning and understanding.</button>
+            <div class="event-details" id="event-details-2">
+                    <span class="close-details" onclick="closeEvent('event-details-2')">&times;</span>
+                 <p>
+                    
+                 </p>
+                <div class="image-wrapper">
+            <img src="./family/Nananani.JPG" alt="Music Image">
+                <p>
+                   
+                   </p>   
+                    <img src="./family/Childhood.jpg" alt="BOAC Event Image">
+                      </div>
+                <p>
+                    </p>
+                <div class="image-wrapper">
+                
+                <img src="./family/Meetu.jpg" alt="BOAC Event Image">
+              <img src="./family/meetuchimmie2.jpg" alt="BOAC Event Clip Image">
+            </div>
+                
+            </div>
+        </div>
+
+              
+             
+    <!-- Event 3 -->
+      <div class="event-container">
+      <button class="event-button" onclick="toggleEvent('event-details-3')">Nididhyasan: Direct experience throughout our present lives, which helps to solidify and internalize our insights.</button>
+      <div class="event-details" id="event-details-3">
+      <span class="close-details" onclick="closeEvent('event-details-3')">&times;</span>
+              <!-- Add event-specific details here -->
+              <p>
+                  Example of lion who thinks he is a goat
+              </p>
+                 <div class="image-wrapper">
+                
+                 
+                  <img src="./family/Report .heic" alt="Chacha Image">
+                  <img src="./family/ramnee.heic" alt="Chacha Image">
+                  <img src="./family/nw.heic" alt="nw Image">
+                  <img src="./family/painting.jpg" alt="Chacha Image">
+             
+                      </div> 
+              <p> 
+            
+                  </p>
+             <div class="image-wrapper">
+                
+             
+                      <img src="./family/Kobrat.jpg" alt="BOAC Event Image">
+                      </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="event-container">
+          <button class="event-button" onclick="toggleEvent('event-details-4')">Core concepts: Reality</button>
+          <div class="event-details" id="event-details-4">
+              <span class="close-details" onclick="closeEvent('event-details-4')">&times;</span>
+              <!-- Add event-specific details here -->
+              <p>
+                  When I say the word “reality,” what comes to your mind?
+<br>Maybe it’s your current thoughts, the weather, or your surrounding or even what you feel. 
+But what about your dream from last night—wasn’t that also “real” while it lasted?
+Or what about a hallucination, or a memory?
+<br><br>Which one of these is “reality”?
+<br>VEDANT says - every one of them is real . But some realities are temporary, some permanent. Every one of us operates at multiple levels of reality simultaneously. 
+That is why, in  Vedanta, we often explore reality in layers—not just the surface facts of what’s happening, but also what lies underneath. And we shift our perspective so that temporary realities do no perturb us . 
+To do this, we first have to look at how the Rishis, or ancient seers, saw the world.
+              </p>
+      <div class="image-wrapper">
+                
+             
+                      <img src="event3dublin1965.jpg" alt="BOAC Event Image">
+                      <img src="event3clip.jpg" alt="BOAC Event Clip Image">
+                  </div>
+                  <p>
+                   <br>   </p>
+            <div class="image-wrapper">
+                
+             
+                      <img src="./family/dhun1.JPG" alt="BOAC Event Image">
+                      <img src="./family/dhun2.JPG" alt="BOAC Event Clip Image">
+                  </div>
+           <p>    </p>
+              <div class="image-wrapper">
+                
+             
+                      <img src="./family/Manjari .png" alt="BOAC Event Image">
+                       </div>
+                    <p>  
+                    </p>
+          </div>
+      </div>
+      <!-- Event 5 -->
+      <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-5')">What the Rishis Found</button>
+            <div class="event-details" id="event-details-5">
+                <span class="close-details" onclick="closeEvent('event-details-5')">&times;</span>
+             <div class="image-wrapper">
+                    <img src="./family/wedding1965.JPG" alt="eedding Image">
+            <img src="./family/Dehradun.JPG" alt="eedding Image">
+           
+                 <img src="./family/Lovestory1.jpg" alt="eedding Image">
+            
+                 <img src="./family/Pm2.GIF" alt="Music Image">
+                   <img src="./family/Pm1.heic" alt="Music Image">
+                 <img src="./family/family2.jpg" alt="Music Image">
+        <img src="./family/Kiss.jpg" alt="Music Image">
+      
+             </div> 
+                <p>
+                   The Rishis asked a powerful question:
+Is there something that never changes, even when everything else does?
+They noticed that:
+Our bodies change constantly—growing, aging, healing.  
+Our minds shift—happy one moment, worried the next.  
+Even the world around us transforms—weather, politics, economies, relationships.  
+But if everything changes, what holds it all together?
+What is the unchanging essence that runs through all of it?
+That’s what they set out to discover.
+Through intense inquiry and self-exploration, they concluded that yes—there is a changeless essence, and it’s not “somewhere out there.”
+It’s within us.
+That unchanging essence is called Brahman.
+                     </p>   
+                   <div class="image-wrapper">
+                
+             
+                      <img src="./family/Jijaji.jpg" alt="BOAC Event Image">
+                      <img src="./family/wordle.jpg" alt="BOAC Event Clip Image">
+                  </div>
+                <p>  
+             </p>       
+                  <div class="image-wrapper">
+                
+             
+                      <img src="./family/Chand.jpg" alt="BOAC Event Image">
+                       </div>   
+                
+              
+                 
+             
+     </div>
+  </div>
+
+
+
+        <!-- Event 6 -->
+         <div class="event-container">
+          <button class="event-button" onclick="toggleEvent('event-details-6')">Levels of Reality</button>
+          <div class="event-details" id="event-details-6">
+              <span class="close-details" onclick="closeEvent('event-details-6')">&times;</span>
+              <!-- Add event-specific details here -->
+        
+          <p>
+          
+The Rishis described four states of existence - levels of realiity 
+sthoola Shareera : our physical body (), or the material self which takes input from the five senses - touch smell sight hearing and taste. At this level a human being is motivated by pleasure and pain 
+ sukshma shareera: our subtle body including mind and emotions—
+The two states are ever-changing and in flux. These are apparent realities. They have a deep and interconnected existence. Our mind/ emotion/ motivation affects the body and vice versa . 
+The third level is Sushupti—a state of being, rich with potential. It is an unmanifest reality. One way to think of it is that it is a flower waiting to blossom. It is the person we can become, but are not yet.  
+Underlying these lies the Atman: a steady, constant, timeless, and unchanging reality. This Atman is the common thread running through everything in the universe. The collective of all is called Brahman—and we are that. “Tat Twam  Asi “The Rishi’s  found that beneath the ever-changing material world lies a substratum of unchanging, infinite, indivisible reality—they called it Brahman: the Absolute reality.  This is the unchanging, all-pervasive, timeless truth. The Self, or Brahman.   Everything else is like waves on the ocean—temporary forms of something deeper.
+Each person, however, experiences their own version or perspective of Brahman ,  this ultimate reality,  at a time. influenced by our unique perceptions and experiences. This means that while we all perceive the same underlying reality, each of us experiences and understands it in our own distinct way.
+By acknowledging this, Vedanta advocates tolerance for the perspectives of others.   </p>
+           <div class="image-wrapper">
+                
+           <img src="event3dubn1965.jpg" alt="sunayana Image">
+            <img src="eve3clip.jpg" alt="sunayana Image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 6a -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-6a')">
+Physics and Reality</button>
+            <div class="event-details" id="event-details-6a">
+                <span class="close-details" onclick="closeEvent('event-details-6a')">&times;</span>
+                <p>
+                  Interestingly, modern physics echoes some of these ideas.
+At the level of quantum mechanics, matter seems less “solid” than we think—it’s mostly empty space.
+Particles pop in and out of existence; observation changes outcomes.
+The deeper scientists look, the more reality seems to blur.
+In this sense, science and Vedanta are not at odds.
+Science describes how the universe works.
+Vedanta asks who is experiencing it. 
+                </p>
+
+            <div class="image-wrapper">
+                
+                <img src="./family/shivani.jpg" alt="BOAC Event Image">
+               
+                  <p>
+                  </p>
+              <img src="./family/Crescent.jpg" alt="crescent moon Image">
+            </div>
+            </div>
+       </div>
+
+     
+      <!-- Event 7 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-7')">A Modern Analogy: The Computer </button>
+            <div class="event-details" id="event-details-7">
+                <span class="close-details" onclick="closeEvent('event-details-7')">&times;</span>
+                <p>
+                  Think of your mind and body as a computer:
+Your brain is the hardware.  
+Your thoughts and emotions are like software.  
+But you—your essential Self—are the electricity that powers it all.  
+The programs may crash. The hardware might age.
+But the electricity?
+It’s untouched, unaffected.
+Vedanta tells us:
+You are not the computer. You are the power that enables it.
+When we mistake ourselves for the software (emotions) or hardware (body), we suffer.
+When we recognize ourselves as the unchanging essence, we are free.    </p>
+                <!-- Display Mum Poem PDF -->
+
+                <div class="image-wrapper">
+                <img src="./family/Ninastory.jpg" alt="Music Image">
+                 
+                    <img src="./family/nina.jpg" alt="Music Image">
+                   <img src="./family/Nina2.jpg" alt="Music Image">
+        </div> 
+            </div>
+        </div>
+
+        <!-- Event 8 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-8')">The Role of the Guru</button>
+            <div class="event-details" id="event-details-8">
+                <span class="close-details" onclick="closeEvent('event-details-8')">&times;</span>
+                <p>
+                  The spiritual journey is not one you take alone.
+The role of a Guru (spiritual teacher) is considered vital in Vedanta.
+Why?
+Because the truth we’re seeking is subtle.
+It’s not something the eyes can see or the mind can grasp easily.
+We’re looking for the seer—but we are also the seer!
+So how do you” see”  the one who sees? This is the subject of the text Drig Dhrushti Vivek. 
+The Guru is someone who has already seen, someone who can point us back to ourselves.
+A Guru doesn’t give you a belief system; a true Guru gives you clarity by directing you to find your own evidence .
+He or she helps remove ignorance, which is like a veil covering the Self.
+And once that veil lifts, the Self shines on its own.
+The methods of Vedanta emphasizes:
+“Shravana” (listening to the teachings),
+Example
+“Manana” (reflecting on them), and
+“Nididhyasana” (deep contemplation and experience . Example 
+All of these are most effective when guided by a qualified teacher.
+                    
+                </p>
+                <div class="image-wrapper">
+                
+                <img src="./family/Uni.HEIC" alt="BOAC Event Image">
+              
+            </div>
+                
+            </div>
+        </div>
+
+        <!-- Event 9 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-9')">Essence, Discipline, Focus</button>
+            <div class="event-details" id="event-details-9">
+                 <span class="close-details" onclick="closeEvent('event-details-9')">&times;</span>
+                <p>
+           Vedanta is not an abstract concept , but it’s deeply practical.
+It’s not just about reading scriptures or chanting mantras.
+It’s about transformation.
+This transformation comes from a life of:
+Essence – Focusing on what really matters.  
+Discipline – Training the mind and senses, not as punishment, but as preparation.  
+Focus – Directing your energy toward your deeper nature, not being tossed around by distractions.  
+When we live like this, a strange thing happens:
+Suffering becomes optional. 
+Example. 
+                </p>
+               <div class="image-wrapper">
+            <img src="./family/madefor.JPG" alt="Music Image">
+                   <img src="./family/pm3.jpg" alt="Music Image">
+        <img src="./family/Dance.JPG" alt="Music Image">
+       
+               </div> 
+            </div>
+        </div>
+          <!-- Event 10 -->
+<div class="event-container">
+    <button class="event-button" onclick="toggleEvent('event-details-10')">What is Meditation</button>
+    <div class="event-details" id="event-details-10">
+        <span class="close-details" onclick="closeEvent('event-details-10')">&times;</span>
+        <p>
+       In Vedanta, meditation isn’t about “feeling good” or “blissing out.”
+It’s about directly experiencing the Self.
+It begins by quieting the mind—not forcing it, but observing it.
+When thoughts settle, what remains?
+You.
+Not the “you” with an identity or a to-do list, but the pure, unchanging awareness.
+That stillness isn’t something you create; it’s something you uncover.
+The Bhagavad Gita says:
+“When the mind becomes still, the Self reveals itself.”
+            </p>
+        <!-- Image -->
+        <div class="image-wrapper">
+            <img src="./family/Bhatkhande.jpg" alt="Music Image">
+        </div>
+         <p>
+        
+        </p>
+        <!-- Audio -->
+        <audio controls>
+            <source src="music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+        <!-- Event 11 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-11')">
+Material Life: Mind and Body </button>
+            <div class="event-details" id="event-details-11">
+                <span class="close-details" onclick="closeEvent('event-details-11')">&times;</span>
+             
+                   
+                   <p> Vedanta doesn’t ask you to reject the world.
+You don’t have to live in a cave to be spiritual.
+In fact, Vedanta teaches that everything in the material world is also Brahman, just temporarily shaped.
+Your body, your job, your relationships—they’re not separate from the Self.
+They’re expressions of it.
+But we suffer when we cling to these expressions as if they’re permanent.
+We identify with our roles, our past, our emotions.
+The trick is not to reject the world, but to see through it.
+Like realizing a movie is just light on a screen—beautiful, emotional, but not ultimately real.
+                             </p> 
+                         
+                <div class="image-wrapper">
+                
+                  <img src="./family/shukl.jpg" alt="Shulk Lal image">
+                
+              </div> 
+
+                          
+                <div class="image-wrapper">
+                
+                  <img src="./family/P7.jpg" alt="Letter Image">
+                
+              </div> 
+                   <p>
+                      
+     </p> 
+                   <div class="image-wrapper">
+                
+                  <img src="./family/solomon.jpg" alt="Letter Image">
+                
+              </div> 
+     </div>
+</div>              
+                 
+
+        <!-- Event 12 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-12')">Rebirth & Moksha</button>
+            <div class="event-details" id="event-details-12">
+                 <span class="close-details" onclick="closeEvent('event-details-12')">&times;</span>
+               
+               <p>  
+                   One of the foundational ideas in Vedanta is samsara—the cycle of birth, death, and rebirth.
+Why does this happen?
+Because of karma—our actions, desires, and attachments.
+As long as we identify with the ego, we keep coming back, trying to fulfill unfinished business.
+But there is a way out:
+It’s called moksha, or liberation.
+Moksha doesn’t mean going somewhere else.
+It means waking up to what you already are—free, complete, infinite.
+Once you realize that, there’s no need to return.
+Not because you’re escaping, but because you’ve understood the dream
+               </p>
+
+         <div class="image-wrapper">
+            <img src="rotary.jpg" alt="Image to be uploaded">
+        </div>
+
+                <p>
+                 
+Vedanta is not a religion, not a dogma, and not a philosophy It’s a mirror—held up to the seeker—so they can see who they’ve always been.It doesn’t tell you what to believe.It invites you to look within.
+In a world chasing identity, status, and external success, Vedanta gently whispers:
+“You are not what you think. You are far more.”
+It’s not an escape from the world but a way to truly engage with it—with wisdom, detachment, and compassion.
+The journey doesn’t end in a mountaintop or monastery.
+It ends (and begins) in the laser faces  that you give to  your own being.
+And in the stillness that emerges from the focus, everything is found, here and now. 
+
+                    
+
+                </p>
+              </div>
+              </div>
+             
+
+
+         
+        <!-- Event 13 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-13')">2002-2008<br> Showering love </button>
+            <div class="event-details" id="event-details-13">
+                 <span class="close-details" onclick="closeEvent('event-details-13')">&times;</span>
+                <p>
+                    In 2001, Kalpana's mother Kanti was diagnosesd with Alzheimers. She came to live in Lucknow. 
+          
+                </p>
+ <div class="image-wrapper">
+    
+    <img src="./family/nani.jpg.jpg" alt="naniImage">
+     <p>
+                    Majid and Kapana taking Nani for a walk in the street in Lucknow. 
+          
+                </p>
+     
+    <img src="./family/havan.jpg.jpg" alt="Music Image">
+        </div> 
+                 <p>
+                   Nirmala tells the story ( to be uploaded) 
+                </p>
+            </div>
+        </div>
+
+        <!-- Event 14 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-14')">2020 - <br> Being showered</button>
+            <div class="event-details" id="event-details-14">
+                  <span class="close-details" onclick="closeEvent('event-details-14')">&times;</span>
+                <p>
+                    Being showered:
+                    
+                </p>
+                 <div class="image-wrapper">
+     <img src="./family/Made3.HEIC" alt="Music Image">
+ 
+        </div> 
+               <!-- Audio -->
+        <audio controls>
+            <source src="./family/nainoo.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio> 
+            </div>
+        </div>
+
+
+    
+
+
+      <h2>Legacy</h2>
+          <p>
+                       Legacy is a nebulous word. Kalpana's legacy is simple to measure;<br> Who answers her call within seconds, <br>whose face bursts into a smile when she flashes before the lens of their mind and <br>who wishes a secret wish - to be with her. And if not, to at least to learn a little bit from her. 
+                      </p> 
+
+               
+      
+ 
+        <!-- Event 15 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-15')">Sunayana and Shivani</button>
+            <div class="event-details" id="event-details-15">
+                <span class="close-details" onclick="closeEvent('event-details-15')">&times;</span>
+                <p>
+
+                       </p>
+                 <div class="image-wrapper">
+               <img src="./family/Daughters1.jpg" alt="Music Image">
+                   <img src="./family/Daughters2.jpg" alt="Music Image">
+       
+                     <img src="./family/daughters.jpg" alt="Music Image">
+                   
+                 </div> 
+            </div>
+        </div>
+
+  
+
+
+
+     
+                <!-- Event 18 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-18')">Rajiv, Sunayana and the grandchilren</button>
+            <div class="event-details" id="event-details-18">
+                 <span class="close-details" onclick="closeEvent('event-details-18')">&times;</span>
+                <p>
+             In 1991 Mummy welcomed a ‘son’ into the family. She always says he is my son, not my son-in-law!
+After a year of courtship, Sunayana and Rajiv got married in December 1991.
+I met ‘Mommy’ for the first time very soon after meeting Sunayana. No ‘meet the parents later’ bit those days. 
+I shall always remember those early days, when almost all evenings were spent in the Beryl House drawing room. I never wanted to leave. So when dinner was served, Mommy would invite me to join, and I would politely refuse the first two times, as had been taught in boarding school. But hoping there would be a third. And there always was, thanks to Mommy !
+Mommy was hugely instrumental in Sunayana & I deciding to get married, but that is another story. Having said that, she alone was there front & centre when we announced our decision to get married at 233 Lower Circular Road. My parents had no idea. Am sure Daddy also did not.
+Mommy has always been there for us, when we temporarily moved into Belvedere Park right after Shantanu was born. And again when Piyu was born for the first three months at Gomti Nagar. Time moves on. We always enjoyed Mommy's visit to us in Bangalore, Gurgaon, Mexico City and more often now back in Gurgaon again. 
+And she loved Tequila (our black labrador), as much as we did. Which is why we could always leave him with her in Lucknow when we went on long holidays. And every time we picked him up, he was fatter than when we left him.  
+Mommy has always said I am more a son than a son-in-law. I just want to say that I wish I actually had been more a son than a son-in-law. But there is still lots of time.
+So happy happy 80th birthday, Mommy. Lots of love, babul
+                               <div class="image-wrapper">
+                       <img src="./family/P8.jpg" alt="dipu Image">
+      <img src="./family/P9.jpg" alt="dipu Image"> 
+                   </div> 
+
+Our most precious gift to Mummy and Papa was on their 30th Anniversary – a grandson, named Shantanu. Spoilt by his grandparents, Shantanu spent the first six months of his life in Nani, Nana’s house. 
+
+My favourite memories with nani have been the summers spent in Lucknow, growing up. The summer holidays were always filled with activities nani organised for us that would keep us occupied for hours on end - these included teaching us how to draw and paint, painting bottles with white designs that would later be used as vases, and the rare occassions where clay would be procured and we would sit out on the ledge of the garden making our masterpieces.
+While mama has inherited a lot of nani's artistic qualities, some have managed to trickle down to me as well and I thoroughly enjoyed these artistic summers. One of my cherished paintings, which I still can't believe nani made is a replica of a picture of me as a child playing with a dog, painting on a small plate. Although I haven't kept up with that hobby and switched to writing, nani has always been supportive - even reading my works in parts when her eyes were giving her problems!
+Happy birthday Nani!
+In 1998 little Piyu delighted everyone by arriving on the 9th of February. Here is what she has to say:
+Growing up, Lucknow was always the most fun place to be. When we would come for summer holidays, Nani would arrange mud so we could play with it as clay, a hose so we could have water fights, and of course, lots and lots of yummy food that would spoil us! I remember taking naps in Nani's big bed in the hot summer and then watching her get dressed up for dinner at her vanity. Her closet and vanity were always exciting places to look at, and some gift or the other for me would always pop up. Everything Nani does is always artistic and meticulous, even things like wrapping gifts! I have watched her re-wrap a gift multiple times because it was not done to absolute perfection. My favourite memories with Nani involve eating different foods that she introduced us to - kankave ke pakode (that leaf that grew in the garden that we used to fry), anarse ki goliyaan, litti chokha, and many more!
+Happy 80th Nani! ♥️♥️♥️
+                </p>
+                   <div class="image-wrapper">
+            <img src="./family/Piyu.jpg" alt="dipu Image">
+            >
+            <img src="./family/P1.jpg" alt="dipu Image">
+        <img src="./family/P2.jpg" alt="dipu Image">
+      <img src="./family/P3.jpg" alt="dipu Image">
+      <img src="./family/P4.jpg" alt="dipu Image">
+      <img src="./family/P5.jpg" alt="dipu Image">
+    <img src="./family/P6.jpg" alt=" Image">
+      
+    
+  
+      
+                   
+                   </div> 
+              <p>  
+                </p>
+                
+<div class="image-wrapper">
+            <img src="./family/Piyu.jpg" alt="dipu Image">
+            <img src="./family/Piyu1.jpg" alt="dipu Image">
+            <img src="./family/Piyu2.jpg" alt="dipu Image">
+            
+        </div> 
+            </div>
+        </div>
+
+            <!-- Event 16 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-16')">Family</button>
+            <div class="event-details" id="event-details-16">
+                 <span class="close-details" onclick="closeEvent('event-details-16')">&times;</span>
+              
+                <p> The Mathur Family<br> 
+                      </p>
+                <div class="image-wrapper">
+                
+              <img src="./family/Papafamily.jpg" alt="BOAC Event Image">
+                <br> 
+                  <p>The Gaur sisters<br>
+                  </p>
+              <img src="./family/meetuchimmie2.jpg" alt="BOAC Event Clip Image">
+            </div>
+                   
+                <p>
+                   Vishnu<br>  
+                </p>
+                <div class="image-wrapper">
+                
+                <img src="./family/tauji.jpg" alt=" Image">
+             
+            </div>
+    <p>
+            Mahatab<br> The one word that cones to mind when i think of Mausi is 'Magnanimous' <br> My best memory of her is from a morning in Danapur. She was peeling some fruit and sitting in the sun while sending a very excited me off to get some leachies with a male helper after feeding the peacocks.
+                   </p> 
+                   <div class="image-wrapper">
+            <img src="./family/Mahatab.jpg" alt="dipu Image">
+                  
+        </div>
+                 <p>
+            Shoni and Shishir <br>
+      It was with excitement that we greeted the announcement that Anand mama was getting married to an airhostess. Wow! That wow factor still remains and best describes Kalpana mami. She has been such an influence in our lives. Her elegance, her charm, the way she kept her house, the clothes she designed for her girls, her cooking (slurp),her warmth all made a mark. She taught me how to make a button hole properly! She has a special place in my heart. All the best to you mamiji on your 80th.
+                </p> 
+                   <div class="image-wrapper">o
+            <img src="./family/Shoni.jpg" alt="shoni image to be uploaded">
+                  
+        </div> 
+<p>
+          Pyoosh Bahadur: <br> 
+   </p> 
+    <!-- Audio -->
+        <audio controls>
+            <source src="./family/Pyoosh.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+                
+                <p>
+            Dipika Matthias: <br> The phrase that comes to mind is ‘herbalist wisdom’! I love hearing about all the ways that Kalpana Chachi uses herbs for both preventive and curative health. For instance, I remember when Hena and I spent time with your parents in London in 2019. She was giving us advice on all her various uses for haldi, including as a natural toothpaste, a digestive aid, face mask, wound ointment and much more! We need to write down all her herbal remedies so the family can benefit from her immense wisdom about how to utilize the vast  plant world for the benefit of human health and beauty.<br>
+                    
+                </p> 
+                   <div class="image-wrapper">
+            <img src="./family/dipu.jpg.JPG" alt="dipu Image">
+                  
+        </div> 
+
+    
+<p>  Reema <br>Dearest Kalpana Jiji. 
+A very Happy 80th Birthday to you. May you be blessed with good health and happiness always. 
+The very first time I heard of you was through your brother who said” she is beauty and elegance personified “!! That’s what I’ve always seen in you along with a lot of gentleness,kindness and always a personal touch to all you do. 
+When Kanti Mausi, your Mom was unwell I remember your words to me— I need to look after her now- when I was little and couldn’t do things by myself she changed my diapers and looked after me, so now I can do it for her when she can’t!! You looked after Mausi with so much love . 
+Jijaji and you have always been our role models.
+Affectionately always 
+Reema
+   </p>
+                <div class="image-wrapper">
+            <img src="./family/reema.JPG" alt="dipu Image">
+                  
+        </div> 
+                  <p>
+            Mala Mathur: <br> I have loved meeting with Kalpana Chachi and Anand Chacha over the years in Lucknow, Calcutta, Rochester, Chicago and Madison! I will always treasure how Chachi taught me about the different sari patterns/fabrics from different parts of Indian when I visited them in Calcutta in 1995. I also remember how Chachi prepared lovely meals for us and I so admired her love of cooking! I was very happy that Chachi and Chacha were able to come to my milestone birthday in 2019 and spent some time visiting us in Madison, Wisconsin. Wishing you lots of love Kalpana Chachi on your 80th Birthday!!! <br>
+                    
+                </p>
+                   <div class="image-wrapper">
+            <img src="./family/mala.jpg" alt="dipu Image">
+                  
+        </div> 
+            </div>
+        </div>
+ <!-- Event 24 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-24')">More favourites</button>
+            <div class="event-details" id="event-details-24">
+                 <span class="close-details" onclick="closeEvent('event-details-24')">&times;</span>
+                
+                  <p>
+                Scott Mead <br>
+            </p> 
+                
+                   <div class="image-wrapper">
+            <img src="./family/Scott.jpg" alt="dipu Image">
+                  
+        </div> 
+                <p>
+            Tarun Das <br>
+
+We grew up in neighbouring apartments at 233 Lower Circular Road. We shared a common wall.
+
+Kalpana was a few years younger than me. We used to see each other often. A very lovely girl. Somewhat reserved (as was the custom), usually in her school uniform.
+
+She struck me as a very special person and that memory, that impression has stayed with me forever.
+
+We were young. Our families were conservative and we did not have the opportunity to know each other well.
+
+But, she was striking. She still is.<br>
+Tarun Das<br>
+                    The picture below is the front door of 233, Lower Circular Road in Kolkatta, where Kalpana grew up. Nearly twenty years after we left this flat, when her sister Meetali revisited Kolkatta, she found the name PC Gaur still on the front door.  
+                </p>
+                   <div class="image-wrapper">
+            <img src="./family/233.JPG" alt="dipu Image">
+                  
+        </div> 
+            <p>
+           Alka and Narendra <br> Kalpanaji is one of the finest human being, love, affection and kindness personified. She has a great aura around her and is always dignified and in control even in the toughest of times. She is a great hostess and thinks about others before herself. 
+We wish her a stupendous 80th birthday and pray for her long life. 
+Alka & Narendra Swarup    
+            </p> 
+                
+                   <div class="image-wrapper">
+            <img src="./family/Alka1.jpg" alt="dipu Image">
+            
+            <img src="./family/Alka2.jpg" alt="dipu Image">
+                 
+            <img src="./family/Alka3.jpg" alt="dipu Image">
+                       
+        </div> 
+              <p> Suman Gandhi <br> She’s incredible, full of talent and love the positive attitude and a smile to die for. 
+              </p>
+                <div class="image-wrapper">
+            <img src="./family/Suman.jpg" alt="dipu Image">
+                  
+        </div>   
+            </div>
+        </div>
+                <!-- Event 20 -->
+<div class="event-container">
+    <button class="event-button" onclick="toggleEvent('event-details-20')">The railway family</button>
+    <div class="event-details" id="event-details-20">
+        <span class="close-details" onclick="closeEvent('event-details-20')">&times;</span>
+
+   
+                <p>
+Cheena <br>
+                    Dear Mrs. Mathur,
+Heartiest congratulations on reaching the incredible milestone of 80 glorious years! Your journey has been marked by grace, intelligence, beauty and unparalleled generosity, that has left an indelible mark on every one fortunate enough to know you.
+As I reflect on the many years of our association, it takes me back to the serenity of Sri Lanka, where our paths first crossed in 1983. Little did I know that this meeting would bloom into a profound and enduring friendship that has withstood the test of time.
+From amazing beaches of Sri Lanka to the picturesque mango orchard picnics in Lucknow, our shared adventures have been nothing short of magical. The laughters we exchanged, the stories we have woven into the tapestry of our lives, all echo the depth of our connection.
+I could share numerous remarkable moments we shared, but delving into each one would make the recounting quite extensive.
+One incident that stands out as a testament to your true character, unfolded during the civil disturbances in Colombo in 1984. The adjacent house, belonging to a Tamil billionaire was set ablaze, and as an Indian, we could have been potential targets. In those uncertain times, your home became our sanctuary. The Indian High Commission arranged for our transport, and you opened your doors to us with a warmth that is characteristic of your spirit. Only in adversities, the true character of people is visible.
+In the face of limited resources, during those challenging days, you not only ensured that my girls and all of us had enough to eat, but also displayed remarkable culinary skills. The creation of Curfew Pie’ and likewise, from whatever limited ingredients were available, not only filled our stomachs but also our hearts with gratitude. Your ability to turn adversity into a moment of shared comfort, showcased your resilience and compassion.
+Our lives have been intertwined in a glorious tapestry of friendship and you, Mr. Mathur, and your daughters Sunayana and Shivani, have become an integral part of our extended family. Your love and care have touched us in countless ways, and we are immensely grateful for the bounds we share.
+On this joyous occasion of your 80th birthday, May you be surrounded by the warmth of loved ones and deep appreciation of those, whose lives you have enriched.
+Here’s to celebrating the extraordinary women you are, and the fruitful and blessed journey that lies ahead.
+With heartfelt wishes
+  </p>
+ <div class="image-wrapper">  
+ <img src="cheena1.JPG" alt="Cheena Rao Image">
+ </div>
+<p>In the gardens of life, where moments bloom,<br>
+A friendship’s seed finds a place to groom,<br>
+Through laughter and tears, in the sun and rain,<br>
+A bound that lasts, a sweet refrain.<br>
+
+Hand in hand, through high and lows,<br>
+A friendship like a river ever flows,<br>
+In words unspoken, understanding shared,<br>
+A connection cherished, forever, paired.<br>
+
+Through time and space, a constant guide,<br>
+In the hearts gallery, side by side,<br>
+A friendship embraces, pure and true,<br>
+A timeless tale for me and you.<br><br>
+</p>  
+
+
+<div class="video-container">
+    <p>Shalini Sinha</p>
+    <video id="videoPlayer1" playsinline poster="./family/shalinis.jpg">
+        <source src="./family/Shalinisinha.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button class="play-button" onclick="toggleVideoPlayer1()">▶️</button>
+</div>
+        
+
+
+<p>Sanjay Kalyani
+         </p>
+      
+    </div>
+</div>
+    
+
+        <!-- Event 19 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-19')">The lucknow family</button>
+            <div class="event-details" id="event-details-19">
+                <span class="close-details" onclick="closeEvent('event-details-19')">&times;</span>
+                <p> Atul/Meenu<br>
+                    Kalpana bhabhi is my favourite friend. I treasure every moment we’ve spent together - the good times we’ve shared, the laughter, our coffee sessions at Mr Brown, and so many others.
+I thank God for giving me such a wonderful friend who is always there for me with her unwavering support. 
+Wishing bhabhi the Happiest Birthday!<br> <br>Baar baar yeh din aaye … tum jiyo hazaron saal- a song I have played as a tribute to your birthday. 
+                </p>
+                     <!-- Audio -->
+        <audio controls>
+            <source src="./family/Meenusong.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+                <div class="image-wrapper">
+            <img src="./family/atulmeenu.jpg" alt="atul meenu  Image">
+                   <img src="./family/madefor2.jpg" alt="atulmeenu Image">
+        </div>
+                <p> Jiji and Jijaji are no longer there to write a tribute. The poem below, written by Kalpana is a tribute to their love </p>
+
+<div class="image-wrapper">
+    <img src="./family/buaji.jpg.jpg" alt="Image 1">
+    <img src="./family/Buaji.jpg" alt="Image 1">
+</div>
+
+<!-- Display Mum Poem PDF -->
+<embed src="./family/Mumpoem.pdf" type="application/pdf" width="100%" height="600px" />
+
+<p>The famous five <br>Today on “ बैसाखी” day, we are celebrating’8’ decades of our darling friend, Kalpana.
+We, शकुन, इन्दु, रेनु एवम् आरती want to say, Dear Octogenarian “ कल्पना”, ‘ 80’ looks so fabulous on you !
+
+The seed of our  “जिगरी दोस्ती” was sown in ‘2001’.
+The tree of our blissful friendship symbolises “ शाहबलूत”- Mighty Oak having ♾️ deep roots of love, and lush green leaves of resilience, wisdom and enduring strength.
+
+Although, all ’10’ of us are not around the same table to cheer this “ सालगिरह”.
+But, अच्छा लग रहा है, this virtual birthday celebration across ’3’ locations.
+
+Clinking glasses of Champagne with sparkling “ शुभकामनाएँ” for health and prosperity!
+Praying for your “ आनन्दमय” life!
+        </p>
+                <div class="image-wrapper">
+            <img src="./family/five.jpg" alt="Music Image">
+                    </div> 
+                
+                   <p>
+Poonam Kakkar <br><br>Congratulations on reaching this milestone in your remarkable and inspiring life. At 80, your beauty, love, helpfulness, and compassion set a rare standard. Your presence in my family and as a pillar of support for over 28 years has been invaluable. Reflecting on our time together brings back a flood of cherished memories. Your company has always been a source of immense joy to me. May your life continue to be filled with smiles, health, and happiness.
+
+I recall a particular incident that speaks volumes about your character. Mrs. Mathur had invited my husband and me for lunch. Just before going, I fell and hurt my foot. Despite the pain, my eagerness to spend time with her led me to walk to her house. After lunch, I couldn't stand up or walk. My husband had to drive me straight to an orthopedist, where we learned I had fractured my foot. Returning home, we found Mrs. Mathur waiting, full of concern. She visited daily thereafter, keeping me company and bringing delicious soups and snacks. Her love and compassion are truly boundless.
+             </p>
+                  <div class="image-wrapper">
+           
+                       <img src="./family/Poonam.jpg" alt="Music Image">
+                   <img src="./family/Sumati.jpg" alt="Music Image">
+                       <img src="./family/Archit.jpg" alt="Music Image">
+                   
+                  </div>
+           <p> Bittoo, Naresh,Lucky,UV<br>
+                </p>
+                <div class="image-wrapper">
+            <img src="./family/Bittoo1.JPG" alt="Music Image">
+                   <img src="./family/Bittoo2.JPG" alt="Music Image">
+                
+        </div> 
+      
+                <!-- Audio -->
+        <audio controls>
+            <source src="./family/Bittoo.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+            </div>
+        </div>
+
+            <!-- Event 11a -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-11a')"> Her Students   </button>
+            <div class="event-details" id="event-details-11a">
+                <span class="close-details" onclick="closeEvent('event-details-11a')">&times;</span>
+             
+                <p>Kalpana loves her students. And they loved her. In the home in Lucknow, we have hundreds , if not thousands of cards. Everywhere she went, someone recognized her and walked up to say Hello. And she remembers each and every one. 
+                     
+                       </p> 
+                
+                  <p> Mala Seth <br>
+                    Mrs Mathur..... A charming, beautiful, ever smiling graceful and elegant personality having lovely sparkling eyes and a sweet smile..... Always admired her...... Always met with a warmth..... Loads of Wishes and Regards to her on her 80th Birthday💐🍫💖🙏..... Wishing her Great Health and Happiness always....
+
+                Mala Seth
+
+                 ( Now Prof. Dr. Mala Tandon)
+                     </p> 
+
+                      Suparna Ganguly
+                <br>  
+               Her blouses had Chinese collars. Later on I learnt, they were called Air India blouses.
+She taught us different knots, and I remember feeling all knotted up within. And bandages and slings. My favourite one was the one involving the elbow. My brother was my Guinea pig.
+We were, at least I was, too much in awe of her grace and beauty. One just let her be. And one wanted to listen to her, on and on. She wore her watch on her right wrist I think.
+Suparna Ganguly 
+                
+                <div class="image-wrapper">
+                
+                  <img src="./family/Mala.jpg" alt="Letter Image">
+                
+              </div>
+<p>Above: Suparna and Mala      </p> 
+
+                
+                 <p>
+                    Reena Bose <br>
+                     Dear Mrs Mathur - the word that comes to my 58 year old brain when i think of you as a 15 year old is “breezy”. To me you seemed like a breath of fresh air - beautiful, approachable and carefree.
+
+My fond memory of you was outside your home science classroom one day. I had taken first aid and was done early, while the girls in your class were still cooking. The delicious aromas wafted out into the verandah and the hall where we sat tying our figure of 8 bandages.
+
+As soon as we were done, a few of us started loitering outside your classroom in the hope that when the bell rang some of our friends would invite us in and let us taste their cooking. We were, of course always hungry.
+However, as we peeked and circled the room, some of the girls were getting distracted. That’s when one of the doors opened and there you were standing tall towering over us! I was petrified of getting into trouble and setting a bad example as head girl. We weren’t supposed to loiter after class. But you were so kind and took us by surprise actually. You invited us in and asked us to help judge the food!!
+We were served a bit from each of the  20 or so dishes ( can’t remember the right number). They were all delicious and it was one of our best, most memorable days in Senior School :) 
+Thank you for showing us the way…
+Wish you many happy returns of the day Miss 💕 💕
+                   </p> 
+                           
+                <div class="image-wrapper">
+                
+                  <img src="./family/Reena.jpg" alt="Letter Image">
+                
+              </div>
+ <p>...       </p> 
+                
+                <p>
+                Ramaa Vasudevan <br><br>
+                   Mrs Mathur or Kalpana Aunty was both my teacher and mother of a good school friend whose home I was continually in and out of. I have many fond memories of her grace, charm and warmth.    As a bookworm who hated household chores, and liked to live in her head, Kalpana Aunty drew me into appreciating the joys in the everyday!  I remember making my mothers life difficult after several classes on 'nutrition' in home science class.. because armed with this knowledge I would subject every meal at home to loud and withering scrutiny!  ... it was but Kalpana Aunty said you should...!  
+        Some lessons you never forget!
+        Happy 80th Kalpana  Aunty!
+        Love 
+        Ramaa 
+          </p> 
+                 <div class="image-wrapper">
+                
+                  <img src="./family/Ramaa.jpg" alt="Letter Image">
+                
+              </div>
+ <p>...       </p> 
+            <p>
+          
+
+              
+                <p>
+         
+              
+            Vinnie <br><br>
+                I didn’t have her as my teacher. 
+I have vivid memories of a very gracious mom😊 lovely smile❤️ 
+… almost jealous as my mom was very simple and couldn’t be bothered 😀
+Vinnie
+                <p>
+
+                   <div class="image-wrapper">
+                
+                  <img src="./family/Vinnie.jpg" alt="Letter Image">
+                
+              </div>  
+                     Tanu Goel<br><br>This is Tanu Goel, batch 2002. Ma’am taught me in “9C and 10C” Years were 1999 and 2000 ☺️ I do not have a picture of hers with me. My memory of hers is 
+Her confidence and poise
+                  </p> 
+                <div class="image-wrapper">
+                
+                  <img src="./family/Tanugoel.jpg" alt="Letter Image">
+                
+              </div>
+               
+              <p>  Vidushi Khanna <br><br>
+                    I would describe Mrs. Mathur as An elegant Diva!!
+I was always awestruck by her swaying gait and the way she used to rest her chin on her hands while seated in the classroom.<br><br>
+                 </p>           
+                <div class="image-wrapper">
+                
+                  <img src="./family/Vidushi.JPG" alt="Letter Image">
+                
+              </div>
+  <p> Shubhra Sinha <br><br>
+                    My memories of Mathur Aunty are of a young, impressionable me in Loreto Lucknow…in awe of this elegant, well-spoken lady who glided into our lives as if on a dream. Aunty’s bearing, just the way she holds herself, her selection of saris, the gracefulness of her draping that made her sashay as she walked, her silky hair in a bun…Mathur aunty has maintained that image in my memories over the years.  And then when she spoke, aunty had a warmth, a lilt in her voice and an acceptance and respect for who she was speaking to.  I love how she rolls her “rrrrs”, the way she says the word room comes evocatively to my mind even as I am writing this note.  She influenced how I walked, talked and thought as I watched and imbibed her demeanor and mannerisms. Wishing Mathur aunty a very happy 80th birthday, and a long life surround with love, good health and happiness.  Love, Shubhra<br>
+                     </p>   
+                <div class="image-wrapper">
+                
+                  <img src="./family/Shubhra.JPG" alt="Letter Image">
+                <img src="./family/Shubhra1.jpg" alt="Letter Image">
+                
+              </div>
+  <p>
+      Vandana raj<br><br>
+                I used to be  so mesmerized hearing her soft voice, jaise muh se phool jhad rahe ho. Just kept staring at her face only. Her Grace and poise had no match
+Vandana raj
+             </p>
+         <div class="image-wrapper">
+                
+                  <img src="./family/Vandanaraj.jpg" alt="Letter Image">
+                
+              </div>       
+         <p> 
+             Shalini Vaswani<br><br>
+                
+                I remember Mrs. Mathur as a very elegant and graceful teacher. We were the first batch who had opted for Home science as a subject. Among other things which she taught us, I clearly remember the figure of 8 bandage to be tied while dressing a wound.
+Shalini Vaswani
+             </p>   
+                <div class="image-wrapper">
+                
+                  <img src="./family/Shalinivaswani.jpg" alt="Letter Image">
+                
+              </div>
+                 <p> 
+           Mamta Gaur<br><br>
+           I remember her plain chiffon sarees with very beautifully coordinated printed blouses, specifically a navy blue one with polka dotted blouse... Also the way she wore her hair in a bun😁... Sadly don't remember any lesson but she must've taught everything rather well coz I do get compliments on my home running skills 😁     
+                
+             </p>   
+                <div class="image-wrapper">
+                
+                  <img src="./family/Mamta.jpg" alt="Letter Image">
+                
+              </div>
+                <p> 
+                     Aarti <br><br>
+                     Long time ago when young girls secured admission to one of the coveted convent schools in the culturally vibrant city of Lucknow, there could have been little doubt that it was in large part due to its great faculty. For a biased 15-year-old, Mrs Kalpana Mathur was the prima donna, a vision to behold: classy, genteel, always dressed to the nines, in addition to being perfection in speech and diction. I had no idea of the correct pronunciation of such basic words as ‘room’ or ‘truth’ (lose the stress in one and add in the other). She must have been the reason for a young girl’s abiding love in sarees and the woman she wants to grow into, on attaining adulthood.
+
+Lesser mortals might have treated Home Science as academically-lite, but not Mrs Mathur. She would take it upon herself, mother-like, to educate the girls in everything remotely related to the subject – the house you live in, the food you eat, the clothes you wear, the resources at your disposal, and the environment around you. Mrs Mathur was not just a subject teacher at Loreto Convent, but also a one-woman finishing school for many a young students.
+
+It was natural to feel envious of her daughter, in the same batch as us, for having Mrs Mathur as her mother. Four decades later, when Sunayana mirrors the same sartorial grace, blemish-less face and self-assured persona, it’s a no-brainer. She has her mom’s wonderful genes. As for us, we are lucky to have been schooled by a diva who has been an incredibly wonderful role model for us. Aarti (Vaish) Gupta
+                </p>
+                      <div class="image-wrapper">
+            <img src="./family/arti.jpg" alt="Music Image">
+        </div>
+   <p> Svasti Navjivan
+                
+                उनकी साड़ियाँ! उफ़ युम्मा !! बस एक शेर याद आता है … 
+इस कदर यूँ ना इतरा के चलिए 
+आँचल यूँ ना लहरा के चलिए
+                               </p>
+                      <div class="image-wrapper">
+            <img src="./family/Svasti.jpg" alt="Music Image">
+        </div>
+                
+            </div>
+        </div>
+
+        <!-- Event 23 -->
+        <div class="event-container">
+            <button class="event-button" onclick="toggleEvent('event-details-23')">Her Children</button>
+            <div class="event-details" id="event-details-23">
+                 <span class="close-details" onclick="closeEvent('event-details-23')">&times;</span>
+              <div class="image-wrapper">
+                                 
+                   <p>
+                       <br>
+                   </p>      
+                       <img src="Mother.jpg" alt="Letter Image">
+                
+              </div>
+                
+                <p>
+                  Ayesha Husaini:<br> 
+                  Kalpana a dream to behold.<br> 
+
+She glided through the long driveway towards the LSR  hostel.<br>
+My first glimpse of her.<br> 
+We, 18 yr olds, who wouldn’t care about anything, turned our heads...<br> 
+
+
+There was something about her:<br> <br>
+Mesmerizing ! <br> <br> 
+
+
+“Stop staring” Nilofar nudged me <br> <br> 
+“We are here to meet shivani Mathur” she said in her characteristic dulcet tones<br> 
+‘Didn’t know Shivani was Royalty’ I thought. <br> 😆<br> 
+
+
+She smiled. <br> <br>
+Adding me to her already long list of fans for life. <br>
+Believe it or not, I spent the next many months writing letters to aunty almost every week giving her all the hostel and Shivani news.<br>
+
+I have always looked up to you, Aunty. <br> 
+You are my inspiration,  my role model. <br> 
+                And everytime you call me your third daughter my heart warms up. 
+
+<br> Happy 80th You will always be the most stylish, sophisticated, classy sensitive and warm person I have known but most of all you are what  I can only  aspire  to be.<br> 
+
+Love you loads and loads, Ayesha
+                 
+                  </p>          
+                <div class="image-wrapper">
+                                 
+                
+                  <img src="./family/Ayesha.jpg" alt="to upload ayeshas Image">
+                
+              </div>
+                                  <p>
+                  Sujata:<br> Mango Motifs and More – Myriad Memories of Kalpana Aunty<br>
+ 
+When I was about seven, I stayed with my uncle and aunt in Yamunanagar for a few days. One night, we were whisked to the pantry for dinner and told firmly to go to bed after we had finished eating, for there was a party on that evening.  Children were not to be seen or heard. 
+ 
+My brothers went off to bed, but I couldn’t resist tiptoeing out and peering through a chink in the curtains, to see what all the fuss was about.  
+ 
+It was a marvellous scene, with drinks and delicious little snacks and the air was filled with the sound of all kinds of voices.  As my eyes scanned the details, they suddenly stopped and focused on what seemed to me to be the loveliest lady I had ever seen.  She was seated not too far from the curtain, elegantly draped in a saree and she wore a yellow rose in her hair.  Suddenly she looked to her side and spotted me through the chink in the curtain.  She gave a big smile and beckoned.
+ 
+I was unsure.  Many rules would be broken if I ventured forth, but I couldn’t resist.  I stepped out hesitantly and went up to her.  She was like a beam of sunshine, and I immensely enjoyed talking to her (as it turned out, I wasn’t admonished either).
+ 
+That was my first meeting with Kalpana Aunty, and each time we meet, it is as though we are swept back to a time when life unfolded in a simple, joyous way, with time enough to do everything and more.  That is how I think about her always.
+ 
+Some years later, we all stayed together for several months in Delhi in my grandfather’s house.  I remember returning from school every day in time to watch Kalpana Aunty making and handing out perfect paans.  The air was always full of conversation, sometimes there was a new game to play or a new thought to ponder over.  Life was never still with her around.
+ 
+Soon it was time for the Mathurs to move to their house near Chanakyapuri.  I could see that they were greatly looking forward to settling into their home, but I missed the whole family.  However, Kalpana Aunty had left behind a few memories that were special for me.
+ 
+Her suddenly ushering me into an old wooden chair and giving me a wonderful new haircut.  Measuring me for size and stitching some clothes that fit me really well (I held onto these long after I outgrew them because they were so perfectly made).  Sitting with my palm upturned, while she decided on a mehndi pattern to draw out. “She will make a mango,” predicted Shivani.  “That’s her favourite.”  And indeed, she did.  I knew school rules forbade mehndi but I didn’t care.  It looked so beautiful!  As it turned out, I wasn’t admonished for this either.
+ 
+Her sitting behind me at a late-night puppet show and periodically passing me some delectable mutton sandwiches she had made from dinner leftovers.
+ 
+Many years passed and I would meet her briefly, from time to time.  I always wondered if I should spend a summer with her sometime and learn how to stitch my own clothes, make many of the delicacies that I had enjoyed eating at her house, and just watch her effortlessly creating mango motifs and other beautiful art.  But it never happened.
+ 
+There now is a mango tree outside my bedroom window.  Sometimes, in the early afternoon, when the light is yellow gold and its dark green leaves rustle gently in the breeze, I think of her, and send her love and happiness.
+ 
+Wishing you many happy birthdays ahead, Kalpana Aunty!
+ 
+​​​​​​​​​​Sujata Varadarajan </p>          
+                <div class="image-wrapper">
+                                 
+                
+                  <img src="./family/sujata.JPG" alt="Letter Image">
+                
+              </div>
+            
+            <p>
+                Allyson and Pheroze:<br>
+            Dear Kalpana aunty, when I think of you, I think ‘exuberant’ and may you always remain so! Wishing you a very Happy 80th birthday, lots of fun and laughter and good health always. Love and hugs, Allyson and Pheroze
+                   
+            </p>          
+                <div class="image-wrapper">
+                                 
+                
+                  <img src="./family/ally.jpg" alt="Letter Image">
+                
+              </div>
+                           
+                   
+                     
+                      <p>
+Vandana Pant <br><br>   
+
+Kalpana Aunty, 
+
+The legacy of a teacher’s contributions lies in the unique opportunity to live on in the minds of endless lives touched by 60 minute increments of interacting, learning and integrating the knowledge, perspective and approach put forth by that person in a classroom. 
+
+The legacy of a mother’s life touches the friends of children as they traipse through homes, finding in the environments of their peers the personality of their parents in every corner - the decor, meals, activities that make up cherished everyday moments. 
+
+I happen to have wonderful memories of both associations with you. 
+
+Home Science in school, a dynamic project on marketing research that required wandering through random stores in Hazratganj gathering information on blenders, ovens and home appliances to determine differences in features and prices and availability. A project that inspired the geek in me for a lifetime and I’ve never stopped researching endlessly before any appliance or equipment purchase much to the chagrin of everyone in my family. 
+
+But my most special memories are of being welcomed to spend endless hours and days at your home in Lucknow and later Delhi. Homes that carried an aesthetic that I always admired; meals that were so creative, and an environment that always felt both modern in thought and charming in its cultural traditions. 
+
+There was also always your grace that was unmistakably woven into every detail. Marshmallows by the fireplace in your bedroom, Diwali rangoli in the hallway and verandahs, and for some reason my favorite - a cream colored stone statuette adjacent to a vibrant, large plant in the living room. 
+
+I also remember with clarity, your very firm and non-negotiable “No’s” on certain asks for Nainoo to step beyond boundaries you had set. Tough lessons for a headstrong teenager (me, not her)!
+
+Having met you last year, some 40+ years later, your presence rings just the same and it’s so wonderful to have this opportunity to wish you a joyous, special birthday that celebrates who you are. 
+
+Happy 80th! 
+Vandana
+      </p>  
+                
+      <div class="image-wrapper">
+                
+                  <img src="./family/Vandanapant.jpg" alt="Letter Image">
+              
+                
+              </div>    
+                   <p> Shreya Zaveri:<br>
+                    Aunty is a Woman of substance. I've always found Aunty extremely elegant, hospitable and sensitive to the needs of those around. She wears her achievements lightly and adjusts the level her conversations to her audience to make them feel comfortable. I have found her work with children and towards social causes extremely inspirational.<br><br>
+                       </p>   
+                       <div class="image-wrapper">
+                
+                  <img src="./family/Shreya.jpg" alt="Shreyas Image">
+                <img src="./family/Rishi.jpg" alt="Shreyas Image">
+                
+              </div>
+             
+              <p> Chetana Munot:<br>
+                    A single word that comes to mind when i think of her is " Warmth and love "
+I recall the first time we met, played cards until the early hours and was so much fun!<br><br>
+                  </p> 
+                <div class="image-wrapper">
+                
+                  <img src="./family/Chetana.JPG" alt="Letter Image">
+                
+              </div>
+                      
+               <p> Tanu Puri<br>
+                   My earliest memory of aunty was sitting right behind mom and dad at our wedding phera’s. The lady with the most expressive eyes and a charming smile was what I remember of my first interaction with Aunty.
+<br>She is one of the most positive and gentle human beings I have ever come across
+                   She is one of the most positive and gentle human beings I have ever come across.<br><br>
+                   </p>     
+                <div class="image-wrapper">
+                
+                  <img src="./family/Tanu.jpg" alt="Letter Image">
+                
+              </div>
+                     
+                <p> Anita <br> 
+                    Wishing you an amazing milestone birthday dear Kalpana aunty 
+All of 18 years old a very impressionable  age when I first met you …so much of poise and charm …I was totally enamored by you and then spending a month at your beautiful home in Danapur and you being a pillar of strength for me …such amazing  and powerful memories that will last a lifetime for me 
+
+Thank you for being by my side and making me tide over the most difficult phase of my life …in gratitude always 
+
+Cheers to your birthday …as charming and beautiful as ever …may you always be blessed with happiness and great health dear aunty …lots of love n wishes today and every other day 🙏♥️🌺 </p>           
+                <div class="image-wrapper">
+                
+                  <img src="./family/Anita.jpg" alt="Letter Image"
+              </div>  
+                
+                <p>  Roli and Anurag <br> 
+                  Aunty is the epitome of elegance with an infectious smile. She loves food and also showers her love through food. She makes the most amazing variety of chutney whenever I visit her and last time on dinner table she described how potato is her favourite vegetable . She had made the most delicious potato dish and we had a good laugh about how potato was hers and mine staple diet growing up .
+                 </p>           
+                <div class="image-wrapper">
+                
+                  <img src="./family/Roli.jpg" alt="Letter Image">
+                <img src="./family/Roli1.jpg" alt="Letter Image">
+                
+              </div>
+               
+              <p>  Shruti Garodia<br>
+                  Whenever I think of Kalpana aunty, the word 'grace' always comes to my mind.I particularly remember one Diwali a few years ago when she made the most unbelievably delicious vegetarian kebabs for me which I still dream about. And she did it so seemingly effortlessly! Would love to emulate that. 
+A very very happy 80th birthday aunty and wish you many more years of happiness and health.
+Much love
+Guddu 
+                <div class="image-wrapper">
+                
+                  <img src="./family/guddu.jpg" alt="Letter Image">
+                <img src="./family/guddu2.jpg" alt="Letter Image">
+                
+              </div>  
+                  </p>   
+                
+                 <p> Jaya<br> 
+                     Kalpana aunty is one of the warmest, most affectionate and gracious people I have known. 
+I met Kalpana aunty when I was single and living away from home for the first time in Bombay, and her warmth, hospitality and kindness made their Churchgate house my home away from home. I still fondly remember raiding her jars of pickled fruit - they were delicious - during late-night chatting sessions with Nainoo. My relationship with my now-husband Venkat began soon afterwards, and being able to discuss things with Kalpana aunty and get her advice was invaluable. Those months of always been made to feel welcome by Kalpana aunty whenever I came over have made them among my happiest and most treasured memories.    Aparna Garodia <br>
+                    <br><br>
+                   </p>   
+                <div class="image-wrapper">
+                
+                  <img src="./family/jaya.JPG" alt="Letter Image">
+              
+                
+              </div>  
+                  <p> Mini Sogani<br> 
+
+                </p>   
+                <div class="image-wrapper">
+                
+                  <img src="./family/Mini.jpg" alt="Letter Image">
+         
+                
+              </div>  
+                    
+                     <p> Anu, Tanu, Bhaiya <br>  
+                         Anu: Elegance personified
+                         Tanu: 
+                         Bhaiya: 
+Aunty is Grace personified….<br>
+I have such great memories of visting your place where everyone was welcome and Aunty exuded such warmth and positivity …. She even played LIFE with us…
+                         
+                </p>   
+                  <div class="image-wrapper">
+                
+                  <img src="./family/Anu.jpg" alt="Letter Image">
+                  
+              </div>  
+              <p>    
+                 Rita<br>Happy birthday, Aunty. It's a very special birthday for you and I take this opportunity to thank you for always being so affectionate, caring and loving and treating me like another daughter.We have always admired your beauty, dignity and graciousness, which you have shown throughout this beautiful journey of your life.Your intelligence,strength, resilience and love have profoundly shaped your family.Today is a day to celebrate all the hard work and ❤love you've imparted into those around you.God bless you with many more years of good health and may you unwrap the gift of life with joy and happiness today.
+Love you loads, best wishes and regards from, Tarun,Arup and Rita🤗😘💞💐🌹🌷🙏🌸
+                </p> 
+                  <div class="image-wrapper">
+                
+                  <img src="./family/Rita.jpg" alt="Letter Image">
+                  
+              </div>  
+
+                
+                
+                     <p> Sophia Cakova<br>
+
+Kalpana Aunty & Mrs Mathur<br>
+
+With a heart full of warmth and a cheerful spirit, she's a timeless beauty, always ready to have a great time with her wonderful circle of family and friends.
+
+I cherish our conversations about childhood and raw mangoes, as well as your memories of your students. The warmth you bring to every interaction is truly a gift, and I'm grateful for the beautiful memories you've shared.
+
+Photo as an evidence of a very happy moment I will always remember.
+
+Very Happy Birthday Aunty Kalpana! 🪻🪷🌺🌸🌼🌻🌞🌝🌛🌜
+                </p>   
+                <div class="image-wrapper">
+                
+                  <img src="./family/sophia.jpg.HEIC" alt="Letter Image">
+              <img src="./family/sophia.JPG" alt="Letter Image">
+              
+                
+              </div>  
+              
+                    <p>  Virgine <br>Bon anniversaire !i wish you all the best  ! And I wish me to look beautiful like you when I am  your age !! 🥰🥰🥰🥰🥰🥰
+                </p>   
+                   <div class="image-wrapper">
+                
+                  <img src="./family/Virgine.jpg" alt="Letter Image">
+              
+                
+              </div>   
+                   
+                     
+                      <p>
+Rimmi <br>Dearest Auntyji, 
+Wishing you a very happy 80th birthday!! Cheers to celebrating your amazing life! I am so glad I was able to spend time with you on my recent trip to India. You are just as  charming & radiant as ever. And you warmed my heart so fully and completely. 
+A special person like you deserves the very best celebration. I know your special day will be as beautiful as you are.   </p>
+      </p>  
+                
+      <div class="image-wrapper">
+                
+                  <img src="./family/Rimmi.jpg" alt="Letter Image">
+              
+                
+              </div>   
+                      <p> Udayani Patankar<br>
+                </p>   
+                   <p>   H J Woltery<br> <br>
+                </p>   
+                    <p>  Rita<br> <br>
+                </p> 
+                            <p>  Anita Chanda <br>
+                </p>   
+                     <p> Aditya Puri<br>
+                </p> 
+                     
+                      <p>
+                </p>  
+                      <p>  Carol and Thanos<br>
+                </p>   
+                    <p>  Ralph<br>
+                </p>  
+
+   
+                   
+                     
+                      <p>
+                </p>  
+
+
+                
+        </div>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+                   
+    <footer>
+
+        </div>
+        <p>Contact</p>
+        <div class="footer-icons">
+            <a href="mailto:shivanimathurart@gmail.com"><i class="fas fa-envelope"></i></a>
+
+        <p> Designed by Anand, Sunayana & Shivani&copy; Copyright Kalpana Mathur. All rights reserved.</p>
+    </footer>
+
+<script>
+
+    // Function to toggle play/pause of videoPlayer1
+    function toggleVideoPlayer1() {
+        var video = document.getElementById('videoPlayer1');
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+   function toggleEvent(eventId) {
+    var eventDetails = document.getElementById(eventId);
+    eventDetails.style.display = 'block';
+}
+
+    function closeEvent(eventId) {
+        var eventDetails = document.getElementById(eventId);
+        eventDetails.style.display = 'none';
+    }
+
+    function showContent(contentId) {
+        var contents = document.querySelectorAll('.content');
+        contents.forEach(function (content) {
+            content.style.display = 'none';
+        });
+        document.getElementById(contentId).style.display = 'block';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const subheadings = document.querySelectorAll('.subheading');
+        const contents = document.querySelectorAll('.content');
+
+        subheadings.forEach(subheading => {
+            subheading.addEventListener('click', () => {
+                const target = subheading.getAttribute('data-target');
+                contents.forEach(content => {
+                    content.style.display = 'none';
+                });
+                document.getElementById(target).style.display = 'block';
+            });
+        });
+    });
+
+           function toggleMenu() {
+        var menuContainer = document.getElementById('menuContainer');
+        var currentDisplay = window.getComputedStyle(menuContainer).display;
+
+        menuContainer.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+    }
+
+    function closeMenu() {
+        var menuContainer = document.getElementById('menuContainer');
+        menuContainer.style.display = 'none';
+    }
+            var slideIndex = 0;
+            var manualSlideIndex = 0;
+
+            // Start the automatic slideshow at the top
+            showSlides();
+            // Start the automatic slideshow at the bottom
+            showSlidesManual();
+
+            function showSlides() {
+                var i;
+                var slides = document.querySelectorAll(".mySlides1");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 7000); // Change slide every 7 seconds
+            }
+
+            function showSlidesManual() {
+                var slides = document.querySelectorAll(".mySlides");
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                manualSlideIndex++;
+                if (manualSlideIndex > slides.length) {
+                    manualSlideIndex = 1;
+                }
+                slides[manualSlideIndex - 1].style.display = "block";
+                setTimeout(showSlidesManual, 7000); // Change slide every 7 seconds
+            }
+
+            function plusSlides(n) {
+                slideIndex += n;
+                var slides = document.querySelectorAll(".mySlides1");
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                if (slideIndex < 1) {
+                    slideIndex = slides.length;
+                }
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+
+            function plusSlidesGallery(n) {
+                manualSlideIndex += n;
+                var slides = document.querySelectorAll(".mySlides");
+                if (manualSlideIndex > slides.length) {
+                    manualSlideIndex = 1;
+                }
+                if (manualSlideIndex < 1) {
+                    manualSlideIndex = slides.length;
+                }
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[manualSlideIndex - 1].style.display = "block";
+            }
+
+
+
+            var titleAudio; // Declare the audio variable globally
+
+            function playTitleAudio() {
+                if (!titleAudio) {
+                    titleAudio = new Audio('lindzay.m4a'); // Replace 'your-audio-file.mp3' with the path to your MP3 audio file
+                    titleAudio.loop = false; // Set the audio to loop continuously
+                    titleAudio.volume = 0.2; // Set the volume to a lower value (e.g., 0.2 for 20% volume)
+                    titleAudio.play();
+                } else {
+                    if (!titleAudio.paused) {
+                        titleAudio.pause(); // Pause the audio if it's playing
+                    } else {
+                        titleAudio.play(); // Resume playing if it's paused
+                    }
+                }
+            }
+
+        </script>
+
+</body>
+</html>

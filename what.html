@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +47,10 @@
     .header-description em {
         color: white;
         font-style: italic;
+    }
+
+    .header-description strong em {
+        color: white;
     }
 
     .video-container {
@@ -122,60 +125,7 @@
         color: #07BFF;
     }
 
-    .menu-icon {
-        position: fixed;
-        top: 10px;
-        right: 20px;
-        z-index: 9999;
-        cursor: pointer;
-    }
-
-    .menu-container {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        color: white;
-        display: none;
-        z-index: 10000;
-    }
-
-    .menu-content {
-        margin: 100px auto;
-        text-align: center;
-    }
-
-    .menu-container ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .menu-container li {
-        margin: 20px 0;
-    }
-
-    .menu-container a {
-        color: white;
-        text-decoration: none;
-        font-size: 24px;
-    }
-
-    .menu-container a.current {
-        text-decoration: underline;
-        font-weight: bold;
-    }
-
-    .close {
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        font-size: 40px;
-        cursor: pointer;
-        color: white;
-    }
-
+    /* Responsive */
     @media (max-width: 768px) {
         body {
             font-size: 18px;
@@ -189,135 +139,266 @@
     }
 </style>
 
-<script>
-    function toggleMenu() {
-        document.getElementById("menuContainer").style.display = "block";
-    }
-
-    function closeMenu() {
-        document.getElementById("menuContainer").style.display = "none";
-    }
-
-    function togglePlayPause(videoId, buttonId) {
-        const video = document.getElementById(videoId);
-        const button = document.getElementById(buttonId);
-
-        if (video.paused) {
-            video.play();
-            button.style.display = 'none';
-        } else {
-            video.pause();
-            button.style.display = 'block';
-        }
-    }
-</script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-
-<!-- MENU -->
-<div class="menu-icon" onclick="toggleMenu()">
-    <img src="icon.jpg" alt="Menu" style="width: 50px; height: 50px;">
-</div>
-
-<div class="menu-container" id="menuContainer">
-    <span class="close" onclick="closeMenu()">&times;</span>
-    <div class="menu-content">
-        <ul>
-            <li><a href="index.html" class="current">What is Vedant</a></li>
-            <li><a href="what.html">What are the core teachings</a></li>
-            <li><a href="how.html">How: The methods used in Vedanta</a></li>
-            <li><a href="gita.html">The Bhagwad Gita</a></li>
-        </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <img src="icon.jpg" alt="Menu" style="width: 50px; height: 50px;">
     </div>
-</div>
 
-<!-- HEADER -->
+    <div class="menu-container" id="menuContainer">
+        <span class="close" onclick="closeMenu()">&times;</span>
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html">Why follow the path of Vedanta</a></li><br>
+                <li class="active"><a href="what.html">What are the core teachings</a></li>
+                <li><a href="how.html">How: The methods used in Vedanta</a></li>
+                <li><a href="gita.html">The Bhagwad Gita</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
 <header>
-    <h1><em>What is Vedant.</em></h1>
-    <p>An exploration by Shivani Mathur</p>
+ <h1><em>What is Vedant.</em></h1>
+    <p> An exploration by Shivani Mathur</p>
+    <div class="header-description">
+<br>
+<section>
+  <p>In this section:</p>
+  <ul>
+    <li>The ancient Rishis</li>
+    <li>Shruti - The revealed texts
+      <ul>
+        <li>Karma Kand</li>
+        <li>Vedanta</li>
+      </ul>
+    </li>
+     <li>Mahavakyas</li>
+    <li>Smriti - The remembered texts
+      <ul>
+        <li>Historical texts (Itihas) such as Mahabharat, Ramayan and Gita</li>
+        <li>Law and Ethics (Dharma Shastra)</li>
+        <li>Puranas (Mythology and cosmology)</li>
+        <li>Sutras and Shastra (Documentation of skill such as Yoga Sutra)</li>
+      </ul>
+    </li>
+   
+    <li>Lifting the veil</li>
+    <li>The role of the guru</li>
+    <li>Core concepts
+      <ul>
+        <li>Sat vs Mithya</li>
+        <li>Atman and Brahman</li>
+        <li>Levels of reality</li>
+        <li>Physics and reality</li>
+        <li>Modern analogy - the computer</li>
+        <li>The Law of Karma</li>
+        <li>Dharma, Arth, Kama and Moksha</li>
+        <li>Rebirth vs Moksha</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+      <br><br> The ancient Rishis
+    <br> In ancient India, 6,000 to 10,000 years ago there existed sages called <em style="color: white;">Rishis</em> (those who see). 
+    These Rishis were untaught. Their meditative practices included observation, reasoning and contemplation. Some of the Rishis were monks,  
+    leading the life of an ascetic, contemplating in the Himalayas. Others were firmly embedded in society, had families, some were indeed even warriors. 
+    <br> Whatever their background, they all had one thing in common. They were seekers of "truth". 
+    These Rishis 'heard' from a divine source and had 'visions' which they subsequently verified against their own experiences and reasoning.  
+    They passed down the content of this knowledge which they experienced by way of an oral tradition.
+    Over time their observations, experiences and inferences were documented in the Vedas. 
+    That is why the Vedas are also called <em style="color: white;">Shruti</em> – that which is heard. 
+    <br> Indeed, it is said that the Rishis are not the origin of the wisdom in the Vedas. They are the vessels. 
+
+    <br>    <br>
+      Shruti - The Reveealed texts     <br>    <br>
+      
+      There are four Vedas. 
+    <br>Each of the four Vedas, The Rig Veda, Samaveds, Yajurveda and Atharvaveda.    <br>
+     Each of the Vedas  is divided into four parts. The first three sections, together called the Karma kand deal with our action and worldly affairs. Samhitas are hymns. Bramhana deal with rituals, Aranyakas focus on  meditations. worldly life—guidance on justice, social harmony, agriculture, compassion, and the pursuit of material success. 
+
+    The fourth section in each Veda stands apart. These are the <strong style="color: white;">Upanishads</strong>—collectively known as <strong style="color: white;">Vedanta</strong>. 
+    "Veda" means <em>knowledge</em>, and "Anta" means <em>end</em>. Vedanta is the culmination—the highest knowledge.
+
+    Though Vedanta transcends worldly concerns, it deeply influences how we live. It transforms our inner lens, which in turn reshapes our actions. 
+    When we understand the Self, our choices begin to reflect clarity, compassion, and true freedom.
+
+    Across the four Vedas, there are 108 Upanishads  - The focus of all of them is singular. <br>
+
+      <section>
+  <h2>Mahavakyas</h2>
+
+  <p>
+  Mahavakyas are statements that encapsulate the essence of Vedant, briefly and efficiently.  
+  But they need to be unpacked to understand. Most Mahavakyas have three components:
+</p>
+
+<ul>
+  <li><em>Tat</em> = "That" = the Infinite = <em>Brahman</em></li>
+  <li><em>Enam</em> / <em>Idam</em> / <em>Aham</em> = "This" = the Self = <em>Atman</em></li>
+  <li>A connector verb (such as "is" or "are")</li>
+</ul>
+
+<p>
+  The realization? The self and the infinite are one and the same.
+</p>
+
+<p> Example:
+  <em>Tat Tvam Asi</em><br>
+  <em>From the Chandogya Upanishad<br>
+  Chapter 6, Verses 8.8–15</em><br><br>
+
+  You are that<br>
+  You are <s>that</s> the Infinite<br>
+  You are <s>the Infinite</s> Brahman<br><br>
+
+  The words are simple, but the implications are far-reaching.  
+  And when we begin to comprehend how far-reaching this is—how it touches our daily lives, our attitudes, actions, and experiences—it becomes deeply empowering.
+</p>
+
+
+  <p>
+    Because if:<br>
+    <em>“The essence that gives <em>this Self</em>—you, me, any of us—life is the same infinite power that animates the entire cosmos.”</em><br>
+    Then:<br>
+    <em>The power and potential that created the entire universe lies within us.</em>
+  </p>
+
+  <p>
+    That is why there are 108 Upanishads explaining this truth in countless ways, using different metaphors and stories.<br>
+    Though they were written in different styles and eras, all 108 Upanishads point to one central insight:<br><br>
+    <em>This is That</em><br>
+    <em>The Self is Infinite</em>
+  </p>
+
+  <p>
+    Statements that connect the core of our being to the Infinite are called <em>Mahavakyas</em>.<br>
+    The images below depict four such Mahavakyas—each drawn from one of the four Vedas.
+  </p>
+
+  <!-- Slideshow Container -->
+  <div class="slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="mySlides1 fade">
+      <img src="maha1.jpg" alt="Slide 1">
+      <div class="caption">Aitareya Upanishad 3.1.3, Rig Veda.</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides1 fade">
+      <img src="maha2.jpg" alt="Slide 2">
+      <div class="caption">Brihadaranyaka Upanishad, 1.4.10, Shukla Yajur Veda</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides1 fade">
+      <img src="maha3.jpg" alt="Slide 3">
+      <div class="caption">Chandogya Upanishad, 6.8.7, Sama Veda</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="mySlides1 fade">
+      <img src="maha4.jpg" alt="Slide 4">
+      <div class="caption">Mandukya Upanishad, Verse 2, Atharva Veda</div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <br><br>
+
+  <p>
+    If we are infinite, then why is there pain and inadequacy in the first place?
+  </p>
+</section>
+  <br><br>
+<section>
+  <p><em>Lifting the veil</em></p>
+
+  <p>
+    Vedanta says it’s because we are unaware of this power within us.
+    Earlier we made an analogy of missing the forest for the trees.
+    Vedanta also cites another example: that of the musk deer that roamed the Himalayas:
+  </p>
+
+  <p><strong>The Fragrance You Are</strong></p>
+
+  <p>
+    The musk deer wandered, lost in trance,<br>
+    Chasing scent like a sacred dance.<br>
+    A hint of love, a holy sign—<br>
+    A fragrance soft, almost divine.<br><br>
+
+    It searched through valleys, peaks, and mist,<br>
+    Believing bliss was just next twist.<br>
+    But step by step, and breath by breath,<br>
+    It chased that scent until its death.<br><br>
+
+    It never saw. How could it know?<br>
+    The source was in it, all aglow.<br>
+    That love it chased, that sacred spark,<br>
+    Was always burning in its heart.
+  </p>
+
+  <p><strong>Three examples of the veil</strong></p>
+
+  <p>
+    The Three Veils (<em>Āvaraṇas</em>) in the Gita:
+    As fire is covered by smoke, a mirror by dust, and an embryo is constricted in the womb,
+    so is knowledge covered by this (this = desire to abandon your duty under the veil of compassion).
+  </p>
+
+  <ul>
+    <li>
+      <strong>Smoke and fire:</strong> When smoke veils a fire, the fire has not yet died.
+      Momentarily obscured, it can be fanned back to life with relative ease.
+      In the same way, desire (<em>kāma</em>), attraction (<em>rāga</em>) and avoidance (<em>dveṣa</em>)
+      can be dispelled through self-effort, devotion, and inquiry.
+      <em>[Gita 3.39, 4.42, 5.11, 6.25, 18.30]</em>
+    </li>
+
+    <li>
+      <strong>Dust covering a mirror:</strong> Requires a little more effort to uncover.
+      When truth is obscured, uninterrupted effort (<em>sādhana</em>), study, and self-discipline are needed.
+      <em>[Gita 4.38, 6.5, 5.27–28, 13.11, 14.11]</em>
+    </li>
+
+    <li>
+      <strong>Embryo constrained in the womb:</strong> When deep-rooted and unconscious conditioning veils the truth,
+      only time, maturation, and patience will resolve the conflict.
+      <em>[Gita 2.13, 4.34, 7.19, 15.11, 18.66]</em>
+    </li>
+  </ul>
+
+  <p>
+    Each veil corresponds to a phase of spiritual maturity,
+    and Krishna offers not only diagnosis, but a path forward —
+    through <em>karma yoga</em>, <em>jñāna yoga</em>, and <em>bhakti yoga</em> respectively.
+  </p>
+</section>
+
+    
+ <br> <br>Vedanta is often associated with wisdom acquired by those who’ve turned away from material life. But that’s a narrow view. 
+      The Rishis were not passive recipients of wisdom. They discovered truths through reflection, reasoning, and direct experience. Observing the constant change in the world—birth, decay, death—they uncovered something deeper beneath it all: a timeless, unchanging reality called Brahman.
+ This insight wasn’t just philosophical. It changed how they engaged with the world. It brought freedom from fear, clarity in decision-making, and compassion in action.
+
+
+ <br>Vedanta doesn’t ask us to retreat from life—it shows us that as we navigate our lives, we must strive for justice , fairnesss and compassion. Even in our pursuit of worldly values, most importantly, we must never lose sight of the truth - that ultimately we are Brahman- timeless and interconnected with the entire universe.
+      This is where the <a href="gita.html">Bhagwad Gita</a> comes in—because it applies the highest teaching of Vedanta to the life of someone who is firmly embedded in the material world: a family of squabbling kings. 
+
+   <br> Before we fastrack to the Gita, it is worthwhile understanding of some of the very fundamental lines of thought in Vedant and some definitions..  
+            <br>  <br>  Core Concepts: 
+  </p>
 </header>
 
-<!-- VIDEO -->
-<div class="video-container">
-    <video id="vedantaVideo" onclick="togglePlayPause('vedantaVideo', 'playBtn')">
-        <source src="your-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <button class="play-button" id="playBtn" onclick="togglePlayPause('vedantaVideo', 'playBtn')">&#9658;</button>
-</div>
+      
+      
 
-<!-- MAIN CONTENT -->
-<div class="header-description">
-
-    <p><em>The ancient Rishis</em><br>
-    In ancient India... that which is heard.</p>
-
-    <br><em>Shruti - The revealed texts</em><br><br>
-    There are four Vedas... highest knowledge.<br>
-
-    <section>
-        <h2><em>Mahavakyas</em></h2>
-        <p>Mahavakyas are statements... Most Mahavakyas have three components:</p>
-        <ul>
-            <li>Tat = "That" = the Infinite = Brahman</li>
-            <li>Enam / Idam / Aham = "This" = the Self = Atman</li>
-            <li>A connector verb (such as "is" or "are")</li>
-        </ul>
-
-        <p>The realization? The self and the infinite are one and the same.</p>
-
-        <p>Example:  
-            <em>Tat Tvam Asi</em><br>
-            <em>From the Chandogya Upanishad<br>Chapter 6, Verses 8.8–15</em><br><br>
-            You are that<br>
-            You are the Infinite<br>
-            You are Brahman<br><br>
-        </p>
-
-        <p>
-            Because if:<br>
-            <em>“The essence that gives this Self— you, me, any of us — life is the same infinite power that animates the entire cosmos.”</em><br>
-            Then:<br>
-            <em>The power and potential that created the entire universe lies within us.</em>
-        </p>
-
-        <p>
-            That is why there are 108 Upanishads... one central insight:<br><br>
-            <em>This is That</em><br>
-            <em>The Self is Infinite</em>
-        </p>
-
-        <p>
-            Statements that connect the core of our being to the Infinite are called <em>Mahavakyas</em>.
-        </p>
-    </section>
-
-    <br><br><p><em>Lifting the veil</em></p>
-    <p>Vedanta says it’s because we are unaware of this power within us...</p>
-
-    <p><em>Three examples of the veil</em></p>
-    <ul>
-        <li><strong>Smoke and fire:</strong> When smoke veils a fire...</li>
-        <li><strong>Dust covering a mirror:</strong> Requires more effort...</li>
-        <li><strong>Embryo constrained in the womb:</strong> When deep-rooted and unconscious conditioning...</li>
-    </ul>
-
-</div>
-
-<!-- FOOTER -->
-<footer>
-    &copy; 2025 Shivani Mathur. All rights reserved.
-    <div class="footer-icons">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-</footer>
-
-</body>
-</html>
+        <br><br>
 
 
 

@@ -1,57 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title><em style="color: white;">Vedant</em> - My personal take. Shivani Mathur</title>
+
 <style>
-  .menu-container {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 100%;
-      background-color: #2c2c2c;
-      box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-      padding: 20px;
-  }
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        background-color: #4c4c4c;
+        margin: 0;
+        font-size: 24px;
+        color: #929292;
+        padding: 0 20px;
+    }
 
-  .menu-container ul {
-      list-style: none;
-      padding: 0;
-  }
+    header {
+        background-color: #4c4c4c;
+        color: #929292;
+        text-align: center;
+        padding: 10px 0;
+    }
 
-  .menu-container ul li {
-      margin: 15px 0;
-  }
+    h1, h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        color: #929292;
+    }
 
-  .menu-container ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 20px;
-  }
+    h1 em, h2 em {
+        color: white;
+        font-style: italic;
+    }
 
-  .menu-container .close {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 30px;
-      color: white;
-      cursor: pointer;
-  }
+    .header-description {
+        font-size: 24px;
+        color: #929292;
+        margin: 20px 0;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-  .menu-icon {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      z-index: 1001;
-      cursor: pointer;
-  }
+    .header-description em {
+        color: white;
+        font-style: italic;
+    }
+
+    .video-container {
+        position: relative;
+        max-width: 900px;
+        margin: 20px auto 40px auto;
+        text-align: center;
+        color: white;
+    }
+
+    .video-container video {
+        width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        cursor: pointer;
+        color: white;
+        background: rgba(0,0,0,0);
+        border: none;
+        border-radius: 50%;
+        padding: 10px 20px;
+        transition: background 0.3s ease;
+    }
+
+    .play-button:hover {
+        background: rgba(0,0,0,0.7);
+    }
+
+    a.vedanta-button {
+        display: inline-block;
+        background-color: #929292;
+        color: white;
+        padding: 12px 24px;
+        margin: 10px 10px 30px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: inherit;
+        transition: background-color 0.3s ease;
+    }
+
+    a.vedanta-button:hover {
+        background-color: #3a3a3a;
+    }
+
+    footer {
+        background-color: #4c4c4c;
+        color: #929292;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .footer-icons a {
+        color: #929292;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .footer-icons a:hover {
+        color: #07BFF;
+    }
+
+    .menu-icon {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    .menu-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        display: none;
+        z-index: 10000;
+    }
+
+    .menu-content {
+        margin: 100px auto;
+        text-align: center;
+    }
+
+    .menu-container ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu-container li {
+        margin: 20px 0;
+    }
+
+    .menu-container a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .menu-container a.current {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 40px;
+        cursor: pointer;
+        color: white;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        a.vedanta-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
 </style>
 
 <script>
-  function toggleMenu() {
-      const menu = document.getElementById("menuContainer");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
-  }
+    function toggleMenu() {
+        document.getElementById("menuContainer").style.display = "block";
+    }
 
-  function closeMenu() {
-      document.getElementById("menuContainer").style.display = "none";
-  }
+    function closeMenu() {
+        document.getElementById("menuContainer").style.display = "none";
+    }
+
+    function togglePlayPause(videoId, buttonId) {
+        const video = document.getElementById(videoId);
+        const button = document.getElementById(buttonId);
+
+        if (video.paused) {
+            video.play();
+            button.style.display = 'none';
+        } else {
+            video.pause();
+            button.style.display = 'block';
+        }
+    }
 </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+
+<!-- MENU -->
+<div class="menu-icon" onclick="toggleMenu()">
+    <img src="icon.jpg" alt="Menu" style="width: 50px; height: 50px;">
+</div>
+
+<div class="menu-container" id="menuContainer">
+    <span class="close" onclick="closeMenu()">&times;</span>
+    <div class="menu-content">
+        <ul>
+            <li><a href="index.html" class="current">What is Vedant</a></li>
+            <li><a href="what.html">What are the core teachings</a></li>
+            <li><a href="how.html">How: The methods used in Vedanta</a></li>
+            <li><a href="gita.html">The Bhagwad Gita</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+    <h1><em>What is Vedant.</em></h1>
+    <p>An exploration by Shivani Mathur</p>
+</header>
+
+<!-- VIDEO -->
+<div class="video-container">
+    <video id="vedantaVideo" onclick="togglePlayPause('vedantaVideo', 'playBtn')">
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button class="play-button" id="playBtn" onclick="togglePlayPause('vedantaVideo', 'playBtn')">&#9658;</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="header-description">
+
+    <p><em>The ancient Rishis</em><br>
+    In ancient India... that which is heard.</p>
+
+    <br><em>Shruti - The revealed texts</em><br><br>
+    There are four Vedas... highest knowledge.<br>
+
+    <section>
+        <h2><em>Mahavakyas</em></h2>
+        <p>Mahavakyas are statements... Most Mahavakyas have three components:</p>
+        <ul>
+            <li>Tat = "That" = the Infinite = Brahman</li>
+            <li>Enam / Idam / Aham = "This" = the Self = Atman</li>
+            <li>A connector verb (such as "is" or "are")</li>
+        </ul>
+
+        <p>The realization? The self and the infinite are one and the same.</p>
+
+        <p>Example:  
+            <em>Tat Tvam Asi</em><br>
+            <em>From the Chandogya Upanishad<br>Chapter 6, Verses 8.8–15</em><br><br>
+            You are that<br>
+            You are the Infinite<br>
+            You are Brahman<br><br>
+        </p>
+
+        <p>
+            Because if:<br>
+            <em>“The essence that gives this Self— you, me, any of us — life is the same infinite power that animates the entire cosmos.”</em><br>
+            Then:<br>
+            <em>The power and potential that created the entire universe lies within us.</em>
+        </p>
+
+        <p>
+            That is why there are 108 Upanishads... one central insight:<br><br>
+            <em>This is That</em><br>
+            <em>The Self is Infinite</em>
+        </p>
+
+        <p>
+            Statements that connect the core of our being to the Infinite are called <em>Mahavakyas</em>.
+        </p>
+    </section>
+
+    <br><br><p><em>Lifting the veil</em></p>
+    <p>Vedanta says it’s because we are unaware of this power within us...</p>
+
+    <p><em>Three examples of the veil</em></p>
+    <ul>
+        <li><strong>Smoke and fire:</strong> When smoke veils a fire...</li>
+        <li><strong>Dust covering a mirror:</strong> Requires more effort...</li>
+        <li><strong>Embryo constrained in the womb:</strong> When deep-rooted and unconscious conditioning...</li>
+    </ul>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    &copy; 2025 Shivani Mathur. All rights reserved.
+    <div class="footer-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+

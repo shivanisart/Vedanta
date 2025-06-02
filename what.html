@@ -623,5 +623,160 @@ These three—Kama, Artha, and Dharma—make up the first path. They operate wit
         <br><br>
 
 
+<script>
 
+    // Function to toggle play/pause of videoPlayer1
+    function toggleVideoPlayer1() {
+        var video = document.getElementById('videoPlayer1');
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+   function toggleEvent(eventId) {
+    var eventDetails = document.getElementById(eventId);
+    eventDetails.style.display = 'block';
+}
+
+    function closeEvent(eventId) {
+        var eventDetails = document.getElementById(eventId);
+        eventDetails.style.display = 'none';
+    }
+
+    function showContent(contentId) {
+        var contents = document.querySelectorAll('.content');
+        contents.forEach(function (content) {
+            content.style.display = 'none';
+        });
+        document.getElementById(contentId).style.display = 'block';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const subheadings = document.querySelectorAll('.subheading');
+        const contents = document.querySelectorAll('.content');
+
+        subheadings.forEach(subheading => {
+            subheading.addEventListener('click', () => {
+                const target = subheading.getAttribute('data-target');
+                contents.forEach(content => {
+                    content.style.display = 'none';
+                });
+                document.getElementById(target).style.display = 'block';
+            });
+        });
+    });
+
+           function toggleMenu() {
+        var menuContainer = document.getElementById('menuContainer');
+        var currentDisplay = window.getComputedStyle(menuContainer).display;
+
+        menuContainer.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+    }
+
+    function closeMenu() {
+        var menuContainer = document.getElementById('menuContainer');
+        menuContainer.style.display = 'none';
+    }
+            var slideIndex = 0;
+            var manualSlideIndex = 0;
+
+            // Start the automatic slideshow at the top
+            showSlides();
+            // Start the automatic slideshow at the bottom
+            showSlidesManual();
+
+            function showSlides() {
+                var i;
+                var slides = document.querySelectorAll(".mySlides1");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 7000); // Change slide every 7 seconds
+            }
+
+            function showSlidesManual() {
+                var slides = document.querySelectorAll(".mySlides");
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                manualSlideIndex++;
+                if (manualSlideIndex > slides.length) {
+                    manualSlideIndex = 1;
+                }
+                slides[manualSlideIndex - 1].style.display = "block";
+                setTimeout(showSlidesManual, 7000); // Change slide every 7 seconds
+            }
+
+            function plusSlides(n) {
+                slideIndex += n;
+                var slides = document.querySelectorAll(".mySlides1");
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                if (slideIndex < 1) {
+                    slideIndex = slides.length;
+                }
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+
+            function plusSlidesGallery(n) {
+                manualSlideIndex += n;
+                var slides = document.querySelectorAll(".mySlides");
+                if (manualSlideIndex > slides.length) {
+                    manualSlideIndex = 1;
+                }
+                if (manualSlideIndex < 1) {
+                    manualSlideIndex = slides.length;
+                }
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[manualSlideIndex - 1].style.display = "block";
+            }
+
+
+
+            var titleAudio; // Declare the audio variable globally
+
+            function playTitleAudio() {
+                if (!titleAudio) {
+                    titleAudio = new Audio('lindzay.m4a'); // Replace 'your-audio-file.mp3' with the path to your MP3 audio file
+                    titleAudio.loop = false; // Set the audio to loop continuously
+                    titleAudio.volume = 0.2; // Set the volume to a lower value (e.g., 0.2 for 20% volume)
+                    titleAudio.play();
+                } else {
+                    if (!titleAudio.paused) {
+                        titleAudio.pause(); // Pause the audio if it's playing
+                    } else {
+                        titleAudio.play(); // Resume playing if it's paused
+                    }
+                        function toggleMenu() {
+        const menu = document.getElementById('menuContainer');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+
+    function closeMenu() {
+        const menu = document.getElementById('menuContainer');
+        menu.style.display = 'none';
+    }
+                }
+            }
+
+        </script>
+</body>
+</html>
 

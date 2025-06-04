@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title><em style="color: white;">Vedant</em> - My personal take. Shivani Mathur</title>
+
+<style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        background-color: #4c4c4c;
+        margin: 0;
+        font-size: 24px;
+        color: #929292;
+        padding: 0 20px;
+    }
+
+    header {
+        background-color: #4c4c4c;
+        color: #929292;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        color: #929292;
+    }
+
+    h1 em, h2 em {
+        color: white;
+        font-style: italic;
+    }
+
+    .header-description {
+        font-size: 24px;
+        color: #929292;
+        margin: 20px 0;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-description em {
+        color: white;
+        font-style: italic;
+    }
+
+    .video-container {
+        position: relative;
+        max-width: 900px;
+        margin: 20px auto 40px auto;
+        text-align: center;
+        color: white;
+    }
+
+    .video-container video {
+        width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        cursor: pointer;
+        color: white;
+        background: rgba(0,0,0,0);
+        border: none;
+        border-radius: 50%;
+        padding: 10px 20px;
+        transition: background 0.3s ease;
+    }
+
+    .play-button:hover {
+        background: rgba(0,0,0,0.7);
+    }
+
+    a.vedanta-button {
+        display: inline-block;
+        background-color: #929292;
+        color: white;
+        padding: 12px 24px;
+        margin: 10px 10px 30px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: inherit;
+        transition: background-color 0.3s ease;
+    }
+
+    a.vedanta-button:hover {
+        background-color: #3a3a3a;
+    }
+
+    footer {
+        background-color: #4c4c4c;
+        color: #929292;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .footer-icons a {
+        color: #929292;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .footer-icons a:hover {
+        color: #07BFF;
+    }
+
+      /* Ensure that the menu icon is visible at smaller screen sizes */
+        @media (max-width: 7680px) {
+              .menu-icon {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: 2;
+            font-size: 10px;
+            cursor: pointer;
+            margin: 0px auto;
+            padding-top: 0px;
+            background-color: #4c4c4c;
+        }
+
+        .menu-container {
+            position: fixed;
+            top: 10;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(76, 76, 76, 0.85); /* Adjust the alpha value (0.8 in this example) for transparency */
+            color: #929292;
+            display: none;
+            z-index: 1;
+        }
+
+        .menu-content {
+            text-align: center;
+            padding: 50px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #929292;
+        }
+
+        .menu-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-content li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu-content a {
+        text-decoration: none;
+        color: #929292;
+        display: block; /* Add this line to make the entire area clickable */
+        padding: 10px; /* Add padding for better clickability */
+        }
+       .menu-content li.active a {
+        color: white;
+        text-decoration: none;
+        }
+
+    .close {
+    position: absolute;
+    top: 85%; /* Adjust this value to your preference */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+    .close-details {
+    color: #929292;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+
+
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+    @media (max-width: 768px) {
+        body {
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        a.vedanta-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+</style>
+    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+   <div class="menu-icon" onclick="toggleMenu()">
+        <img src="icon.jpg" alt="Menu" style="width: 50px; height: 50px;">
+    </div>
+
+    <div class="menu-container" id="menuContainer">
+        <span class="close" onclick="closeMenu()">&times;</span>
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html">Why: The path of Vedanta</a></li><br>
+                <li><a href="what.html">What: Foundational themes and glossary</a></li>
+                <li><a href="how.html">How: Process to acquire knowledge</a></li>
+                <li  class="active"><a href="gita.html">Text: The Bhagwad Gita</a></li>
+                <li><a href="mandukya.html">Text: The Mandukya Upanishad</a></li>
+                 <li><a href="drig.html">Text: Drig Drishya Vivek</a></li>
+                
+            </ul>
+        </div>
+    </div>
+   
+    <header>
+ <h1><em>The Bhagwad Gita</em></h1>
+    <p>
+  An exploration by Shivani Mathur<br>
+  The Bhagwad Gita is a discourse from Shri Krishna to Arjuna, delivered moments before the greatest battle of his life. 
+       
+ </p>
+        
+   </header>
+       <div class="header-description">
+        In this section:<br><br>
+      The context of the Bhagwad Gita and Sanjay's narration<br>
+           Methodology in Gita follows methodlogy of Vedant.<br>
+           Notable ommisions. <br>
+           Verse by Verse commentary.
+
+        <br><br>
+       <em style="color: white; font-style: italic;">The Context of the Bhagavad Gita</em><br>
+
+<p>
+  A question that is often asked: Is it possible to follow the teachings of Vedanta and the Upanishads while still living a worldly life?
+</p>
+
+<p>
+  This is where the Bhagavad Gita steps in. The Bhagavad Gita comprises 700 verses embedded in the Mahabharata.<br>
+  The Mahabharata is an epic - the longest in the world comprising nearly 100,000 verses.<br>
+  The story is about a family of kings - the Kauravas and their cousins, the Pandavas .<br>
+  The conflicts in this family mirror the complexities of our material existence.<br> 
+      
+
+<ul>
+
+  <li>Injustice and betrayal: A game of dice, rigged by the Kauravas, is used to strip the Pandavas of their kingdom.<br></li>
+  <li>Power struggle laced with moral dilemmas: Who should ascend the throne? The Pandavas or the Kauravas?<br></li>
+  <li>Disputes over land: The Kauravas refuse to give the Pandavas land even "the size of the point of a needle", let alone concede the kingdom.<br></li>
+  <li>Failed negotiations: Despite several rounds of talks, Duryodhana, leader of the Kauravas, refuses to yield. The only option left is war.<br></li>
+  <li>Violence and dishonour towards women: Draupadi, the wife of the Pandavas, is humiliated and nearly disrobed in a public assembly.<br></li>
+</ul>
+
+  Every human challenge is present and a war is ultimately invoked.<br>
+  To crown the problems, 
+    Arjuna, a Pandava, the central character,the world’s best archer on becomes wishes to withdraw from
+           the war.
+    At the last minute, he refuses to fight: Misplaced compassion paralyses him.
+     Growing up in a close knit family,the same teachers had trained both him and his cousins, the Kauravas. In this battle, 
+    several of his mentors are part of the Kaurava army. 
+    Arjuna does not want to kill his guru or kin. 
+      He rejects a Pyrrhic, blood-stained victory.
+</p>
+
+<p>
+  The Gita makes no reference to the pre war problems between the two families. 
+    It opens at a moment of high tension—just before the war begins.<br><br>
+Sanjay, the narrator, describes the battlefield to the blind king Dhritarashtra, father of the Kauravas. 
+    This narration occurs on Day 10 of the war, shortly after Bhishma Pitamah—the most revered elder of the Kaurava army—has fallen.<br><br>
+Sanjay, formerly Bhishma’s charioteer, is now free to return to the palace to recounts the events leading up to the war to the current king Dhritrastra 
+    who is fully vested in the outcome of the war, but is unable to see because he is blind. 
+    Here, it is noteworthy to mention that Sanjaya has divine sight to see the war in real time, 
+    but he has no authority or knowledge. His narration therefore is a verbatim relay of 
+    the conversation between Krishna and Arjuna. The integrity of the Vedantic teachings by Krishna are 
+    preserved and devoid of any layers of interpretation. The words of "Bhagwan Krishna" speak directly to us 
+    through Sanjaya. This is why the Gita is regarded as one of the highest teachings and is  awarded sanctity 
+    as a text of Vedanta. <br>
+    
+   Sanjay describes the moment when Arjuna, the Pandava warrior, is overwhelmed by moral conflict and turns to his charioteer, Krishna—an avatar of God—for guidance, just before the first arrow is released.
+</p>
+
+<br>
+        
+The first 28 verses of Chapter 1 (out of 47) are devoted to setting the scene. Sanjay describes the warriors on both sides—their lineage, stature, and credentials. The conch shells are blown, signaling the start of war.<br>
+Then, amidst this grandeur, Krishna halts Arjuna’s chariot in the middle of the battlefield. It is here, seeing his gurus, his family and his nearest and dearest in the enemy army, that  Arjuna falters. 
+Not due to fear or doubt in his strength, but from emotional turmoil.<br>
+
+<br>
+    Krishna applies the teachings of Vedanta to resolve Arjunas crisis.
+           <br>The Gita guides us—those immersed in the material world—to see that our inner conflicts, like Arjuna's, can be resolved by following the path of Vedanta.<br>
+<em>Every one of us is Arjuna.<br><br></em>
+</p>
+
+<p>
+    Most interesting of all, the Gita shows us that the solution to almost 
+    every challenge is remarkably consistent. It offers a path to clarity, 
+    purpose, and inner strength by helping us see problems through the lens of different 
+    layers of reality. At every level, resolution is essential:
+  </p>
+
+<ul>
+  <li>Personal duty and action: When we are endowed with a privilege or talent, we have a responsibility to act. We are meant to use our gifts to uphold what is right.</li>
+  <li>Justice in society: If we stay silent or inactive in the face of injustice, the very structure of society begins to fall apart.</li>
+  <li>Understanding what lasts: We must learn to distinguish between what is temporary — like the body — and what is eternal — the Atman.</li>
+  <li>Freedom through wisdom: Ultimately, the Gita teaches that our choices shape our journey toward liberation (Moksha). Every decision matters.</li>
+</ul> 
+
+
+
+<p><em>Methodology in the Gita follows the methodology of Vedanta.<br><br></em>
+
+The Gita, a sophisticated and widely read Vedantic text, is a masterclass in content, persuasion, and timing. As Arjuna’s charioteer, Krishna must ensure that Arjuna does not retreat—not from cowardice, but from misplaced compassion.<br>
+To abandon the battle would be to allow deceit and Adharma to prevail. And with that, the very foundation of Dharma in society would collapse.<br><br>
+
+It is interesting to note that in the structure of the Gita itself, we see the methodology of Vedanta described in <a href="how.html"><i>this section</i></a>.<br>
+As a mentor, Krishna imparts wisdom, but the experience, understanding of the teachings, and ultimately, decision-making are left to Arjuna. Arjuna must reach his own determination.<br>
+Indeed, the Gita ends (Chapter 18:63) with the verse:<br>
+इति ते ज्ञानम् आख्यातम् गुह्याद्गुह्यतरं मया।<br>
+विमृश्यैतदशेषेण यथेच्छसि तथा कुरु॥<br><br>
+
+Thus, I have explained to you this wisdom—more secret than all secrets.<br>
+Reflect on it fully, and then do as you wish.<br><br>
+
+<p>
+  Throughout the Gita, Krishna does not try to <em>solve</em> Arjuna’s dilemma.<br>
+  He doesn’t deny Arjuna’s fear—that his loved ones will be killed—nor does he offer comfort or promises of a different outcome. He acknowledges the fear as valid and likely to happen just as Arjuna anticipates.<br><br>
+
+  But rather than removing the fear, Krishna offers something far more powerful:  
+  a complete shift in perspective.<br><br>
+
+  This shift is not about changing the situation but about helping Arjuna see that the situation itself is not the real problem.<br><br>
+
+  Krishna introduces Arjuna to the different levels of reality we live in, using relatable examples. These teachings reflect the wisdom of the <i>Mandukya Upanishad</i>, which explores the nature of self and consciousness.<br><br>
+
+  Pujya Swami Dayananda beautifully captures this distinction:<br>
+  <i>“In psychology, there is no solution (to an emotional problem).<br>
+  In Vedanta, there is no problem (in having an emotional problem).”</i><br><br>
+
+  Vedanta does not ask us to suppress our emotions or “bear with” suffering as many traditions might.<br>
+  Instead, it shows <em>why</em> the problem doesn’t have to be solved or removed—because the problem exists only at one level of reality.<br>
+  indeed , in this case , at the bodily level Arjuna has a problem -  'death of loved ones' .At a societal level, its a solution - justice and at the level of 
+    Atman, it is neither a problem , nor a solution because Atman is eternal. You can read more about these levels in <a href="what.html"><i>this section</i></a>.<br><br>
+
+  Krishna explains that even if events unfold exactly as Arjuna fears, the suffering will still be temporary, confined to a limited plane of experience.<br>
+  You are more than the situation.<br>
+  The situation will change, but you remain unchanged—because you are eternal.<br><br>
+
+  Even if you make the wrong choice, you remain eternal.<br>
+  But wrong choices bind you to suffering longer.<br><br>
+
+  So, Krishna's message is this:<br>
+  Act without fear.<br>
+  Choose with awareness.<br>
+  Use your freedom to gain true liberation—here and now.
+</p>
+<p>
+
+    <br>
+    <br><em style="color: white; font-style: italic;">Notable Omissions:</em><br>   <br>
+      </p>
+  Conspicuously absent from Krishna’s approach is any focus on battle plans, weapons, or enemies. 
+  Although the Bhagavad Gita unfolds moments before the war is about to begin, the dialogue avoids military strategy. 
+  Krishna does not address Arjuna’s emotional rant about fighting Bhishma, Drona, or other loved ones. 
+  He offers no counsel on war tactics, enemy weaknesses, alliances, or treaties.
+
+  <br><br>
+  The focus is on individual duty and ethical conduct.
+          Krishna does not praise Arjuna’s gurus (his opponents), nor does he dwell on personal loss. 
+  All emphasis is on self-reliance.
+
+  <br><br>
+  The idea of an "enemy" is redefined. Instead of focusing on external foes, the Gita highlights internal adversaries like desire and anger. 
+  There is no attention to war methodology—only to intent, attitude, and the discernment between what is real and what is unreal.
+
+  <br><br>
+  The Gita is a roadmap to Moksha or freedom; and more urgently, a solution to Arjuna’s immediate personal dilemma: 
+  by recognizing what is real (the Atman, justice, and righteousness) and what is temporary noise (wars, relationships, desires), 
+  one can choose rightly, endure wisely, and act with clarity.
+</p>
+
+      <p> 
+
+        
+<em>Chapter 2 : 72 verses</em>
+<p>In this section:</p>
+<ul>
+  <li>Verse 1 – Sanjaya’s opening verse<br></li>
+  <li>Verses 2–3 – Krishna gently urges Arjuna as a friend<br></li>
+  <li>Verses 4–8 – Arjuna expresses his moral dilemma<br></li>
+  <li>Verses 9–10 – Sanjaya continues his narration<br></li>
+  <li>Verses 11–38 – Sankhya Yoga:<br>
+    <ul>
+      <li>Verses 11–25 – War’s effect on the eternal, unchanging Atman<br></li>
+      <li>Verses 26–28 – War’s relation to the transmigration of the subtle body (sūkṣma śarīra)<br></li>
+      <li>Verses 29–30 – Recap of key points<br></li>
+      <li>Verses 31–38 – The social and moral consequences of Arjuna's role in war<br></li>
+    </ul>
+  </li>
+  <li>Verses 39–53 – Karma Yoga:<br>
+    <ul>
+      <li>Verses 39–44 – Karma Yoga as the attitude guiding action<br></li>
+      <li>Verse 45 – The qualities of a Karma Yogi<br></li>
+      <li>Verse 46 – The blessings of abundance for a Karma Yogi<br></li>
+      <li>Verses 47–53 – The core teachings of Karma Yoga<br></li>
+    </ul>
+  </li>
+  <li>Verses 54–72 – Sthitha Pragnya<br></li>
+</ul>
+
+2:1 Three Perspectives on Arjuna’s Dilemma<br>
+In the opening scene of the Bhagavad Gita, three individuals observe Arjuna’s inner turmoil, each interpreting it from their unique vantage point.<br> 
+It is interesting that an objective situation - the meltdown of Arjuna, is interpreted by three people very differently based on their own context and perspective.<br><br>
+
+Sanjaya’s Perspective:<br>
+Sanjaya, the divine narrator, describes Arjuna as overwhelmed —<br>
+“Viṣādaḥ kṛipayāviṣṭaḥ” — filled with sorrow.<br>
+To him, Arjuna is paralyzed by emotion, unable to act.<br><br>
+
+Arjuna’s Perspective:<br>
+Arjuna himself views his crisis as one of Karuṇā — compassion.<br>
+He sees dharma through the lens of emotion, believing it wrong to fight and kill his kin.<br><br>
+
+Krishna’s Perspective:<br>
+Krishna is the harshest of the three. “What is this delusion  - Kaśmalam idam - at this critical hour?” He asks.<br>
+To Krishna, Arjuna’s problem is not compassion but ignorance — Kasmal is dirt, a veil of delusion covering his understanding.<br><br>
+
+The first lesson of the Gita is that none of those perspectives are wrong.<br>
+Despite that, the Gita is devoted, not to a systematic exploration of each perspective, but instead a deep dive into Krishna’s perspective. Why?<br>
+Because although both Arjun’s and Sanjay’s perspective might be reasonable (and might yield small wins), Krishna’s perspective is a roadmap to the path of freedom (moksha).<br><br>
+
+2:2-3 Krishna’s Diagnosis of Arjuna’s Delusion<br><br>
+
+Krishna challenges Arjuna:<br>
+श्रीभगवानुवाच ।<br>
+कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् ।<br>
+अनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन ॥ २.२॥<br>
+क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते ।<br>
+क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥ २.३॥<br><br>
+
+“From where has this delusion (kaśmalam) come to you at this crucial moment? It is unworthy of an Arya, does not lead to heaven, and brings disgrace, O Arjuna!”<br>
+The word kaśmalam here, often translated as "impurity" or "delusion," can be more precisely understood in the Vedantic sense as āvaraṇa — a veil that obscures the true Self (ātman), truth (satya), and duty (dharma).<br>
+Krishna’s rebuke is not mere scolding.<br>
+It is a diagnosis: Arjuna is covered by layers of ignorance that veil and obstruct him from seeing the truth and therefore following the righteous path.<br><br>
+
+The Three Veils (Āvaraṇas) in the Gita:<br>
+As fire is covered by smoke, a mirror by dust, and an embryo is constricted in the womb, so is knowledge covered by this (this = desire to abandon your duty under the veil of compassion).<br><br>
+
+1. Smoke and fire:<br>
+When smoke veils a fire, the fire has not yet died, momentarily obscured, it can be fanned back to life with relative ease.<br>
+In the same way desire (kāma), attraction (raga) and avoidance (dwesha) can be dispelled through self-effort, devotion, and inquiry. [3.39, 4.42, 5.11.6,25, 18.30]<br><br>
+
+2. Dust Covering a Mirror:<br>
+Requires a little more effort to uncover.<br>
+When truth is obscured, uninterrupted effort (sadhana), study, and self-discipline is needed. [4.38,6.5,5.27–28,13.11,14.11]<br><br>
+
+3. Embryo constrained in the womb:<br>
+When deep rooted and unconscious conditioning veils the truth, only time, maturation, and patience will resolve a conflict.<br>
+2.13<br>
+4.34<br>
+7.19<br>
+15.11<br>
+18.66<br><br>
+
+Each veil corresponds to a phase of spiritual maturity, and Krishna offers not only diagnosis, but a path forward — through karma yoga, jnana yoga, and bhakti yoga respectively.<br><br>
+
+2:11 Methodology in Vedanta (2:2-11 chimneys minute 5)<br>
+Proving a point is different from understanding truth.<br>
+The process to understand truth is threefold. In any order, the following three conditions must be satisfied.<br>
+Listen (Read/observe) to a statement (Pratigyan, Shravan)<br>
+Reason (Hetu, Manan)<br>
+Apply to an example (Dristanta, Niradhyasana)<br><br>
+
+Conspicuous by absence.<br>
+Conspicuous by absence in Krishna’s perspective is his focus beyond the battlefield at a time when the conch has just been blown, heralding the beginning of war.<br>
+The Bhagavad Gita unfolds amidst the imminent clash of the Kurukshetra war, with Krishna and Arjuna positioned between two formidable armies.<br>
+One might expect their dialogue to center on military strategies or political maneuvers.<br><br>
+
+Notable Omissions:<br>
+Krishna strategically ignores Arjuna’s rant about his opponents, Drona, Bhishma etc.<br>
+He does not even comment on it.<br>
+Military Strategy and Enemy Analysis: Arjuna does not seek and Krishna doesn’t offer counsel on battle tactics or enemy vulnerabilities.<br>
+There is no mention of alliances, treaties, or negotiations.<br>
+Krishna cuts any reference to gurus, relatives and loved ones in the opponent army.<br>
+The focus remains on individual duty (dharma) and ethical conduct.<br><br>
+
+Traditional Methodology:<br>
+There is no focus on methodology of war, strategy or sequence of action.<br>
+All focus is on intent of action and attitude.<br><br>
+
+Conventional Guru Worship:<br>
+The dialogue lacks customary praises for Arjuna’s gurus (who all happen to be his opponents).<br>
+All focus is on self reliance.<br><br>
+
+Personal Vendettas or Hatred:<br>
+The concept of the enemy is redefined, highlighting internal adversaries like desire and anger within oneself rather than external foes or the people/opponents on the battlefield.<br><br>
+
+In a nutshell all focus is on intent/attitude and discernment between what is real and what is unreal.<br><br>
+
+Gita is a roadmap for the path to freedom (Moksha) and more immediately it is a roadmap to solve Arjuna’s immediate conflict:<br>
+By discerning what is real (ātman, justice and righteousness) and will outlive vs what is temporary noise (wars, relationships, desires) and therefore can be ignored/endured.<br>
+</p>
+
+
+          <p>
+2.4<br>
+अर्जुन उवाच ।<br>
+कथं भीष्ममहं संख्ये द्रोणं च मधुसूदन ।<br>
+इषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन ॥<br><br>
+
+2.5<br>
+गुरूनहत्वा हि महानुभावान्<br>
+श्रेयो भोक्तुं भैक्ष्यमपीह लोके ।<br>
+हत्वार्थकामांस्तु गुरूनिहैव<br>
+भुञ्जीय भोगान् रुधिरप्रदिग्धान् ॥<br><br>
+
+2.6<br>
+न चैतद्विद्मः कतरन्नो गरीयो<br>
+यद्वा जयेम यदि वा नो जयेयुः ।<br>
+यानेव हत्वा न जिजीविषामस्<br>
+तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥<br><br>
+
+2.7<br>
+कार्पण्यदोषोपहतस्वभावः<br>
+पृच्छामि त्वां धर्मसंमूढचेताः ।<br>
+यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे<br>
+शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥<br><br>
+
+2.8<br>
+न हि प्रपश्यामि ममापनुद्याद्<br>
+यच्छोकमुच्छोषणमिन्द्रियाणाम् ।<br>
+अवाप्य भूमावसपत्नमृद्धं<br>
+राज्यं सुराणामपि चाधिपत्यम् ॥<br>
+</p>
+
+
+Verses 11 - 25 of chapter 2 are dedicated to drawing Arjun’s attention to the u changing nature of the Atman. 
+न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः ।
+न चैव न भविष्यामः सर्वे वयमतः परम् ॥ 2-12॥
+Translation:
+“It is not that at any time (in the past), indeed, was I not, nor were you, nor these rulers of men. Nor shall we ever cease to be hereafter.”
+(Here, Krishna is referring to the Atman.)
+नासतो विद्यते भावो नाभावो विद्यते सतः।
+उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः॥ 2:16
+In this verse, Krishna distinguishes between the real (Atman) and the apparent (body).
+To understand the nuance of Krishna’s teachings, it is key to understand the definition of what is “sat” or real.
+Shankaracharya says that “real” has the quality of Trikāla Abādhitam—that which is non-negatable in the past, present, and future.
+That which:
+• Has no beginning (unborn, uncreated)
+• Has no end (does not die)
+• Does not change (for change implies destruction and rebirth)
+What changes (our body) is not truly real. It is only apparently real.
+Krishna points out to Arjuna that this truth has been clearly seen by the seers (Rishis):
+“य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।
+उभौ तौ न विजानीतो नायं हन्ति न हन्यते॥” 2:19
+One-way Street:
+Krishna tells Arjuna that the apparent reality (body, world, actions) cannot affect absolute reality (the Self),
+but the absolute reality can (and does) affect the apparent.
+“वेत्त्येनं नित्यमव्ययम् अजं न हन्यते हन्यमाने शरीरे।
+कथं स पुरुषः पार्थ कं घातयति हन्ति कम्॥” 2:21
+Translation:
+If your true self, my true self, and our collective true self is the Atman—indestructible, eternal, unborn, and inexhaustible—how can the Atman slay or be slain?
+So when the body is slain, the Atman remains ‘as is.’
+He further elaborates:
+नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः ।
+न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥ 2-23॥
+Translation:
+“Weapons cannot cleave it, fire cannot burn it, water cannot moisten it, and wind cannot dry it.” These are elements of the material world, therefore they do not affect the atman. 
+Once again, Krishna urges Arjuna to fight—for the right cause, and without hesitation.
+On the level of apparent reality, where society and relationships exist, his family may perish—but for the sake of justice.
+Yet on the level of absolute reality, he neither kills nor is killed.
+The Atman—the true Self—is eternal, untouched by the death of the body.
+Chapter 25-30 
+
+. Krishna shifts focus from the atma to the second and third level of reality - the sukshma shareera in it manifest form ( level 2)   and in its u manifest form ( third level of reality  what happens to them in level 2 
+
+
+As I was discussing the profound teachings imparted by Krishna to Arjuna—about the levels of reality and how the Atman and Sukshma Sharira remain untouched—I was asked a very insightful question:
+
+“I understand that Arjuna did not want to fight his family and teacher, but why must he fight at all? Why is it his duty?”so  what if the Atma dies not die? Why even kill the body ? 
+
+It’s an excellent question.
+
+It’s not enough to say that Arjuna should fight because the Atman and subtle body are eternal and unaffected by death. That may be true on the level of absolute reality, but Krishna’s guidance is not limited to that.
+
+Arjuna must fight to uphold dharma—to stand for justice within the context of the material world, the first level of reality.
+
+In this transactional reality, where society functions, the fabric of life is sustained by principles—fairness, justice, and ethical conduct. These are what we call Dharma. The word Dharma comes from the Sanskrit root dhri, meaning to hold or uphold. Dharma, then, is what holds society together—it binds individuals to a shared order of responsibility and truth.
+
+When these principles are compromised, those who recognize the injustice must act—not because the eternal Self is harmed, but because a failure to act allows rot to grow unchecked in the systems we live within.
+
+This message is not theoretical for me. For those who know me, I worked as a minority woman in the male-dominated industry of investment banking. While I was largely treated with respect, there were moments when I experienced clear discrimination.
+
+It was not easy to take a stand—especially against a large corporation with more resources, time, and influence in the media than I could ever hope to match. But I chose to speak up. Because when injustice is left unchallenged, it doesn’t disappear—it festers.
+
+In those moments, reading the Gita was a strong source of inner strength. Krishna’s words, his call to act in alignment with Dharma—even when the odds are stacked against you—gave me clarity and courage.
+
+This is what Krishna is asking of Arjuna—not action from ego or emotion, but right action, grounded in duty and truth, for the sake of maintaining what holds our shared world together.
+
+
+
+As the Gita progresses, this is precisely what Shri Krishna does . He then preempts the question my friend asked, with a  radical shift in perspective in verse 31- - of the second chapter from his teaching that at the fourth level his relatively will not die to 
+
+How does this chapter of the Bhagwad Gita help us navigate loss of loved one? 
+
+It was several years ago that one of my closest friend lost his mother who was ailing for awhile . In a moment of grief he said -  “ it’s not as if I didn’t know -  this  ( death) was not outside the realm of possibilities….. . But suddenly it feels so real . At the age of sixty , I feel like an orphan. “ 
+It brought tears to my eyes and I have over the years learned that any loss we feel is real . It is as real as the loss that Arjun feels  on the battlefield. 
+But as my friend wisely pointed out , Sri Kristalsi tells Arjun - 
+Quote verse 2:27
+
+Verse 55-58 
+Shittt pragnya kakshana 
+One whose pragnya ( wisdom) is stable 
+It is precipitated by verse 53 where he describes samadhi as unwavering g exercise. Rooted in placing oneself in  Alignment  with god 
+Now this is my interpretation- but god is in everything, so really samadhi is an unwavering focus in something ( anything) as long as the attitude is one of intense focus and without ulterior motives . 
+It is not the mind that is absorbed By being in focus  but the intent that unwavering. What changes is not the behaviour but the attitude and motivation which guides the the behaviour 
+Central to:
+• Dharma – laws that express and maintain the universe
+• Karma – the laws of cause and effect
+• Samsara – the cycle of rebirth and death
+• Moksha – spiritual liberation, the experience that is life’s supreme goal.
+
+
+  </p>
+
+      
+      
+   </div>
+
+
+ 
+
+  
+    <div class="video-container">
+      <video id="videoPlayer1" playsinline poster="dusttife.jpg">
+        <source src="dusttife.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p> <em style="color: white;">xxxxx"</em></p>
+      <button class="play-button" onclick="toggleVideoPlayer1()">▶️</button>
+    </div>
+
+    
+    
+
+                   
+    <footer>
+
+        </div>
+        <p>Contact</p>
+        <div class="footer-icons">
+            <a href="mailto:shivanimathurart@gmail.com"><i class="fas fa-envelope"></i></a>
+
+        <p> &copy; Copyright Shivani Mathur. All rights reserved.</p>
+    </footer>
+
+<script>
+
+    // Function to toggle play/pause of videoPlayer1
+    function toggleVideoPlayer1() {
+        var video = document.getElementById('videoPlayer1');
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    function toggleMenu() {
+    const menu = document.getElementById('menuContainer');
+    menu.classList.toggle('show');
+}
+
+function closeMenu() {
+    const menu = document.getElementById('menuContainer');
+    menu.classList.remove('show');
+}
+   function toggleEvent(eventId) {
+    var eventDetails = document.getElementById(eventId);
+    eventDetails.style.display = 'block';
+}
+
+    function closeEvent(eventId) {
+        var eventDetails = document.getElementById(eventId);
+        eventDetails.style.display = 'none';
+    }
+
+    function showContent(contentId) {
+        var contents = document.querySelectorAll('.content');
+        contents.forEach(function (content) {
+            content.style.display = 'none';
+        });
+        document.getElementById(contentId).style.display = 'block';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const subheadings = document.querySelectorAll('.subheading');
+        const contents = document.querySelectorAll('.content');
+
+        subheadings.forEach(subheading => {
+            subheading.addEventListener('click', () => {
+                const target = subheading.getAttribute('data-target');
+                contents.forEach(content => {
+                    content.style.display = 'none';
+                });
+                document.getElementById(target).style.display = 'block';
+            });
+        });
+    });
+
+         
+            var slideIndex = 0;
+            var manualSlideIndex = 0;
+
+            // Start the automatic slideshow at the top
+            showSlides();
+            // Start the automatic slideshow at the bottom
+            showSlidesManual();
+
+            function showSlides() {
+                var i;
+                var slides = document.querySelectorAll(".mySlides1");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 7000); // Change slide every 7 seconds
+            }
+
+            function showSlidesManual() {
+                var slides = document.querySelectorAll(".mySlides");
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                manualSlideIndex++;
+                if (manualSlideIndex > slides.length) {
+                    manualSlideIndex = 1;
+                }
+                slides[manualSlideIndex - 1].style.display = "block";
+                setTimeout(showSlidesManual, 7000); // Change slide every 7 seconds
+            }
+
+            function plusSlides(n) {
+                slideIndex += n;
+                var slides = document.querySelectorAll(".mySlides1");
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                if (slideIndex < 1) {
+                    slideIndex = slides.length;
+                }
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+
+            function plusSlidesGallery(n) {
+                manualSlideIndex += n;
+                var slides = document.querySelectorAll(".mySlides");
+                if (manualSlideIndex > slides.length) {
+                    manualSlideIndex = 1;
+                }
+                if (manualSlideIndex < 1) {
+                    manualSlideIndex = slides.length;
+                }
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[manualSlideIndex - 1].style.display = "block";
+            }
+
+
+
+            var titleAudio; // Declare the audio variable globally
+
+            function playTitleAudio() {
+                if (!titleAudio) {
+                    titleAudio = new Audio('lindzay.m4a'); // Replace 'your-audio-file.mp3' with the path to your MP3 audio file
+                    titleAudio.loop = false; // Set the audio to loop continuously
+                    titleAudio.volume = 0.2; // Set the volume to a lower value (e.g., 0.2 for 20% volume)
+                    titleAudio.play();
+                } else {
+                    if (!titleAudio.paused) {
+                        titleAudio.pause(); // Pause the audio if it's playing
+                    } else {
+                        titleAudio.play(); // Resume playing if it's paused
+                    }
+                        function toggleMenu() {
+        const menu = document.getElementById('menuContainer');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+
+    function closeMenu() {
+        const menu = document.getElementById('menuContainer');
+        menu.style.display = 'none';
+    }
+                }
+            }
+
+        </script>
+
+</body>
+</html>

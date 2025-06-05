@@ -49,12 +49,16 @@
         font-style: italic;
     }
 
+    .header-description strong em {
+        color: white;
+    }
+
     .video-container {
         position: relative;
         max-width: 900px;
         margin: 20px auto 40px auto;
         text-align: center;
-        color: white;
+        color: #929292;
     }
 
     .video-container video {
@@ -121,7 +125,25 @@
         color: #07BFF;
     }
 
-      /* Ensure that the menu icon is visible at smaller screen sizes */
+    /* Responsive */
+    @media (max-width: 768px) {
+        body {
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        a.vedanta-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+          .menu-icon {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+  /* Ensure that the menu icon is visible at smaller screen sizes */
         @media (max-width: 7680px) {
               .menu-icon {
             position: fixed;
@@ -206,24 +228,15 @@
             color: #bbb;
             text-decoration: none;
         }
-    @media (max-width: 768px) {
-        body {
-            font-size: 18px;
-            padding: 0 10px;
-        }
 
-        a.vedanta-button {
-            font-size: 16px;
-            padding: 10px 20px;
-        }
+
     }
 </style>
-    
-    
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-   <div class="menu-icon" onclick="toggleMenu()">
+     <div class="menu-icon" onclick="toggleMenu()">
         <img src="icon.jpg" alt="Menu" style="width: 50px; height: 50px;">
     </div>
 
@@ -231,763 +244,286 @@
         <span class="close" onclick="closeMenu()">&times;</span>
         <div class="menu-content">
             <ul>
-                <li><a href="index.html">Why: The path of Vedanta</a></li><br>
+                <li  class="active"><a href="index.html">Why: The path of Vedanta</a></li><br>
                 <li><a href="what.html">What: Foundational themes and glossary</a></li>
                 <li><a href="how.html">How: Process to acquire knowledge</a></li>
-                <li  class="active"><a href="gita.html">Text: The Bhagwad Gita</a></li>
+                <li><a href="gita.html">Text: The Bhagwad Gita</a></li>
                 <li><a href="mandukya.html">Text: The Mandukya Upanishad</a></li>
                  <li><a href="drig.html">Text: Drig Drishya Vivek</a></li>
                 
             </ul>
         </div>
     </div>
-   
-    <header>
- <h1><em>The Bhagwad Gita</em></h1>
-    <p>
-  An exploration by Shivani Mathur<br>
-  The Bhagwad Gita is a discourse from Shri Krishna to Arjuna, delivered moments before the greatest battle of his life. 
-       
- </p>
-        
-   </header>
-       <div class="header-description">
-        In this section:<br><br>
-      The context of the Bhagwad Gita and Sanjay's narration<br>
-           Gita follows methodlogy of Vedant.<br>
-           Notable ommisions. <br>
-           Verse by Verse commentary.
+
+<header>
+ <h1><em>Why Vedant.</em></h1>
+    <p> An exploration by Shivani Mathur<br> Vedanta is an uninterrupted pursut to know that truth which will set us free.  </p>
+    <div class="header-description">
+<br>
+        In this section:<br>
+       What is my purpose?<br>
+       What Vedant is not.<br>
+       Three words.<br>
+       Methodology.<br>
+        Living in the material world.
 
         <br><br>
-       <em style="color: white; font-style: italic;">The Context of the Bhagavad Gita</em><br>
 
-<p>
-  A question that is often asked: Is it possible to follow the teachings of Vedanta and the Upanishads while still living a worldly life?
-</p>
+        <em>What is my purpose?</em><br><br>
 
-<p>
-  This is where the Bhagavad Gita steps in. The Bhagavad Gita comprises 700 verses embedded in the Mahabharata.<br>
-  The Mahabharata is an epic - the longest in the world comprising nearly 100,000 verses.<br>
-  The story is about a family of kings - the Kauravas and their cousins, the Pandavas .<br>
-  The conflicts in this family mirror the complexities of our material existence.<br> 
-      
+        No matter who we are—how accomplished, beautiful, wealthy, healthy, or loved—we all face moments when life feels heavy. 
+        Times when problems overwhelm us, self-doubt creeps in, and everything seems on the verge of falling apart. 
+        Our relationships feel fragile, our work uncertain, and the love or security we once felt begins to fade.
 
-<ul>
+        <br>
+        When life is smooth, I feel energized and inspired. I notice the sunshine, the blooming flowers;
+        I plan dinners out and sketch five-year visions for my career.
 
-  <li>Injustice and betrayal: A game of dice, rigged by the Kauravas, is used to strip the Pandavas of their kingdom.<br></li>
-  <li>Power struggle laced with moral dilemmas: Who should ascend the throne? The Pandavas or the Kauravas?<br></li>
-  <li>Disputes over land: The Kauravas refuse to give the Pandavas land even "the size of the point of a needle", let alone concede the kingdom.<br></li>
-  <li>Failed negotiations: Despite several rounds of talks, Duryodhana, leader of the Kauravas, refuses to yield. The only option left is war.<br></li>
-  <li>Violence and dishonour towards women: Draupadi, the wife of the Pandavas, is humiliated and nearly disrobed in a public assembly.<br></li>
-</ul>
+        <br>
+        But in moments like these—the hard ones—I start to question everything:
+        <br>
+        What is my purpose?<br>
+        Why was I born?<br>
+        What is the meaning of life?
+<br> I began to explore multiple paths:    <br>  
+   
+        My search for answers has taken me through history, religion, science, art, and even the volatile world of financial markets. Each discipline offered some wisdom.
+<br>History teaches you history (of course it does!).
+<br>The purpose of science is to understand the subject matter of science.
+<br>But the purpose of Vedanta is not to understand the subject matter of Vedas or scriptures—
+it is to gain mastery over the one who studies them: the Self.
+To know the very core of our being—directly and immediately.
 
-  Every human challenge is present and a war is ultimately invoked.<br>
-  To crown the problems, 
-    Arjuna, a Pandava, the central character,the world’s best archer wants to withdraw from
-           the war at the last minute. Misplaced compassion paralyses him.
-     He grew up in a close knit family,the same teachers had trained both him and his cousins, the Kauravas. In this battle, 
-    several of his mentors are part of the enemy camp - the Kaurava army. 
-    Arjuna does not want to kill his guru or kin. 
-      He rejects a Pyrrhic, blood-stained victory.
-</p>
-
-<p>
-  The Gita makes no reference to the pre war problems between the two families. 
-    It opens at a moment of high tension—just before the war begins.<br><br>
-Sanjay, the narrator, describes the battlefield to the blind king Dhritarashtra, father of the Kauravas. 
-    This narration occurs on Day 10 of the war, shortly after Bhishma Pitamah—the most revered elder of the Kaurava army—has fallen.<br><br>
-Sanjay, formerly Bhishma’s charioteer, is now free to return to the palace to recounts the events leading up to the war to the current king Dhritrastra 
-    who is fully vested in the outcome of the war, but is unable to see because he is blind. 
-    Here, it is noteworthy to mention that Sanjaya has divine sight to see the war in real time, 
-    but he has no authority or knowledge. His narration therefore is a verbatim relay of 
-    the conversation between Krishna and Arjuna. The integrity of the Vedantic teachings by Krishna are 
-    preserved and devoid of any layers of interpretation. The words of "Bhagwan Krishna" speak directly to us 
-    through Sanjaya. This is why the Gita is regarded as one of the highest teachings and is  awarded sanctity 
-    as a text of Vedanta. <br>
-    
-   Sanjay describes the moment when Arjuna, the Pandava warrior, is overwhelmed by moral conflict and turns to his charioteer, Krishna—an avatar of God—for guidance, just before the first arrow is released.
-</p>
-
-<br>
+<br><br>The closest I’ve come to a comprehensive understanding—
+one that silences my restlessness while provoking deeper curiosity—
+is through applying the teachings of Vedanta to my own life.
+       Vedanta permits you to challenge every thing the scriptures say . Indeed challenge is encouraged. 
+        There is a single goal
+        Freedom from suffering. 
+        Given my professional background, I prepared a graph to chart what progress might look like when you begin. 
+        It is noteworthy that there is no axis of time. 
+        As we proceed we will understand why. 
         
-The first 28 verses of Chapter 1 (out of 47) are devoted to setting the scene. Sanjay describes the warriors on both sides—their lineage, stature, and credentials. The conch shells are blown, signaling the start of war.<br>
-Then, amidst this grandeur, Krishna halts Arjuna’s chariot in the middle of the battlefield. It is here, seeing his gurus, his family and his nearest and dearest in the enemy army, that  Arjuna falters. 
-Not due to fear or doubt in his strength, but from emotional turmoil.<br>
-
-<br>
-    Krishna applies the teachings of Vedanta to resolve Arjunas crisis.
-           <br>The Gita guides us—those immersed in the material world—to see that our inner conflicts, like Arjuna's, can be resolved by following the path of Vedanta.<br>
-<em>Every one of us is Arjuna.<br><br></em>
-</p>
-
-<p>
-    Most interesting of all, the Gita shows us that the solution to almost 
-    every challenge is remarkably consistent. It offers a path to clarity, 
-    purpose, and inner strength by helping us see problems through the lens of different 
-    layers of reality. At every level, resolution is essential:
-  </p>
-
-<ul>
-  <li>Personal duty and action: When we are endowed with a privilege or talent, we have a responsibility to act. We are meant to use our gifts to uphold what is right.</li>
-  <li>Justice in society: If we stay silent or inactive in the face of injustice, the very structure of society begins to fall apart.</li>
-  <li>Understanding what lasts: We must learn to distinguish between what is temporary — like the body — and what is eternal — the Atman.</li>
-  <li>Freedom through wisdom: Ultimately, the Gita teaches that our choices shape our journey toward liberation (Moksha). Every decision matters.</li>
-</ul> 
-
-
-
-<p><em>Methodology in the Gita follows the methodology of Vedanta.<br><br></em>
-
-The Gita, a sophisticated and widely read Vedantic text, is a masterclass in content, persuasion, and timing. As Arjuna’s charioteer, Krishna must ensure that Arjuna does not retreat—not from cowardice, but from misplaced compassion.<br>
-To abandon the battle would be to allow deceit and Adharma to prevail. And with that, the very foundation of Dharma in society would collapse.<br><br>
-
-It is interesting to note that in the structure of the Gita itself, we see the methodology of Vedanta described in <a href="how.html"><i>this section</i></a>.<br>
-As a mentor, Krishna imparts wisdom, but the experience, understanding of the teachings, and ultimately, decision-making are left to Arjuna. Arjuna must reach his own determination.<br>
-Indeed, the Gita ends (Chapter 18:63) with the verse:<br>
-इति ते ज्ञानम् आख्यातम् गुह्याद्गुह्यतरं मया।<br>
-विमृश्यैतदशेषेण यथेच्छसि तथा कुरु॥<br><br>
-
-Thus, I have explained to you this wisdom—more secret than all secrets.<br>
-Reflect on it fully, and then do as you wish.<br><br>
-
-<p>
-  Throughout the Gita, Krishna does not try to <em>solve</em> Arjuna’s dilemma.<br>
-  He doesn’t deny Arjuna’s fear—that his loved ones will be killed—nor does he offer comfort or promises of a different outcome. He acknowledges the fear as valid and likely to happen just as Arjuna anticipates.<br><br>
-
-  But rather than removing the fear, Krishna offers something far more powerful:  
-  a complete shift in perspective.<br><br>
-
-  This shift is not about changing the situation but about helping Arjuna see that the situation itself is not the real problem.<br><br>
-
-  Krishna introduces Arjuna to the different levels of reality we live in, using relatable examples. These teachings reflect the wisdom of the <i>Mandukya Upanishad</i>, which explores the nature of self and consciousness.<br><br>
-
-  Pujya Swami Dayananda beautifully captures this distinction:<br>
-  <i>“In psychology, there is no solution (to an emotional problem).<br>
-  In Vedanta, there is no problem (in having an emotional problem).”</i><br><br>
-
-  Vedanta does not ask us to suppress our emotions or “bear with” suffering as many traditions might.<br>
-  Instead, it shows <em>why</em> the problem doesn’t have to be solved or removed—because the problem exists only at one level of reality.<br>
-  indeed , in this case , at the bodily level Arjuna has a problem -  'death of loved ones' .At a societal level, its a solution - justice and at the level of 
-    Atman, it is neither a problem , nor a solution because Atman is eternal. You can read more about these levels in <a href="what.html"><i>this section</i></a>.<br><br>
-
-  Krishna explains that even if events unfold exactly as Arjuna fears, the suffering will still be temporary, confined to a limited plane of experience.<br>
-  You are more than the situation.<br>
-  The situation will change, but you remain unchanged—because you are eternal.<br><br>
-
-  Even if you make the wrong choice, you remain eternal.<br>
-  But wrong choices bind you to suffering longer.<br><br>
-
-  So, Krishna's message is this:<br>
-  Act without fear.<br>
-  Choose with awareness.<br>
-  Use your freedom to gain true liberation—here and now.
-</p>
-<p>
-
-    <br>
-    <br><em style="color: white; font-style: italic;">Notable Omissions:</em><br>   <br>
-      </p>
-  Conspicuously absent from Krishna’s approach is any focus on battle plans, weapons, or enemies. 
-  Although the Bhagavad Gita unfolds moments before the war is about to begin, the dialogue avoids military strategy. 
-  Krishna does not address Arjuna’s emotional rant about fighting Bhishma, Drona, or other loved ones. 
-  He offers no counsel on war tactics, enemy weaknesses, alliances, or treaties.
-
-  <br><br>
-  The focus is on individual duty and ethical conduct.
-          Krishna does not praise Arjuna’s gurus (his opponents), nor does he dwell on personal loss. 
-  All emphasis is on self-reliance.
-
-  <br><br>
-  The idea of an "enemy" is redefined. Instead of focusing on external foes, the Gita highlights internal adversaries like desire and anger. 
-  There is no attention to war methodology—only to intent, attitude, and the discernment between what is real and what is unreal.
-
-  <br><br>
-  The Gita is a roadmap to Moksha or freedom; and more urgently, a solution to Arjuna’s immediate personal dilemma: 
-  by recognizing what is real (the Atman, justice, and righteousness) and what is temporary noise (wars, relationships, desires), 
-  one can choose rightly, endure wisely, and act with clarity.
-</p>
-
-      <p> 
-
+           <div class="video-container">
         
-<em>Chapter 2 : 72 verses</em>
-<p>In this section:</p>
-<ul>
-  <li>Verse 1 – Sanjaya’s opening verse<br></li>
-  <li>Verses 2–3 – Krishna gently urges Arjuna as a friend<br></li>
-  <li>Verses 4–8 – Arjuna expresses his moral dilemma<br></li>
-  <li>Verses 9–10 – Sanjaya continues his narration<br></li>
-  <li>Verses 11–38 – Sankhya Yoga:<br>
-    <ul>
-      <li>Verses 11–25 – War’s effect on the eternal, unchanging Atman<br></li>
-      <li>Verses 26–28 – War’s relation to the transmigration of the subtle body (sūkṣma śarīra)<br></li>
-      <li>Verses 29–30 – Recap of key points<br></li>
-      <li>Verses 31–38 – The social and moral consequences of Arjuna's role in war<br></li>
-    </ul>
-  </li>
-  <li>Verses 39–53 – Karma Yoga:<br>
-    <ul>
-      <li>Verses 39–44 – Karma Yoga as the attitude guiding action<br></li>
-      <li>Verse 45 – The qualities of a Karma Yogi<br></li>
-      <li>Verse 46 – The blessings of abundance for a Karma Yogi<br></li>
-      <li>Verses 47–53 – The core teachings of Karma Yoga<br></li>
-    </ul>
-  </li>
-  <li>Verses 54–72 – Sthitha Pragnya<br></li>
-</ul>
-
-2:1 Three Perspectives on Arjuna’s Dilemma<br>
-In the opening scene of the Bhagavad Gita, three individuals observe Arjuna’s inner turmoil, each interpreting it from their unique vantage point.<br> 
-It is interesting that an objective situation - the meltdown of Arjuna, is interpreted by three people very differently based on their own context and perspective.<br><br>
-
-Sanjaya’s Perspective:<br>
-Sanjaya, the divine narrator, describes Arjuna as overwhelmed —<br>
-“Viṣādaḥ kṛipayāviṣṭaḥ” — filled with sorrow.<br>
-To him, Arjuna is paralyzed by emotion, unable to act.<br><br>
-
-Arjuna’s Perspective:<br>
-Arjuna himself views his crisis as one of Karuṇā — compassion.<br>
-He sees dharma through the lens of emotion, believing it wrong to fight and kill his kin.<br><br>
-
-Krishna’s Perspective:<br>
-Krishna is the harshest of the three. “What is this delusion  - Kaśmalam idam - at this critical hour?” He asks.<br>
-To Krishna, Arjuna’s problem is not compassion but ignorance — Kasmal is dirt, a veil of delusion covering his understanding.<br><br>
-
-The first lesson of the Gita is that none of those perspectives are wrong.<br>
-Despite that, the Gita is devoted, not to a systematic exploration of each perspective, but instead a deep dive into Krishna’s perspective. Why?<br>
-Because although both Arjun’s and Sanjay’s perspective might be reasonable (and might yield small wins), Krishna’s perspective is a roadmap to the path of freedom (moksha).<br><br>
-
-2:2-3 Krishna’s Diagnosis of Arjuna’s Delusion<br><br>
-
-Krishna challenges Arjuna:<br>
-श्रीभगवानुवाच ।<br>
-कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् ।<br>
-अनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन ॥ २.२॥<br>
-क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते ।<br>
-क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप ॥ २.३॥<br><br>
-
-“From where has this delusion (kaśmalam) come to you at this crucial moment? It is unworthy of an Arya, does not lead to heaven, and brings disgrace, O Arjuna!”<br>
-The word kaśmalam here, often translated as "impurity" or "delusion," can be more precisely understood in the Vedantic sense as āvaraṇa — a veil that obscures the true Self (ātman), truth (satya), and duty (dharma).<br>
-Krishna’s rebuke is not mere scolding.<br>
-It is a diagnosis: Arjuna is covered by layers of ignorance that veil and obstruct him from seeing the truth and therefore following the righteous path.<br><br>
-
-Three examples are given in thr Gita to explain the  Veils (Āvaraṇas) that eclipse the true reality that you are 
-           no different from Bramhan:<br>
-
-1. Smoke and fire:<br>
-When smoke veils a fire, the fire is eclipsed even though it has not died.  Momentarily obscured, it can be fanned back to life with relative ease.<br>
-In the same way, we are often consumed by desire (kāma), attraction (raga) and avoidance (dwesha). These material trappings 
-           eclipse  the realization that we can be free and happy even when these  material desires 
-           are not achieved. A little ghee, or fanning thr fire will resolve the problem .  <br>
-2. Dust Covering a Mirror:<br>
-Requires a little more effort to uncover.<br>
-This metaphor was drafted in an era when mirrors were made 
-           of metal. To resume the reflectivity, it needed to be polished. 
-           Uninterrupted effort (sadhana), study, and self-discipline. <br>
-3. Embryo constrained in the womb:<br>
-When deep and underdeveloped ideas veil the truth, effort us not enough. Time is also needed resolve a conflict.<br>
-Several verses in Krishna's discourse are relevent.      
-           [3.39, 4.42, 5.11.6,25, 18.30]<br>       
-           [4.38,6.5,5.27–28,13.11,14.11]<br>
-           2.13, 4.34, 
-7.19
-15.11
-18.66<br>
-
- Krishna offers not only diagnosis, but a path forward — through karma yoga, jnana yoga, and bhakti yoga respectively.<br><br>
-
-2:11 Methodology in Vedanta (2:2-11 chimneys minute 5)<br>
-Proving a point is different from understanding truth.<br>
-The process to understand truth is threefold. In any order, the following three conditions must be satisfied.<br>
-Listen (Read/observe) to a statement (Pratigyan, Shravan)<br>
-Reason (Hetu, Manan)<br>
-Apply to an example (Dristanta, Niradhyasana)<br><br>
-
-Conspicuous by absence.<br>
-Conspicuous by absence in Krishna’s perspective is his focus beyond the battlefield at a time when the conch has just been blown, heralding the beginning of war.<br>
-The Bhagavad Gita unfolds amidst the imminent clash of the Kurukshetra war, with Krishna and Arjuna positioned between two formidable armies.<br>
-One might expect their dialogue to center on military strategies or political maneuvers.<br><br>
-
-Notable Omissions:<br>
-Krishna strategically ignores Arjuna’s rant about his opponents, Drona, Bhishma etc.<br>
-He does not even comment on it.<br>
-Military Strategy and Enemy Analysis: Arjuna does not seek and Krishna doesn’t offer counsel on battle tactics or enemy vulnerabilities.<br>
-There is no mention of alliances, treaties, or negotiations.<br>
-Krishna cuts any reference to gurus, relatives and loved ones in the opponent army.<br>
-The focus remains on individual duty (dharma) and ethical conduct.<br><br>
-
-Traditional Methodology:<br>
-There is no focus on methodology of war, strategy or sequence of action.<br>
-All focus is on intent of action and attitude.<br><br>
-
-Conventional Guru Worship:<br>
-The dialogue lacks customary praises for Arjuna’s gurus (who all happen to be his opponents).<br>
-All focus is on self reliance.<br><br>
-
-Personal Vendettas or Hatred:<br>
-The concept of the enemy is redefined, highlighting internal adversaries like desire and anger within oneself rather than external foes or the people/opponents on the battlefield.<br><br>
-
-In a nutshell all focus is on intent/attitude and discernment between what is real and what is unreal.<br><br>
-
-Gita is a roadmap for the path to freedom (Moksha) and more immediately it is a roadmap to solve Arjuna’s immediate conflict:<br>
-By discerning what is real (ātman, justice and righteousness) and will outlive vs what is temporary noise (wars, relationships, desires) and therefore can be ignored/endured.<br>
-</p>
-
-
-          <p>
-2.4<br>
-अर्जुन उवाच ।<br>
-कथं भीष्ममहं संख्ये द्रोणं च मधुसूदन ।<br>
-इषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन ॥<br><br>
-
-2.5<br>
-गुरूनहत्वा हि महानुभावान्<br>
-श्रेयो भोक्तुं भैक्ष्यमपीह लोके ।<br>
-हत्वार्थकामांस्तु गुरूनिहैव<br>
-भुञ्जीय भोगान् रुधिरप्रदिग्धान् ॥<br><br>
-
-2.6<br>
-न चैतद्विद्मः कतरन्नो गरीयो<br>
-यद्वा जयेम यदि वा नो जयेयुः ।<br>
-यानेव हत्वा न जिजीविषामस्<br>
-तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥<br><br>
-
-2.7<br>
-कार्पण्यदोषोपहतस्वभावः<br>
-पृच्छामि त्वां धर्मसंमूढचेताः ।<br>
-यच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे<br>
-शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥<br><br>
-
-2.8<br>
-न हि प्रपश्यामि ममापनुद्याद्<br>
-यच्छोकमुच्छोषणमिन्द्रियाणाम् ।<br>
-अवाप्य भूमावसपत्नमृद्धं<br>
-राज्यं सुराणामपि चाधिपत्यम् ॥<br>
-</p>
-
-
-Verses 11 - 25 of chapter 2 are dedicated to drawing Arjun’s attention to the u changing nature of the Atman. 
-न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः ।
-न चैव न भविष्यामः सर्वे वयमतः परम् ॥ 2-12॥
-Translation:
-“It is not that at any time (in the past), indeed, was I not, nor were you, nor these rulers of men. Nor shall we ever cease to be hereafter.”
-(Here, Krishna is referring to the Atman.)
-नासतो विद्यते भावो नाभावो विद्यते सतः।
-उभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः॥ 2:16
-In this verse, Krishna distinguishes between the real (Atman) and the apparent (body).
-To understand the nuance of Krishna’s teachings, it is key to understand the definition of what is “sat” or real.
-Shankaracharya says that “real” has the quality of Trikāla Abādhitam—that which is non-negatable in the past, present, and future.
-That which:
-• Has no beginning (unborn, uncreated)
-• Has no end (does not die)
-• Does not change (for change implies destruction and rebirth)
-What changes (our body) is not truly real. It is only apparently real.
-Krishna points out to Arjuna that this truth has been clearly seen by the seers (Rishis):
-“य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम्।
-उभौ तौ न विजानीतो नायं हन्ति न हन्यते॥” 2:19
-One-way Street:
-Krishna tells Arjuna that the apparent reality (body, world, actions) cannot affect absolute reality (the Self),
-but the absolute reality can (and does) affect the apparent.
-“वेत्त्येनं नित्यमव्ययम् अजं न हन्यते हन्यमाने शरीरे।
-कथं स पुरुषः पार्थ कं घातयति हन्ति कम्॥” 2:21
-Translation:
-If your true self, my true self, and our collective true self is the Atman—indestructible, eternal, unborn, and inexhaustible—how can the Atman slay or be slain?
-So when the body is slain, the Atman remains ‘as is.’
-He further elaborates:
-नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः ।
-न चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥ 2-23॥
-Translation:
-“Weapons cannot cleave it, fire cannot burn it, water cannot moisten it, and wind cannot dry it.” These are elements of the material world, therefore they do not affect the atman. 
-Once again, Krishna urges Arjuna to fight—for the right cause, and without hesitation.
-On the level of apparent reality, where society and relationships exist, his family may perish—but for the sake of justice.
-Yet on the level of absolute reality, he neither kills nor is killed.
-The Atman—the true Self—is eternal, untouched by the death of the body.
-Chapter 25-30 
-
-. Krishna shifts focus from the atma to the second and third level of reality - the sukshma shareera in it manifest form ( level 2)   and in its u manifest form ( third level of reality  what happens to them in level 2 
-
-
-As I was discussing the profound teachings imparted by Krishna to Arjuna—about the levels of reality and how the Atman and Sukshma Sharira remain untouched—I was asked a very insightful question:
-
-“I understand that Arjuna did not want to fight his family and teacher, but why must he fight at all? Why is it his duty?”so  what if the Atma dies not die? Why even kill the body ? 
-
-It’s an excellent question.
-
-It’s not enough to say that Arjuna should fight because the Atman and subtle body are eternal and unaffected by death. That may be true on the level of absolute reality, but Krishna’s guidance is not limited to that.
-
-Arjuna must fight to uphold dharma—to stand for justice within the context of the material world, the first level of reality.
-
-In this transactional reality, where society functions, the fabric of life is sustained by principles—fairness, justice, and ethical conduct. These are what we call Dharma. The word Dharma comes from the Sanskrit root dhri, meaning to hold or uphold. Dharma, then, is what holds society together—it binds individuals to a shared order of responsibility and truth.
-
-When these principles are compromised, those who recognize the injustice must act—not because the eternal Self is harmed, but because a failure to act allows rot to grow unchecked in the systems we live within.
-
-This message is not theoretical for me. For those who know me, I worked as a minority woman in the male-dominated industry of investment banking. While I was largely treated with respect, there were moments when I experienced clear discrimination.
-
-It was not easy to take a stand—especially against a large corporation with more resources, time, and influence in the media than I could ever hope to match. But I chose to speak up. Because when injustice is left unchallenged, it doesn’t disappear—it festers.
-
-In those moments, reading the Gita was a strong source of inner strength. Krishna’s words, his call to act in alignment with Dharma—even when the odds are stacked against you—gave me clarity and courage.
-
-This is what Krishna is asking of Arjuna—not action from ego or emotion, but right action, grounded in duty and truth, for the sake of maintaining what holds our shared world together.
-
-
-
-As the Gita progresses, this is precisely what Shri Krishna does . He then preempts the question my friend asked, with a  radical shift in perspective in verse 31- - of the second chapter from his teaching that at the fourth level his relatively will not die to 
-
-How does this chapter of the Bhagwad Gita help us navigate loss of loved one? 
-
-It was several years ago that one of my closest friend lost his mother who was ailing for awhile . In a moment of grief he said -  “ it’s not as if I didn’t know -  this  ( death) was not outside the realm of possibilities….. . But suddenly it feels so real . At the age of sixty , I feel like an orphan. “ 
-It brought tears to my eyes and I have over the years learned that any loss we feel is real . It is as real as the loss that Arjun feels  on the battlefield. 
-But as my friend wisely pointed out , Sri Kristalsi tells Arjun - 
-Quote verse 2:27
-
-<p><em>2.47-53 : Karma Yoga </em></p>
-
-<p>Karma means action.<br>
-Yoga means to join, synchronize, or integrate.</p>
-
-<p>Karma Yoga, therefore, is the practice of engaging in action that is aligned with a mindful and purposeful attitude.</p>
-
-<p><em>What is this mindset?</em></p>
-
-<p>It is a shift in motivation—from acting based on personal likes and dislikes (rāga and dveṣa) to acting from a deeper intention: the pursuit of inner freedom (mokṣa).</p>
-
-<p>In simpler terms:<br>
-👉 You stop acting just to get what you want or avoid what you don't want.<br>
-👉 You start acting as a part of your journey toward peace, clarity, and liberation.</p>
-
-<p><em>Karma Yoga is:</em></p>
-
-<p>• Not about what you do, but how and why you do it.<br>
-• A conscious shift from emotional impulses (wanting, fearing) to clear discernment (viveka)—the understanding that lasting happiness doesn’t come from success, pleasure, or approval, but from spiritual growth.<br>
-• A way of life where each action is offered with awareness, not clinging to the results, but learning and growing through them.</p>
-
-<p><em>Practicing Karma Yoga means:</em></p>
-
-<p>• Acting in alignment with dharma—your values, responsibilities, and ethical duties.<br>
-• Being free from attachment to outcomes, and not defining your self-worth by success or failure.<br>
-• Using every action as a step in inner purification, a preparation of the mind and heart for the discovery of mokṣa—freedom from inner suffering.</p>
-
-       <p><em>Sāṅkhya and Karma Yoga: The Path to Liberation (Bhagavad Gita 2.51)</em><br>
-बुद्धियुक्तो जहातीह फलं त्यक्त्वा मनीषिणः ।<br>
-जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम् ॥<br>
-Those endowed with clear understanding (बुद्धियुक्तः, buddhi-yuktaḥ), who through deep reflection (मनीषिणः, manīṣiṇaḥ) let go of attachment to outcomes (फलं त्यक्त्वा, phalaṁ tyaktvā), become free from the cycle of birth and death (जन्मबन्धविनिर्मुक्ताः, janma-bandha-vinirmuktāḥ) and reach a state beyond sorrow (पदं गच्छन्ति अनामयम्, padaṁ gacchanti anāmayam). This verse reveals that Sāṅkhya (साङ्ख्य, from <em>sam</em> + <em>khyā</em>, "complete knowing") is the path of discerning the real (eternal consciousness) from the temporary (material world), leading to liberation (मोक्ष, mokṣa). Karma Yoga (कर्मयोग, from <em>karma</em> + <em>yoga</em>, "action" + "union") supports this by uniting actions with a purposeful attitude, free from compulsive likes (राग, rāga) and dislikes (द्वेष, dveṣa), purifying the mind for Sāṅkhya’s transformative insight.</p>
-
-<p><em>Karma Yoga: Preparing the Mind for Sāṅkhya</em><br>
-Karma Yoga (कर्मयोग, from <em>kar</em>, "to do" + <em>yuj</em>, "to join") is the practice of uniting actions with a higher purpose, not fleeting results. It’s not about acting without desire (निष्काम कर्म, niṣkāma karma), but acting without attachment to outcomes (फलं त्यक्त्वा, phalaṁ tyaktvā), focusing on spiritual growth toward liberation (मोक्ष, mokṣa). For example, a teacher joins effort with clarity, teaching to inspire, not for praise; a musician joins creativity with detachment, crafting music for its own sake, not applause. This shift overcomes compulsive likes (राग, rāga, the inner urge to chase) and dislikes (द्वेष, dveṣa, the urge to avoid), which cloud the mind. By aligning actions with discernment—whether through selfless work (कर्मयोग, karma yoga), devotion (भक्तियोग, bhakti yoga), knowledge (ज्ञानयोग, jñāna yoga), or meditation (ध्यानयोग, dhyāna yoga)—Karma Yoga purifies the mind, making it ready for Sāṅkhya’s realization of the eternal self (तत् त्वम् असि, tat tvam asi, "you are that"). This leads to freedom from rebirth and suffering, reaching the supreme, sorrow-free state (परं अनामयम्, param anāmayam).</p>    
- 
-           
-           
-           2.51 (Sanskrit and Translation)</h2>
-    <p>बुद्धियुक्तो जहातीह फलं त्यक्त्वा मनीषिणः ।<br>
-    जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम् ॥</p>
-    <p><em>Translation</em>:<br>
-    Those who act with refined intellect (<em>buddhi-yuktaḥ</em>), who through deep reflection (<em>manīṣiṇaḥ</em>) let go of attachment to outcomes (<em>phalaṁ tyaktvā</em>), become free from the cycle of birth and death and reach a state beyond sorrow (<em>anāmayam padam</em>).</p>
-    <p>This verse offers a practical guide to living with freedom—not by escaping life’s demands, but by transforming how we engage with them. It highlights three qualities: acting with clarity (<em>buddhi-yuktaḥ</em>), reflecting deeply (<em>manīṣiṇaḥ</em>), and releasing obsession with results (<em>phalaṁ tyaktvā</em>). Together, these create a life of purpose, peace, and liberation.</p>
-
-    <h2>The Threefold Path to Freedom</h2>
-
-    <h3>1. Buddhi-yuktaḥ: Acting with Clear Intelligence</h3>
-    <p><em>Buddhi-yuktaḥ</em> describes someone who acts with sharp, discerning awareness—not just intellectual knowledge, but the ability to stay calm and choose wisely, even in challenging situations. This is about aligning actions with inner clarity, not reacting impulsively.</p>
-    <p><em>Example</em>:<br>
-    Imagine a paramedic responding to a multi-car accident. The scene is chaotic—sirens blaring, people injured, and time is critical. A reactive person might panic or make hasty decisions. A <em>buddhi-yuktaḥ</em> paramedic pauses, assesses priorities, and acts with precision, saving lives without being overwhelmed by stress. Their clarity allows them to be compassionate and effective.</p>
-    <p>This isn’t about being detached in a cold way. The paramedic cares deeply but remains grounded. The Gita encourages this poised engagement, where actions flow from a clear, steady mind.</p>
-
-    <h3>2. Manīṣiṇaḥ: The Power of Reflective Wisdom</h3>
-    <p><em>Manīṣiṇaḥ</em>, derived from <em>manana</em> (deep reflection), refers to someone who processes experiences to align their actions with a higher purpose. This isn’t casual thinking—it’s sustained reflection that leads to inner growth and clarity.</p>
-    <p><em>Example</em>:<br>
-    Consider a software developer who faces a project failure—perhaps a critical bug derails a product launch. The instinct might be to blame teammates, feel defeated, or rush to fix it without learning. A <em>manīṣī</em> steps back and reflects: <em>What went wrong? Am I chasing deadlines for ego, or to create something valuable? How can I improve my approach?</em> Through reflection, they grow, adjusting their work to align with purpose over pride.</p>
-    <p>This reflection isn’t about overthinking—it’s about integration. The <em>manīṣī</em> doesn’t retreat from life; they engage it with maturity, using setbacks as opportunities for growth. Their actions become more conscious, like Arjuna learning to act with wisdom on the battlefield.</p>
-
-    <h3>3. Phalaṁ tyaktvā: Letting Go of Outcome Obsession</h3>
-    <p>Krishna’s call to “renounce the fruits of action” (<em>phalaṁ tyaktvā</em>) can seem confusing, especially since the Gita (2.47) says we don’t control outcomes. Shankaracharya clarifies this in his commentary on the Bhagavad Gita: <em>“Renunciation of the fruits of action does not mean abandoning the results themselves, but abandoning the desire and attachment for those results”</em> (Shankaracharya’s <em>Bhagavad Gita Bhashya</em>, 2.51). In other words, it’s not about rejecting success—it’s about releasing psychological dependence on it.</p>
-    <p><em>Example</em>:<br>
-    Picture a musician composing a song for a community event. One musician is consumed by thoughts of applause: <em>Will the audience love it? Will it get shared online?</em> This anxiety clouds their creativity. Another musician focuses on the music itself, pouring their heart into each note. They aim for beauty but don’t tie their worth to the crowd’s reaction. This is <em>phalaṁ tyāga</em>—acting with care, free from craving external validation.</p>
-    <p>This doesn’t mean being careless. The detached musician still practices diligently and seeks to improve. But their joy lies in the act of creation, not in rewards. This shift cuts the “karmic bind”—the ego’s attachment to outcomes that traps us in cycles of craving and suffering.</p>
-
-    <h2>Real-World Integration</h2>
-    <p>This path isn’t about withdrawing from life—it’s about engaging it with skill and freedom. Examples include:</p>
-    <ul>
-        <li>A teacher who plans lessons thoughtfully, not for praise, but to spark curiosity in students.</li>
-        <li>A volunteer who serves their community, not for recognition, but because it aligns with their values.</li>
-        <li>A parent who supports their child’s growth, not to fulfill their own dreams, but to nurture the child’s unique path.</li>
-    </ul>
-    <p>These people are fully engaged, yet free. They act with clarity, reflect with purpose, and release the need for specific outcomes. This is not apathy—it’s intelligent, heartfelt participation.</p>
-
-    <h2>Conclusion: Freedom Through Inner Alignment</h2>
-    <p>Verse 2.51 invites us to live from inner steadiness, not outer chaos. The <em>buddhi-yuktaḥ manīṣī</em> acts with clarity, reflects deeply, and lets go of outcome obsession. Their life is purposeful, not frantic; engaged, not clingy.</p>
-    <p>As Shankaracharya emphasizes, renouncing the fruits of action isn’t about rejecting results but freeing ourselves from attachment to them. This shift leads to <em>anāmayam padam</em>—a state beyond sorrow, where joy arises from the Self, not from gain or loss. It’s a call to live with wisdom:</p>
-    <ul>
-        <li>Not apathy, but skillful engagement.</li>
-        <li>Not renunciation of action, but freedom from bondage.</li>
-        <li>Not detachment from love, but love rooted in clarity.</li>
-    </ul>
-    <p>By aligning with this threefold path—clear action, deep reflection, and non-attachment—we move toward liberation, living with peace amid life’s ups and downs.</p>         
-           <p>2.51</p>
-<p>
-बुद्धियुक्तो जहातीह फलं त्यक्त्वा मनीषिणः ।<br>
-जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम् ॥<br>
-</p>
-<p>Translation:</p>
-<p>Those whose actions are aligned with subtle intellect (buddhi-yuktaḥ), who—through deep contemplation (manīṣiṇaḥ)—have relinquished attachment to the fruits of action (phalaṁ tyaktvā), become free from the bondage of birth and attain a state beyond sorrow.</p>
-
-<br>
-
-<p>⸻</p>
-
-<p><u>Living with Clarity: The Threefold Path to Inner Freedom</u></p>
-<p>This verse offers a blueprint for deep freedom—not by abandoning the world, but by changing how we relate to it. Through a discerning mind (buddhi-yuktaḥ), reflective understanding (manīṣiṇaḥ), and detachment from results (phalaṁ tyaktvā), we can engage life with skill and serenity.</p>
-
-<br>
-
-<p>⸻</p>
-
-<p><u>1. buddhi-yuktaḥ – Acting with a Refined Inner Intelligence</u></p>
-<p>Buddhi-yuktaḥ refers to someone who acts with a sharpened, discerning awareness. This isn’t about raw intellect or knowledge, but the ability to pause and choose wisely, especially under pressure.</p>
-
-<p><b>Example:</b><br>
-Imagine a nurse in a high-stress emergency room. Chaos is all around—patients arrive in critical condition, emotions are high. A reactive person might panic or snap. But a buddhi-yuktaḥ nurse breathes, assesses, and calmly takes the next clear step. Their inner clarity allows effective, compassionate action without getting swept away emotionally.</p>
-
-<p>This doesn’t mean the nurse is indifferent. In fact, detachment here is not disinterest. The nurse cares deeply—but is grounded. The Gita encourages this kind of poised engagement, where your care is not compromised by chaos.</p>
-
-<br>
-
-<p>⸻</p>
-
-<p><u>2. manīṣiṇaḥ – The Thoughtful Integrator</u></p>
-<p>Manīṣiṇaḥ, derived from manana, means more than thinking. It’s deep, sustained reflection that leads to inner resolution and alignment.</p>
-
-<p><b>Example:</b><br>
-Take someone who just went through a career setback—perhaps they were passed over for a promotion. The instinct might be to blame, react, or spiral into insecurity. But a manīṣī steps back and reflects: What can I learn here? Was I seeking external validation? How do I align my efforts better with what I value most?</p>
-
-<p>Over time, this reflection becomes integration. Life doesn’t stop them—they grow from it. Even their speech, eating habits, and rest become more conscious. Their life orients around a higher aim—not indulgence or comparison.</p>
-
-<p>This does not mean they withdraw from work or ambition. Reflection is not withdrawal. The manīṣī may still pursue meaningful goals, but now with clarity and steadiness—not desperation. Like Arjuna on the battlefield, their insight fuels right action.</p>
-
-<br>
-
-<p>⸻</p>
-
-<p><u>3. phalaṁ tyaktvā – Letting Go of Outcome-Obsession</u></p>
-<p>Krishna’s advice to renounce the fruits of action may seem puzzling: if you can’t control the result (Gita 2.47), how can you give it up?</p>
-
-<p>Shankaracharya clarifies: you’re not rejecting the result—you’re releasing your psychological dependence on it.</p>
-
-<p><b>Example:</b><br>
-Picture an artist painting a mural in a public space. One artist is obsessed with praise: Will people like it? Will it go viral? This anxiety clutters their process. Another artist paints with care, but their joy is in the act itself. They strive for excellence, but are not owned by external approval. That’s phalaṁ tyāga—detachment from craving.</p>
-
-<p>This doesn’t mean becoming careless or passive. The detached artist still gives their best effort. The difference is: they are free. Their effort is an offering, not a bargain.</p>
-
-<p>This freedom from the “reward loop” creates space for skillful, conscious action. You act not to become something—but because it’s true to who you are. This cuts the karmic bind, which isn’t caused by action itself, but by the egoic tension wrapped around it.</p>
-
-<br>
-
-<p>⸻</p>
-
-<p><u>Real-World Integration: What This Looks Like</u></p>
-<p>• A teacher gives their all to their students—not for recognition, but out of love for learning.<br>
-• A social activist fights injustice—not for applause or anger, but because it’s the right thing to do.<br>
-• A parent raises their child not to live vicariously through them, but to serve the child’s unfolding nature.</p>
-
-<p>In each case, the person is engaged, reflective, and non-attached—not disengaged, not robotic, not numb.</p>
-
-<br>
-
-<p>⸻</p>
-
-<p><u>Conclusion: The Inner Architecture of Freedom</u></p>
-<p>Verse 2.51 doesn’t ask us to stop living—it invites us to live differently: from inner steadiness rather than outer fluctuation.</p>
-
-<p>The buddhi-yuktaḥ manīṣī acts with presence, reflects with maturity, and releases the burden of needing specific results. Their effort is not frantic, but full. Their care is not clingy, but clear.</p>
-
-<p>This is not apathy—it is intelligent engagement.<br>
-This is not renunciation of life—it is renunciation of bondage.<br>
-This is not detachment from love—it is freedom within love.</p>
-
-<p>Such a person steadily approaches the anāmayam padam—a state beyond affliction, untouched by the drama of gain and loss, and rooted in the joy of the Self.</p>
-           
-Verse 55-58 
-Shittt pragnya kakshana 
-One whose pragnya ( wisdom) is stable 
-It is precipitated by verse 53 where he describes samadhi as unwavering g exercise. Rooted in placing oneself in  Alignment  with god 
-Now this is my interpretation- but god is in everything, so really samadhi is an unwavering focus in something ( anything) as long as the attitude is one of intense focus and without ulterior motives . 
-It is not the mind that is absorbed By being in focus  but the intent that unwavering. What changes is not the behaviour but the attitude and motivation which guides the the behaviour 
-Central to:
-• Dharma – laws that express and maintain the universe
-• Karma – the laws of cause and effect
-• Samsara – the cycle of rebirth and death
-• Moksha – spiritual liberation, the experience that is life’s supreme goal.
-
-
-  </p>
-
-      
-      
-   </div>
-
-
- 
-
-  
+            <img src="Freedom.jpeg" type="PNG" />
+            Your browser does not support the video tag.
+       
+        
+    </div>
+        
+<br>I am taking this path:<br>
+To devote myself to the study of Vedanta,<br>
+To memorize the seven hundred shlokas of the Bhagavad Gita,<br>
+    To express what I comprehend in a visual. <br><br>
+ People ask why I intend to memorize all 700 verses, “Isn’t understanding enough?” 
+       <br> Memorization deepens understanding. 
+        It’s like having a perfectly organized mental filing system, 
+        one where every verse is instantly accessible.<br>
+        This clarity allows connections to emerge effortlessly and vividly. The text doesn’t just sit in books; 
+        it lives within you, shaping thought and insight in real time. <br>   
+     
+        <br><br>
+        <em>What Vedanta is not</em>
+
+        <br><br>
+        Vedanta is not a religion, it is not a philosophy, 
+        nor a belief system—and it certainly is not a concept.<br>
+       Vedanta is about 'you' and you are not a concept or a philosophy! 
+At its core Vedanta has a single goal:
+       <br> Freedom (Moksha).<br>
+        But here’s the paradox—Vedanta says we are already free.
+        So how can freedom be a goal if we already have it? 
+        It’s like saying, “My goal is to be a millionaire,” when your bank account already holds millions—
+        The problem is that you just haven’t checked your account, so you don't know.
+
+That’s exactly the point Vedanta makes: 
+        The goal needs to be more precise. 
+        The problem is not the absence of freedom, but ignorance of it. 
+        So the goal isn’t to gain freedom—it’s to gain the knowledge that we are already free.
+         
+        <br> 
+        
+          The word <em>ved</em> itself means “knowledge”—not just any knowledge, but the most intimate kind: knowledge of the Self.
+        Are there other paths to this discovery?
+        Certainly. But many are long and winding. Vedanta offers a direct one.
+        
+          <br><br>
+        <em>What Vedanta is </em>
+ <br><br>
+Vedanta provides a clear and practical method for Self-knowledge. It doesn’t bind you with rules or dogma. You are free to choose at every step—but those choices matter. 
+        Missteps bring confusion and unnecessary suffering;
+       but even through detours  you will ultimately arrive—because what you seeking, you already are.
+
+        <br><br>
+       
+        You might think that knowing the Self should be simple. After all, it’s what’s closest to us. And yet, like missing the forest for the trees, our true nature often escapes us—precisely because it is so ever-present.
+        <br><br>
+        <em>A structured methodology</em>
+        <br><br>
+        That’s why Vedanta offers more than ideas—it offers a process. A structured means of inquiry to uncover what is already true. It is not a new thought; it is discovery.
+        <br><br>
+        <em>And when this knowledge arises, it’s not abstract. 
+            It transforms how we see the world, how we make decisions, how we relate to others, and how we live—right here, right now.</em>
+   <br><br>
+        This stereoscopic image is a great metaphor for self-knowledge.
+        At first, you don’t see the 3D image, it is hard. But when you focus without blinking, 
+        the first thing that happens is that the blue balls seem to rise. 
+        Then, all of a sudden, the picture turns glassy, 
+        a bowl shaped like a crown with a  ball  appears.<br>
+        The image is clear. There is no doubt. For most of us, 
+        it takes persistance and time. 
+        The image was always there, hidden in plain sight. Just like the Self: not something new to gain, but something to recognize. 
+        Once seen, it’s unmistakably known.
+        as with Vedanta there is no ' average ' time that you will definately see it in ! Each person has a unique experience. frustrating and exhiliarating. 
+        <div class="video-container">
+        <video id="videoPlayer" playsinline poster="IMG_5594.jpeg">
+            <source src="IMG_5594.jpeg" type="jpeg" />
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+        My motivation to explore Vedanta began in trying to understand myself in moments of despair. 
+        But quickly, it became something more, a path I wanted to walk every day, everywhere, in everything I do.
+
+        <br><br>
+        <em>Three words</em>
+
+        <br><br>
+        They say the essence of all the Vedas can be distilled into just three words:
+
+        <br><br>
+        <strong><em>Tat Tvam Asi</em></strong> <br>
+       Chandogya Upanishad, Chapter 6, Verses 8.8–15
+
+        <br><br>
+        <strong>Translated:</strong> You are that.
+
+        <br><br>
+        What does it mean?<br>
+        The words are simple; the implications, profound. The first time you hear it, you are clueless as to what it means. That's okay. The true test is: Will understanding this statement set us free?
+
+    </div>
     <div class="video-container">
-      <video id="videoPlayer1" playsinline poster="dusttife.jpg">
-        <source src="dusttife.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p> <em style="color: white;">xxxxx"</em></p>
-      <button class="play-button" onclick="toggleVideoPlayer1()">▶️</button>
+        <video id="videoPlayer1" playsinline poster="dusttolife.jpg">
+            <source src="dusttolife.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <p>Image above: In 2022 I made this self portrait. Titled "From dust to life" it 
+           represents my birth from  the same infinite power (tat) that animates the entire cosmos.</p>
+        <button class="play-button" onclick="toggleVideoPlayer1()">▶️</button>
     </div>
 
-    
-    
+    <div class="header-description">
+        Vedant says Yes - It will.<br>
+       Freedom from suffering comes in the current life. It is not a prize to be won after death.<br>The heaven we talk about is here, now.</em>
+        <br>
+        Freedom comes through knowledge, not beliefs.<br>
+        Knowledge that dissolves misconceptions- the source of suffering.
+        <br><br>
+        <em>The methodology of Vedanta</em>
+        <br><br>
+        Vedanta provides a structured way to inquire and discover the Self through clear, logical inquiry and experiential understanding. It is not blind faith or speculation but a rigorous journey inward.
+      <div>
 
-                   
-    <footer>
+  <p>
+    Vedanta teaches us how to think, not what to think.The methodology aims to radically shift our perspective by placing emphasis on three things ( not necessarily in this order)
+  </p>
+  <ul>
+    <li>Shravan – Listening to the teachings with respect and openness.</li>
+    <li>Nididhyasan – Reflecting and testing them against personal experience.</li>
+    <li> Manan – Examining their logical consistency.</li>
+  </ul>
+  <p>
+    This three-pronged approach provides stability to our conclusions. Like a three-legged table offers the greatest stability—four legs might cause it to wobble, while fewer than three make it unstable.
+  </p>
 
-        </div>
-        <p>Contact</p>
-        <div class="footer-icons">
-            <a href="mailto:shivanimathurart@gmail.com"><i class="fas fa-envelope"></i></a>
+  <p>
+  All that follows in this journey is part of step one.
+      Steps two and three are yours alone. Two-thirds of this path must be walked by you.
+  </p>
 
-        <p> &copy; Copyright Shivani Mathur. All rights reserved.</p>
-    </footer>
+ <br><br>
+        <em>Living in a material world </em>
+            <br><br>
+    For those of us who have chosen to live in the material world, Vedanta doesn't ask us to renounce. It offers context.
+  </p>
+  <ol>
+    <li>How can we better manage relationships?</li>
+    <li>How do we make decisions amid conflict?</li>
+    <li>How do we cope with the loss, death and breakups?</li>
+    <li>Is it possible to follow the Vedantic path while living fully?</li>
+    <li>How can we handle misunderstandings, stress, and burnout?</li>
+  </ol>
+
+  <p>
+   Vedanta doesn’t deny emotions or circumstances. It shifts our perspective: we are more than the challenges we face. 
+p>
+
+  <p>
+    <em style="color: white;">
+            When we know we’ll emerge whole, stress fades. A crisis becomes a situation and the problem is reduced to one of temporary endurance.
+    </em>
+  </p>
+
+
+ <br>
+  <p>
+  The choice ahead <br>
+
+With this introduction to why I chose Vedanta, you now have options:
+You can explore foundational themes, or leap into the Gita. It’s like choosing between abstract art (universal truths) or figurative painting (life examples). Both are profound and analytical. The choice is yours.
+
+Or you may choose another path. That’s valid too. <br>The Rigveda says in verse 1.164.46 <br>
+     
+          <em> "एकं सद्विप्रा बहुधा वदन्ति"     </em>  <br>
+Ekam sad viprā bahudhā vadanti  <br>  <br> 
+      Translated: Truth is one; the wise express it in many ways. <br>All traditions point to the same truth.
+      <br>
+   
+          <br>Eventually every one of us will realize the truth. When we do, the knowledge will set us free. 
+      We won’t retreat from life—we’ll engage more fully, upholding justice, fairness, and compassion.  
+      <br><em style="color: white;">The truth is that we are infinite, timeless and interconnected with the entire universe.
+      ... Vedant offers one path, a very direct path to this realisation.
+    </em>
+
+
+
+
+
+
+
+  </p>
+
+  <a href="what.html" class="vedanta-button">Core foundational themes</a>
+  <a href="gita.html" class="vedanta-button">The Bhagwad Gita</a>
+</div>
+    </div>
+</header>
+
+<footer>
+    <div class="footer-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Vedant. All rights reserved.</p>
+</footer>
 
 <script>
-
-    // Function to toggle play/pause of videoPlayer1
     function toggleVideoPlayer1() {
-        var video = document.getElementById('videoPlayer1');
+        const video = document.getElementById('videoPlayer1');
+        const button = event.currentTarget;
         if (video.paused) {
             video.play();
+            button.textContent = '⏸️';
         } else {
             video.pause();
+            button.textContent = '▶️';
         }
     }
 
     function toggleMenu() {
-    const menu = document.getElementById('menuContainer');
-    menu.classList.toggle('show');
-}
-
-function closeMenu() {
-    const menu = document.getElementById('menuContainer');
-    menu.classList.remove('show');
-}
-   function toggleEvent(eventId) {
-    var eventDetails = document.getElementById(eventId);
-    eventDetails.style.display = 'block';
-}
-
-    function closeEvent(eventId) {
-        var eventDetails = document.getElementById(eventId);
-        eventDetails.style.display = 'none';
-    }
-
-    function showContent(contentId) {
-        var contents = document.querySelectorAll('.content');
-        contents.forEach(function (content) {
-            content.style.display = 'none';
-        });
-        document.getElementById(contentId).style.display = 'block';
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const subheadings = document.querySelectorAll('.subheading');
-        const contents = document.querySelectorAll('.content');
-
-        subheadings.forEach(subheading => {
-            subheading.addEventListener('click', () => {
-                const target = subheading.getAttribute('data-target');
-                contents.forEach(content => {
-                    content.style.display = 'none';
-                });
-                document.getElementById(target).style.display = 'block';
-            });
-        });
-    });
-
-         
-            var slideIndex = 0;
-            var manualSlideIndex = 0;
-
-            // Start the automatic slideshow at the top
-            showSlides();
-            // Start the automatic slideshow at the bottom
-            showSlidesManual();
-
-            function showSlides() {
-                var i;
-                var slides = document.querySelectorAll(".mySlides1");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1;
-                }
-                slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 7000); // Change slide every 7 seconds
-            }
-
-            function showSlidesManual() {
-                var slides = document.querySelectorAll(".mySlides");
-                for (var i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                manualSlideIndex++;
-                if (manualSlideIndex > slides.length) {
-                    manualSlideIndex = 1;
-                }
-                slides[manualSlideIndex - 1].style.display = "block";
-                setTimeout(showSlidesManual, 7000); // Change slide every 7 seconds
-            }
-
-            function plusSlides(n) {
-                slideIndex += n;
-                var slides = document.querySelectorAll(".mySlides1");
-                if (slideIndex > slides.length) {
-                    slideIndex = 1;
-                }
-                if (slideIndex < 1) {
-                    slideIndex = slides.length;
-                }
-                for (var i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[slideIndex - 1].style.display = "block";
-            }
-
-            function plusSlidesGallery(n) {
-                manualSlideIndex += n;
-                var slides = document.querySelectorAll(".mySlides");
-                if (manualSlideIndex > slides.length) {
-                    manualSlideIndex = 1;
-                }
-                if (manualSlideIndex < 1) {
-                    manualSlideIndex = slides.length;
-                }
-                for (var i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[manualSlideIndex - 1].style.display = "block";
-            }
-
-
-
-            var titleAudio; // Declare the audio variable globally
-
-            function playTitleAudio() {
-                if (!titleAudio) {
-                    titleAudio = new Audio('lindzay.m4a'); // Replace 'your-audio-file.mp3' with the path to your MP3 audio file
-                    titleAudio.loop = false; // Set the audio to loop continuously
-                    titleAudio.volume = 0.2; // Set the volume to a lower value (e.g., 0.2 for 20% volume)
-                    titleAudio.play();
-                } else {
-                    if (!titleAudio.paused) {
-                        titleAudio.pause(); // Pause the audio if it's playing
-                    } else {
-                        titleAudio.play(); // Resume playing if it's paused
-                    }
-                        function toggleMenu() {
         const menu = document.getElementById('menuContainer');
         if (menu.style.display === 'block') {
             menu.style.display = 'none';
@@ -1000,10 +536,8 @@ function closeMenu() {
         const menu = document.getElementById('menuContainer');
         menu.style.display = 'none';
     }
-                }
-            }
+</script>
 
-        </script>
 
 </body>
 </html>

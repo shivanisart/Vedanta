@@ -971,15 +971,22 @@ Central to:
         }
     }
 
+   
     function toggleMenu() {
-    const menu = document.getElementById('menuContainer');
-    menu.classList.toggle('show');
-}
+        const menu = document.getElementById('menuContainer');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
 
-function closeMenu() {
-    const menu = document.getElementById('menuContainer');
-    menu.classList.remove('show');
-}
+    function closeMenu() {
+        const menu = document.getElementById('menuContainer');
+        menu.style.display = 'none';
+    }
+    
+ 
    function toggleEvent(eventId) {
     var eventDetails = document.getElementById(eventId);
     eventDetails.style.display = 'block';

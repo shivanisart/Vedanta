@@ -1,55 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title><em style="color: white;">Vedant</em> - My personal take. Shivani Mathur</title>
 
-    <title>Vedanta - My personal take. Shivani  Mathur</title>
-    <style>
-        /* Basic CSS styling */
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-            background-color: #4c4c4c;
-            margin: 0;
-            font-size: 24px;
-            color: #929292;
-            padding: 0;
-        }
-
-        /* Style header and footer */
-        header {
-            background-color: #4c4c4c;
-            color: #929292;
-            text-align: center;
-            padding: 10px;
-            font-size: 16px; /* Adjust the font size to your preference */
-        }
-@media (max-width: 7680px) {
-    .page-container, .slideshow-container, .event-container {
-        padding: 0 10px; /* Reduce padding on smaller screens */
-        max-width: 100%; /* Allow the containers to fill their parent width */
+<style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        background-color: #4c4c4c;
+        margin: 0;
+        font-size: 24px;
+        color: #929292;
+        padding: 0 20px;
     }
-}
 
-/* Styles for slideshow and event containers */
-.slideshow-container,  {
-    margin: 0 auto; /* This centers the content if necessary, might be redundant */
-    padding: 0 20px; /* This ensures spacing from the edges */
-    margin-bottom: 20px; /* Adjust the value as needed */
-    box-sizing: border-box; /* Ensure padding does not expand the box */
-}
-        
+    header {
+        background-color: #4c4c4c;
+        color: #929292;
+        text-align: center;
+        padding: 10px 0;
+    }
 
+    h1, h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        color: #929292;
+    }
 
-        .event-container {
-    display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center; /* Centers items horizontally */
-    margin-bottom: 20px; /* Optional: Adjusts spacing between each event-container */
-}
+    h1 em, h2 em {
+        color: white;
+        font-style: italic;
+    }
 
+    .header-description {
+        font-size: 24px;
+        color: #929292;
+        margin: 20px 0;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        /* Ensure that the menu icon is visible at smaller screen sizes */
+    .header-description em {
+        color: white;
+        font-style: italic;
+    }
+
+    .header-description strong em {
+        color: white;
+    }
+
+    .video-container {
+        position: relative;
+        max-width: 900px;
+        margin: 20px auto 40px auto;
+        text-align: center;
+        color: #929292;
+    }
+
+    .video-container video {
+        width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        cursor: pointer;
+        color: white;
+        background: rgba(0,0,0,0);
+        border: none;
+        border-radius: 50%;
+        padding: 10px 20px;
+        transition: background 0.3s ease;
+    }
+
+    .play-button:hover {
+        background: rgba(0,0,0,0.7);
+    }
+
+    a.vedanta-button {
+        display: inline-block;
+        background-color: #929292;
+        color: white;
+        padding: 12px 24px;
+        margin: 10px 10px 30px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: inherit;
+        transition: background-color 0.3s ease;
+    }
+
+    a.vedanta-button:hover {
+        background-color: #3a3a3a;
+    }
+
+    footer {
+        background-color: #4c4c4c;
+        color: #929292;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .footer-icons a {
+        color: #929292;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .footer-icons a:hover {
+        color: #07BFF;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        body {
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        a.vedanta-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+          .menu-icon {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+  /* Ensure that the menu icon is visible at smaller screen sizes */
         @media (max-width: 7680px) {
               .menu-icon {
             position: fixed;
@@ -136,324 +230,13 @@
         }
 
 
-        /* Style header and footer */
-        header {
-            background-color: #4c4c4c;
-            color: #929292;
-            text-align: center;
-            padding: 10px;
-        }
-
-        footer {
-            background-color: #4c4c4c;
-            color: #929292;
-            text-align: center;
-            padding: 10px;
-            margin-top: auto;
-        }
-
-        /* Add CSS for the Font Awesome icons here */
-        .footer-icons {
-            font-size: 16px;
-        }
-
-        .footer-icons a {
-            color: #929292;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        /* Style the icons on hover (optional) */
-        .footer-icons a:hover {
-            color: #07BFF;
-        }
-
-
-      /* Center the header content */
-          .header-content {
-            text-align: center;
-        }
-
-
-
-        h1 {
-            text-align: center;
-            font-size: 24px;
-             margin: 0 10px;
-        }
-            h2 {
-               text-align: center;
-            font-size: 24px;
-                 margin: 0 10px;
-        }
-
-          /* Style for the additional text */
-          .header-description {
-            font-size: 24px; /* Adjust the font size as needed */
-            margin-top: 10px; /* Add margin to separate it from the title */
-            color: #929292; /* Set the text color */
-          }
-
-
-          /* Center-align the text box */
-          .slideshow-text-center {
-              text-align: center;
-              padding: 20px; /* Add padding for spacing */
-          }
-
-          /* Left-align the text inside the text box */
-          .slideshow-text-left {
-              display: inline-block; /* Ensure inline block for left alignment */
-              text-align: left; /* Left-align the text inside the box */
-          }
-
-
-/* Adjust the CSS for individual sections if needed */
-.header {
-    text-align: center;
-    padding: 10px;
-}
-}
-
-/* Adjust the CSS for individual sections if needed */
-.header {
-    text-align: center;
-    padding: 10px;
-}
-    
-/* Other existing CSS styles... */
-
-/* Adjust the CSS for individual sections if needed */
-.header {
-    text-align: center;
-    padding: 10px;
-}
-    position: relative;
-    overflow: hidden;
-    height: 500px; /* Set a fixed height for the slideshow container */
-}
-
-/* Hide slides by default */
-    .mySlides {
-      display: none;
-    }
-
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    .mySlides1 {
-        display: none;
-        height: 600px; /* Set your desired fixed height */
-    }
-
-    .mySlides1 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Maintain aspect ratio and cover the container */
-    }
-
-/* Style for prev/next buttons */
-.prev, .next {
-  position: absolute;
-  top: 85%;
-  transform: translateY(-50%);
-  font-size: 36px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px;
-  background-color: #4c4c4c;
-  color: white;
-  transition: background-color 0.3s;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}width */
-}
-
-    .prev:hover, .next:hover {
-      background-color: #4c4c4c;
-    }
-.mySlides1 {
-    position: relative; /* Ensure this container is positioned to allow more controlled positioning within it */
-    /* Other styles for .mySlides1 */
-}
-
-.caption {
-    background-color: #4c4c4c; /* Dark gray background */
-    color: #929292; /* Light gray text */
-    padding: 5px;
-    text-align: center; /* Center the text */
-    width: 100%; /* Ensure the caption takes the full width */
-     margin-bottom: 20px;
-    box-sizing: border-box; /* Include padding in the element's total width and height */
-    /* Remove position absolute and related properties */
-}
-
-/* No need for hover effect since captions are always visible */  
-
-/* Adjust the CSS for individual sections if needed */
-.header {
-    text-align: center;
-    padding: 10px;
-}
-  }
-  .life-story-section{
-    max-width: 100%; /* Set max-width to 100% for responsiveness */
-    margin: 0 auto;
-    padding: 0 20px;
-     text-align: center;
-}
-
-
-   .tribute-section{
-      max-width: 100%; /* Set max-width to 100% for responsiveness */
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
-}
-        
-            /* Adjust the CSS for the image wrapper */
-.image-wrapper {
-    max-width: 100%; /* Ensure images don't exceed their natural size */
-    height: auto; /* Allow images to scale proportionally */
-    display: flex; /* Use flexbox to align images horizontally */
-    justify-content: center; /* Center-align images */
-    align-items: center; /* Center-align images */
-    flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
-    margin: 10px 0; /* Add margin for spacing */
-}
-
-/* Adjust the CSS for individual images */
-.image-wrapper img {
-    max-width: 100%; /* Ensure images don't exceed their natural size */
-    height: auto; /* Allow images to scale proportionally */
-    margin: 5px; /* Add margin between images */
-}
-.event-details {
-    display: none;
-    background-color: #4c4c4c; /* Set the background color to match your design */
-    color: white; /* Set the text color for event details */
-    font-size: 24px;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    text-align: center;
-    box-sizing: border-box; /* Include padding in the total width/height */
-}
-
-/* Adjust the CSS for the content within the event details */
-.event-details p {
-    margin-bottom: 5px; /* Add margin at the bottom of each paragraph for spacing */
-}
-/* Style for open state */
-.event-details.open {
-    display: block;
-}
-
-/* Style for closed state */
-.event-details.closed {
-    display: none;
-    /* Add other styles for closed state if needed */
-}
-
-
-.vedanta-button {
-    display: inline-block;
-    background-color: #929292;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: inherit;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.vedanta-button:hover {
-    background-color: #3a3a3a;
-}
-
-            
-
-    .event-button {
-        background-color: transparent;
-        color: #929292;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        padding: 0px;
-        margin: 0;
-        text-align: center; /* Add this line to align the text to the left */
-    
-}
-
-
-    .close-details {
-        color: #929292;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-.spacer {
-    height: 40px; /* Adjust the height as needed to create space */
-}
-
-.content {
-    display: none;
-    color: white; /* Set the text color for content */
-}
-
-
-    .event-image {
-        max-width: 100%; /* Ensure images don't exceed their natural size */
-        height: 400px; /* Maintain aspect ratio */
-        display: block; /* Remove extra space below images */
-        margin: 10px 0; /* Add margin for spacing */
-    }
-
-
-    .video-container {
-        position: relative;
-        max-width: 100%;
-    }
-
-    .video-container video {
-        width: 100%;
-    }
-
-    .play-button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-    }
-
-    </style>
-    <!-- Include the Font Awesome CSS stylesheet -->
-    <style>
-    /* Basic CSS styling */
-    /* ... (your existing CSS code) ... */
-
-    /* Add CSS for the Font Awesome icons here */
-    .fa {
-        font-family: FontAwesome, sans-serif;
     }
 </style>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
-    <div class="menu-icon" onclick="toggleMenu()">
+     <div class="menu-icon" onclick="toggleMenu()">
         <img src="icon.jpg" alt="Menu" style="width: 50px; height: 50px;">
     </div>
 
@@ -462,261 +245,321 @@
         <div class="menu-content">
             <ul>
                 <li  class="active"><a href="index.html">Why: The path of Vedanta</a></li><br>
-                <li><a href="what.html">What: Core teachings</a></li>
+                <li><a href="what.html">What: Foundational themes and glossary</a></li>
                 <li><a href="how.html">How: Process to acquire knowledge</a></li>
                 <li><a href="gita.html">Text: The Bhagwad Gita</a></li>
                 <li><a href="mandukya.html">Text: The Mandukya Upanishad</a></li>
-                 <li><a href="drig.html">Text: Drig Drishya Vivek</a></li>
-                
+                 <li><a href="drig.html">Text: Drig Drishya Vivek</a></li>   
             </ul>
         </div>
     </div>
 
-<div class="page-container">
-  <header>
-    <h1>Vedanta<br><br>WHY</h1>
-
+<header>
+ <h1><em>Why Vedant.</em></h1>
+    <p> An exploration by Shivani Mathur<br> Vedanta is an uninterrupted pursut to know that truth which will set us free.  </p>
     <div class="header-description">
-      No matter who we are—how accomplished, beautiful, wealthy, healthy, or loved—we all face moments when life feels heavy. Times when problems overwhelm us, self-doubt creeps in, and everything seems on the verge of falling apart. Our relationships feel fragile, our work uncertain, and the love or security we once felt begins to fade.
-      <br><br>
-      When life is smooth, I feel energized and inspired. I notice the sunshine, the blooming flowers; I plan dinners out and sketch five-year visions for my career.
-      <br><br>
-      But in moments like these—the hard ones—I start to question everything:
-      <br>
-      What is my purpose?<br>
-      Why was I born?<br>
-      What is the meaning of life?
-      <br><br>
-      My search for answers has taken me through history, religion, science, art, and even the volatile world of financial markets. Each of these disciplines taught me wisdom in some aspect or another. But the closest I’ve come to real comprehensive understanding is through the teachings of Vedanta.
-      <br><br>
-      Vedanta is not a religion, a philosophy, or a belief system—and certainly not a concept.
-      <br><br>
-      It is an ancient Indian framework—a practical methodology for acquiring knowledge. The word <em>ved</em> means “knowledge”—not just any knowledge, but the most intimate kind: knowledge of the Self.
-      <br><br>
-      The purpose of history is to understand the past. The purpose of science is to explore the universe. But the purpose of Vedanta is not to master the Vedas. It is to gain mastery over the one who studies them: the Self. To know the very core of our being—directly and immediately.
-      <br><br>
-      You might think that knowing the Self should be simple. After all, it’s what’s closest to us. And yet, like missing the forest for the trees, our true nature often escapes us—precisely because it is so ever-present.
-      <br><br>
-      That’s why Vedanta offers more than ideas—it offers a process. A structured means of inquiry to uncover what is already true. In that sense, it is not a new thought; it is discovery.
-      <br><br>
-      <strong>And when this knowledge arises, it’s not abstract. It transforms how we see the world, how we make decisions, how we relate to others, and how we live—right here, right now.</strong>
-      <br><br>
-      My motivation to explore Vedanta began in trying to understand myself in moments of despair. But quickly, it became something more, a path I wanted to walk every day, everywhere, in everything I do.
-      <br><br>
-      They say the essence of all the Vedas can be distilled into just three words:
-      <br><br>
-    <strong> <em style="color: white;">Tat Tvam Asi</strong> </em></em>—<br>
-      <em>Chandogya Upanishad, Chapter 6, Verses 8.8–15</em><br><br>
-      <strong>Translated:</strong> You are that.
-      <br><br>
-      What does it mean?<br> 
-      The words are simple; the implications, profound.In all likely hood, the fist time you hear it, you are clueless as to what it means. That's ok. The true test is:  Will understanding this statement set us free?
-  
-    </div>
 
-    <div class="video-container">
-      <video id="videoPlayer1" playsinline poster="dusttolife.jpg">
-        <source src="dusttolife.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p> <em style="color: white;">Image above: Artist rendition of Tat Twam Asi. "The essence that gives you (tvam) life is the same infinite power (tat) that animates the entire cosmos."</em></p>
-      <button class="play-button" onclick="toggleVideoPlayer1()">▶️</button>
-    </div>
-
-    <div class="header-description">
-      
-     
-     <br> Vedant says Yes - It will. <strong> <em style="color: white;">Freedom form suffering comes in the current life, It  is not a prize to be won after death. <br>The heaven we talk about is here, now.</strong> </em><br> 
-        Freedom comes with knowledge, not beliefs. <br> Knowledge that destroys misconceptions. Misconceptions are the source of suffereing.<br>
+       <section>
+  <p>In this section we explore five themes: Freedom, Vedanta, Uninterrupted , Pursuit and Truth:</p>
+  <ul>
+        <li>Freedom
+      <ul>
+      <li>What is my purpose</li>
+      <li>Moksha</li>
+         </ul>
+    </li> 
+    <li>Vedanta
+      <ul>
+        <li>What Vedanta is not</li>
+        <li>What Vedanta is</li>
         
-       Vedanta has a goal—to gain self-knowledge and dispel misconceptions. It teaches us how to think, not what to think.The methodology aims to radically shift our perspective by placing emphasis on three things ( not necessarily in this order)
-        - first listening to those who came before us, without judgement and with respect... ( shravan) next, verifying against our personal experiences if what we heard is 
-        true for us (niradyasna ), and finally assesing it's logical consistency( manan).  <br>This three-pronged approach provides stability to our conclusions. It’s often said that a three-legged table offers the greatest stability—four legs might cause it to wobble, while fewer than three make it unstable.
-
- <br>
-        For your own self-discovery, everything you read henceforth will be part of (1) above.
-This means that logical conclusions and experiences can be done by you alone.
-On our journey, two-thirds of our work must be our own…
-         <br>
-        <br>For those of us who have chosen to live in the material world, Vedanta contextualizes our jobs, our relationships and our daily victories and failures within a larger 
-        framework.
- <br>1. How can we better manage our relationships with loved ones?
- <br>2. How do we navigate our daily decisions when conflicting fears and desires arise?
- <br>3. How can we cope with the loss of loved ones, death, or breakups?
- <br>4. Is it possible to follow the Vedantic path while still living a material life?
- <br>5. How can we manage misunderstandings, stress, and burnout?
-
-Without minimizing our roles, emotions, or circumstances, Vedant shows us a fresh perspective - we are more than the challenges we face—and this shift in perspective can transform a problem into a situation . 
-      <strong> <em style="color: white;">If we know that we will emerge unscathed from a problem, then the stress levels fall and the problem is reduced to one of temporary endurance. </strong></em>
-
-Vedanta doesn’t ask us to retreat from life and to escape challenges by retreating into the mountains—on the contrary, it shows us that as we navigate our lives, we must strive for justice , fairnesss and compassion,
-        but regardless of the outcome of our efforts, never lose sight of the truth:<br>   <strong> <em style="color: white;"> We are infinite- timeless and interconnected with the entire universe. Eventually every one of us will realize this, and when we 
-            do, this realization, this knowledge will set us free.
-        ... Vedant offers one of the routes to this knowledge-   a very direct path. </strong></em>
-    </div>
-
-    <a href="what.html" class="vedanta-button">
-  Core ideas in Vedanta
-    </a>
-      <a href="gita.html" class="vedanta-button">
-    he Bhagwad Gita   </a>
-  </header>
-</div>
-
+      </ul>
+    </li>
+      <li>Uninterrupted
+      <ul>
+        <li>A way of life</li>
+      </ul>
+    </li>
+      </li>
+      <li>Pursuit
+      <ul>
+        <li>Vedanta is a methodology</li>
+        <li>The role of a Guru</li>
+      </ul>
+    </li>
+    <li>Truth</li>
+  </ul>
+</section> 
     
 
-                   
-    <footer>
+    
+        <em>Freedom</em><br>
+   
+        <em>What is my purpose?</em><br><br>
 
-        </div>
-        <p>Contact</p>
-        <div class="footer-icons">
-            <a href="mailto:shivanimathurart@gmail.com"><i class="fas fa-envelope"></i></a>
+        No matter who we are—how accomplished, beautiful, wealthy, healthy, or loved—we all face moments when life feels heavy. 
+        Times when problems overwhelm us, self-doubt creeps in, and everything seems on the verge of falling apart. 
+        Our relationships feel fragile, our work uncertain, and the love or security we once felt begins to fade.
 
-        <p> &copy; Copyright Shivani Mathur. All rights reserved.</p>
-    </footer>
+        <br>
+        When life is smooth, I feel energized and inspired. I notice the sunshine, the blooming flowers;
+        I plan dinners out and sketch five-year visions for my career.
+
+        <br>
+        But in moments like these—the hard ones—I start to question everything:
+        <br>
+        What is my purpose?<br>
+        Why was I born?<br>
+        What is the meaning of life?
+<br><br>I began to explore multiple paths:    <br>  
+   
+        My search for answers has taken me through history, religion, science, art, and even the volatile world of financial markets. Each discipline offered some wisdom.
+<br>History teaches you history (of course it does!).
+<br>The purpose of science is to understand matter and our universe - the subject of science.
+<br>But the purpose of Vedanta is not to understand the subject matter of Vedas or scriptures—
+it is to gain mastery over the one who studies them: the Self.
+To know the very core of our being—directly and immediately.
+
+<br><br>The closest I’ve come to a comprehensive understanding—
+one that silences my restlessness while provoking deeper curiosity—
+is through applying the teachings of Vedanta to my own life.
+       Vedanta permits you to challenge every thing the scriptures say . Indeed challenge is encouraged. 
+         
+<br>
+        My motivation to explore Vedanta began in trying to understand myself in moments of despair. 
+        But quickly, it became something more, a path I wanted to walk every day, everywhere, in everything I do.
+So I decided to study the Upanishads...  <br>
+To memorize the seven hundred shlokas of the Bhagavad Gita,<br>
+    As an artist and someone with a corporate background my natural inclination is to express what I comprehend visually and graphically. <br><br>
+ People ask why I want to memorize all seven hundred verses, “Isn’t understanding enough?” 
+       <br> <br>Memorization deepens understanding. 
+        It’s like having a perfectly organized mental filing system, 
+        one where every verse is instantly accessible.<br>
+        This ease of retrieval allows connections to emerge effortlessly and vividly. The text doesn’t just sit in books; 
+        it lives within you, shaping thought and insight in real time. <br> 
+        The goal is singular<br> the knowledge that we are free, here and now.
+        <br><br>
+            <em>Moksha</em>
+
+     <p>Let's explore what we mean by freedom. Moksha (mo = release + Ksha = the state of) means the state of being liberated -  freedom attained through self-realization. As humans, we are born with inherent freedom, yet we often remain unaware of our true strength and potential. Moksha represents:<br>
+- Eternal peace and bliss (ānanda)<br>
+- Freedom from desire, fear, and sorrow<br>
+- Liberation from the cycle of karma and rebirth<br>
+- A profound understanding of the true Self</p>
+     
+  
+       
+        <em>Vedanta</em><br>
+        <em>What Vedanta is not</em>
+
+        <br><br>
+        Vedanta is not a religion, it is not a philosophy, 
+        nor a belief system—and it certainly is not a concept.<br>
+       Vedanta is about 'you' and you are not a concept or a philosophy. 
+        Nor it it any use to "know" a concept if you don't apply it to 
+        your life. Everyday. In everything you do so every action becomes a prayer - redefining th very meaning of the word prayer.
+        A prayer in which every though, every action is not a dialogue with an external god,
+        but a dialogue with the infinite within yourself.<br>
+        
+At its core Vedanta has a single goal:
+       <br> Freedom (Moksha).<br>
+        But here’s the paradox—Vedanta says we are already free.
+        So how can freedom be a goal if we already have it? 
+        It’s like saying, “My goal is to be a millionaire,” when your bank account already holds millions—
+        The problem is that you just haven’t checked your account, so you don't know.
+
+That’s exactly the point: 
+        The goal needs to be more precise. 
+        The problem is not the absence of freedom, but ignorance of it. 
+        So the goal isn’t to gain freedom—it’s to gain the knowledge that we are already free.
+         
+        <br> <br>
+        
+          The word <em>ved</em> itself means “knowledge”—not just any knowledge, but the most intimate kind: knowledge of the Self.
+        Are there other paths to this discovery?
+        Certainly. But many are long and winding. Vedanta offers a direct one. 
+        
+          <br><br>
+        <em>What Vedanta is </em>
+<p>
+Since concepts are not sufficient unless we apply them, Vedanta provides a clear and practical method for  ensuring our actions and our thoughts are governed by  Self-knowledge. 
+        This "joining" of actions and self knowledge is called Sankhya Yoga. It is the path to freedom.
+        You are not given edicts, nor bound by rules or dogma on how to behave. You are free to choose at every step—but those choices matter. 
+        Missteps bring confusion and unnecessary suffering;
+       but even through detours  you will ultimately arrive—because what you seeking, you already are.<br> Infinite and timeless. 
+
+        </p>
+       <p><em>Uninterrupted<br> A way of life</em></p>
+<p>
+  You might think that knowing the Self should be simple—it’s what’s closest to us.  
+  The Self is ever present; it’s not something we schedule.  
+  It’s in every action, every thought, all day, every day.  
+  And yet, like missing the forest for the trees, our true nature often escapes us—precisely because it’s always there.
+</p>
+     <p>      <em>Pursuit <br> Methodology</em></p>   
+   
+        
+  <p>That’s why Vedanta provides more than concepts—it offers a process. 
+        A systematic method of inquiry to reveal what is already true.
+        It is not a new idea; it is discovery. <br><br> <em>When this understanding dawns, it’s not theoretical.
+            It reshapes how we perceive the world, make choices, connect with others, and live—in this moment, in this reality. It liberates us.</em> <br>
+        The goal is singular: <br> Freedom. <br>
+        The path to this singular goal is also singular:<br> Self-knowledge. <br> 
+        The tools for attaining self-knowledge are many.
+  
+          
+           <br><br>
+        Given my professional background, I created a chart to illustrate what progress might look like in our journey towards freedom. 
+ Notably, there is no time axis. 
+      That would be counterproductive. Freedom comes with contentment in the present—a certainty that nothing can unsettle you. This is possible only if no force in the world—time, space, power, or even yourself—can disturb you. <br>So here we are: <br> A single goal - Freedom<br> A single path - Self-knowledge <br> Multiple tools - Action with purpose and right intent, love and devotion, curiosity and inquiry. <br> 
+      No single tool is enough. Understanding how they work, applying them to our lives, and executing them is the essence of Vedanta. </p>   
+        <div class="video-container">
+        <video id="videoPlayer" playsinline poster="Freedom.jpeg">
+            <source src="Freedom.jpeg" type="jpeg" />
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+           
+ 
+       Another way to think of our progress in our journey to gain freedon is 
+        the image below.
+        Wgen you look at it, at first, you don’t see the 3D image embedded in the pattern. I found it very hard to see, 
+        But when you focus without blinking, 
+        the first thing that happens is that the blue balls seem to rise. 
+        Then, all of a sudden, the picture turns glassy, 
+        a bowl shaped like a crown with a  ball  appears.<br>
+        The image is clear. There is no doubt. For most of us, 
+        it takes persistance and time. 
+        The image was always there, hidden in plain sight. 
+        Just like the Self: not something new to gain, but something to recognize. 
+        Once seen, it’s unmistakably known.
+          <div class="video-container">
+        <video id="videoPlayer" playsinline poster="IMG_5594.jpeg">
+            <source src="IMG_5594.jpeg" type="jpeg" />
+            Your browser does not support the video tag.
+        </video> 
+    </div>
+
+        <br>
+        Vedanta provides a structured way to inquire and discover the Self through clear, logical inquiry and experiential understanding. It is not blind faith or speculation but a rigorous journey inward.
+      <div>
+
+  <p>
+    Vedanta teaches us how to think, not what to think.The methodology aims to radically shift our perspective by placing emphasis on three things ( not necessarily in this order)
+  </p>
+  <ul>
+    <li>Shravan – Listening to the teachings with respect and openness.</li>
+    <li>Nididhyasan – Reflecting and testing them against personal experience.</li>
+    <li> Manan – Examining their logical consistency.</li>
+  </ul>
+  <p>
+    This three-pronged approach provides stability to our conclusions. Like a three-legged table offers the greatest stability—four legs might cause it to wobble, while fewer than three make it unstable.
+  </p>
+
+  <p>
+  All that follows in this journey is part of step one.
+      Steps two and three are yours alone. Two-thirds of this path must be walked by you.
+  </p>
+
+ 
+   Vedanta doesn’t deny emotions or circumstances. It shifts our perspective: we are more than the challenges we face. 
+p>
+
+  <p>
+    <em style="color: white;">
+            When we know we’ll emerge whole, stress fades. A crisis becomes a situation and the problem is reduced to one of temporary endurance. </em>
+  </p>
+<p> <em>The role of a Guru. </em>
+             </p> 
+    
+<p> 
+We are not left alone. 
+    In Vedanta, the Guru is indispensable—a living guide who helps us internalize the revelations 
+    first seen by the ancient Rishis, the original seers.
+    The Guru, rooted in direct realization, is both mirror and mentor on the path to truth.
+    Adi Shanrachaeya places the Guru 
+    firmly at oar with none orher tgan 
+    Bramhan: “गुरुर्ब्रह्मा गुरुर्विष्णुः गुरुर्देवो महेश्वरः। गुरुः साक्षात् परब्रह्म तस्मै श्रीगुरवे नमः॥” —
+    the Guru is none other than Brahmā, Viṣṇu, Śiva, and the Supreme Brahman.
+    The Muṇḍaka Upaniṣad affirms: “तद्विज्ञानार्थं स गुरुमेवाभिगच्छेत् समित्पाणिः श्रोत्रियं ब्रह्मनिष्ठम्”, 
+    one must approach a Guru who is rooted in knowledge and established in Brahman.
+    It is through such a Guru that the teachings of the 
+    Upanishads become a living, transformative experience.
+    </p> 
+    <br>
+ 
+<em style="color: white;">  The Truth</em>
+
+ <p>With this introduction to why I chose Vedanta, you now have options:
+You can explore foundational themes, or leap into the Gita. It’s like choosing between abstract art (universal truths) or figurative painting (life examples). Both are profound and analytical. The choice is yours.
+
+Or you may choose another path. That’s valid too. <br>The Rigveda says in verse 1.164.46 <br>
+     
+          <em> "एकं सद्विप्रा बहुधा वदन्ति"     </em>  <br>
+Ekam sad viprā bahudhā vadanti  <br>  <br> 
+      Translated: Truth is one; the wise express it in many ways. <br>All traditions point to the same truth.
+      <br>
+   
+          <br> Truth is a fundamental law which was, is and always will be.<br>Everwhere and in everything. 
+      <br>It is the very reason for your existance, mine and that of everything in the entire universe.<br>  
+      Eventually every one of us will realize the truth. When we do, the knowledge will set us free. 
+      We won’t retreat from life—we’ll engage more fully, upholding justice, fairness, and compassion.  
+      <br><em style="color: white;">The truth is that we are infinite, timeless and interconnected with the entire universe.
+      ... Vedant offers one path,not the only path, but a very direct path to this realisation.
+    </em>
+
+
+
+
+
+
+
+  </p>
+
+  <a href="what.html" class="vedanta-button">Core foundational themes</a>
+  <a href="gita.html" class="vedanta-button">The Bhagwad Gita</a>
+</div>
+    </div>
+</header>
+
+<footer>
+    <div class="footer-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Vedant. All rights reserved.</p>
+</footer>
 
 <script>
-
-    // Function to toggle play/pause of videoPlayer1
     function toggleVideoPlayer1() {
-        var video = document.getElementById('videoPlayer1');
+        const video = document.getElementById('videoPlayer1');
+        const button = event.currentTarget;
         if (video.paused) {
             video.play();
+            button.textContent = '⏸️';
         } else {
             video.pause();
+            button.textContent = '▶️';
         }
     }
 
-   function toggleEvent(eventId) {
-    var eventDetails = document.getElementById(eventId);
-    eventDetails.style.display = 'block';
-}
-
-    function closeEvent(eventId) {
-        var eventDetails = document.getElementById(eventId);
-        eventDetails.style.display = 'none';
-    }
-
-    function showContent(contentId) {
-        var contents = document.querySelectorAll('.content');
-        contents.forEach(function (content) {
-            content.style.display = 'none';
-        });
-        document.getElementById(contentId).style.display = 'block';
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const subheadings = document.querySelectorAll('.subheading');
-        const contents = document.querySelectorAll('.content');
-
-        subheadings.forEach(subheading => {
-            subheading.addEventListener('click', () => {
-                const target = subheading.getAttribute('data-target');
-                contents.forEach(content => {
-                    content.style.display = 'none';
-                });
-                document.getElementById(target).style.display = 'block';
-            });
-        });
-    });
-
-           function toggleMenu() {
-        var menuContainer = document.getElementById('menuContainer');
-        var currentDisplay = window.getComputedStyle(menuContainer).display;
-
-        menuContainer.style.display = (currentDisplay === 'block') ? 'none' : 'block';
+    function toggleMenu() {
+        const menu = document.getElementById('menuContainer');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
     }
 
     function closeMenu() {
-        var menuContainer = document.getElementById('menuContainer');
-        menuContainer.style.display = 'none';
+        const menu = document.getElementById('menuContainer');
+        menu.style.display = 'none';
     }
-            var slideIndex = 0;
-            var manualSlideIndex = 0;
+</script>
 
-            // Start the automatic slideshow at the top
-            showSlides();
-            // Start the automatic slideshow at the bottom
-            showSlidesManual();
-
-            function showSlides() {
-                var i;
-                var slides = document.querySelectorAll(".mySlides1");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                    slideIndex = 1;
-                }
-                slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 7000); // Change slide every 7 seconds
-            }
-
-            function showSlidesManual() {
-                var slides = document.querySelectorAll(".mySlides");
-                for (var i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                manualSlideIndex++;
-                if (manualSlideIndex > slides.length) {
-                    manualSlideIndex = 1;
-                }
-                slides[manualSlideIndex - 1].style.display = "block";
-                setTimeout(showSlidesManual, 7000); // Change slide every 7 seconds
-            }
-
-            function plusSlides(n) {
-                slideIndex += n;
-                var slides = document.querySelectorAll(".mySlides1");
-                if (slideIndex > slides.length) {
-                    slideIndex = 1;
-                }
-                if (slideIndex < 1) {
-                    slideIndex = slides.length;
-                }
-                for (var i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[slideIndex - 1].style.display = "block";
-            }
-
-            function plusSlidesGallery(n) {
-                manualSlideIndex += n;
-                var slides = document.querySelectorAll(".mySlides");
-                if (manualSlideIndex > slides.length) {
-                    manualSlideIndex = 1;
-                }
-                if (manualSlideIndex < 1) {
-                    manualSlideIndex = slides.length;
-                }
-                for (var i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[manualSlideIndex - 1].style.display = "block";
-            }
-
-
-
-            var titleAudio; // Declare the audio variable globally
-
-            function playTitleAudio() {
-                if (!titleAudio) {
-                    titleAudio = new Audio('lindzay.m4a'); // Replace 'your-audio-file.mp3' with the path to your MP3 audio file
-                    titleAudio.loop = false; // Set the audio to loop continuously
-                    titleAudio.volume = 0.2; // Set the volume to a lower value (e.g., 0.2 for 20% volume)
-                    titleAudio.play();
-                } else {
-                    if (!titleAudio.paused) {
-                        titleAudio.pause(); // Pause the audio if it's playing
-                    } else {
-                        titleAudio.play(); // Resume playing if it's paused
-                    }
-                }
-            }
-
-        </script>
 
 </body>
 </html>

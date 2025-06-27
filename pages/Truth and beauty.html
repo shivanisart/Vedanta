@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title><em style="color: white;">Neti Neti</title>
+
+<style>
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        background-color: #4c4c4c;
+        margin: 0;
+        font-size: 24px;
+        color: #929292;
+        padding: 0 20px;
+    }
+
+    header {
+        background-color: #4c4c4c;
+        color: #929292;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+        margin: 10px 0;
+        color: #929292;
+    }
+
+    h1 em, h2 em , em{
+        color: white;
+        font-style: italic;
+    }
+
+    .header-description {
+        font-size: 24px;
+        color: #929292;
+        margin: 20px 0;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-description em {
+        color: white;
+        font-style: italic;
+    }
+
+    .header-description strong em {
+        color: white;
+    }
+
+    .video-container {
+        position: relative;
+        max-width: 900px;
+        margin: 20px auto 40px auto;
+        text-align: center;
+        color: #929292;
+    }
+
+    .video-container video {
+        width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        cursor: pointer;
+        color: white;
+        background: rgba(0,0,0,0);
+        border: none;
+        border-radius: 50%;
+        padding: 10px 20px;
+        transition: background 0.3s ease;
+    }
+
+    .play-button:hover {
+        background: rgba(0,0,0,0.7);
+    }
+
+    a.vedanta-button {
+        display: inline-block;
+        background-color: #929292;
+        color: white;
+        padding: 12px 24px;
+        margin: 10px 10px 30px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: inherit;
+        transition: background-color 0.3s ease;
+    }
+
+    a.vedanta-button:hover {
+        background-color: #3a3a3a;
+    }
+
+    footer {
+        background-color: #4c4c4c;
+        color: #929292;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .footer-icons a {
+        color: #929292;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .footer-icons a:hover {
+        color: #07BFF;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        body {
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        a.vedanta-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+          .menu-icon {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+  /* Ensure that the menu icon is visible at smaller screen sizes */
+        @media (max-width: 7680px) {
+              .menu-icon {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: 2;
+            font-size: 10px;
+            cursor: pointer;
+            margin: 0px auto;
+            padding-top: 0px;
+            background-color: #4c4c4c;
+        }
+
+        .menu-container {
+            position: fixed;
+            top: 10;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(76, 76, 76, 0.85); /* Adjust the alpha value (0.8 in this example) for transparency */
+            color: #929292;
+            display: none;
+            z-index: 1;
+        }
+
+        .menu-content {
+            text-align: center;
+            padding: 50px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #929292;
+        }
+
+        .menu-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-content li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu-content a {
+        text-decoration: none;
+        color: #929292;
+        display: block; /* Add this line to make the entire area clickable */
+        padding: 10px; /* Add padding for better clickability */
+        }
+       .menu-content li.active a {
+        color: white;
+        text-decoration: none;
+        }
+
+    .close {
+    position: absolute;
+    top: 85%; /* Adjust this value to your preference */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+    .close-details {
+    color: #929292;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+
+
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+
+
+
+       <p><em> Neti Neti in Vedanta</em></p>
+<p>   Neti Neti is a method to systematically discover and reach a goal which is unclear, complex and not immediately visible in the begining. 
+ <br>    In Vedanta, it is the principal methodology to discover the self. 
+<br>     In modern contexts, "Neti Neti" is a brilliant technique for innovation - a product or business where the goal itself is not clear. 
+<br><br> Neti Neti begins with what’s known, 
+    take clear steps, and as each milestone is reached, the next path emerges, leading to the ultimate goal, which at the outset was far and not clearly visible.
+    
+   <br>  We can think of neti neti as a process of purification. Purity is easy to understand but challenging to attain. It defined not by what is present but by what is absent. For example, water is pure when minerals are absent. 
+    In Vedanta, this principle of removal applies to realizing the true Self, or Atman, through neti neti—a Sanskrit phrase meaning “not this, not this” (from “na” meaning “not” and “iti” meaning “this”).</p>
+
+<p><em>Conditions for Effective Neti Neti</em></p>
+<ul>
+    <li>neti neti is discovery: so what we seek must be within our sphere of reach/perception, even if it us initially clouded. </li>
+    <li>It must exist - otherwise stripping away will reveal nothing</li>
+</ul>
+
+       
+<p><em>Arundhati Nyaya as a live example of Neti Neti </em></p>
+
+<p>Arundhati Nyaya is a teaching method in  Vedanta that reveals complex truths by moving from the obvious to the subtle. 
+    It draws its name from the stars Arundhati and Vashishta. In the legend, sage Vashishta and his wife Arundhati are very close , just 
+    like these two stars,
+    symbolizing harmony for married couples in Indian tradition.</p>
+<p>During an Indian wedding, a priest advises the couple to be like this pair- 
+    close but each with a distinctive light. To helps the couple locate Arundhati and Vashishta among countless stars in 
+    the night sky, the priest uses neti neti (“not this, not this”). 
+    This process, called Arundhati Darshan Nyaya, infers the unknown from the known through systematic negation:</p>
+<ul>
+    <li>The priest point to a bright star visible close to a branch of a tree
+       and say, “Neti—this is not Arundhati.”</li>
+    <li>Direct attention to a closer, fainter star next to it, saying, “Neti—this too is not Arundhati.”</li>
+    <li>Continue until only Arundhati and Vashishta remain, clearly visible in their subtle brilliance, and then distinguish the two .</li>
+</ul>
+<p><em>Significance in Vedanta and Beyond</em></p>
+
+    <p>In Vedanta, neti neti guides us to the pure, unchanging Self, after stripping away all transient elements such as body , mind and ego , which 
+        we mistakenly think is our "self".</p>
+<p>
+   Refined by scholars like Vachaspati Mishra, 
+    this method guides seekers to profound truths, . 
+   <br>  neti. <br> 
+    look whats in the body - the mind <br> 
+     neti. <br> 
+    look what's in the mind. The intellect. 
+   <br>   neti. <br> 
+    and progressing ... till we reach " iti"
+    <br> 
+    
+Practically, this is a great tool for analysis of the unknown.
+    <br> 
+ .</p>   
+   
+    <p><em>A Three-Pronged Approach to Neti Neti</em></p>
+<p>Neti neti (“not this, not that”) helps identify the true Self by negating what it is not. <br> But how do we even know what is neti, if no one tells us? <br>
+    A structured method, using three tests, clarifies what is temporary ( Neti)  versus permanent ( Real, iti) , guiding us to the eternal. 
+    These tests—Shravan, Nididhyasan, and Manan—are applied to three real-world examples to illustrate the process.</p>
+<p><em>The Three Tests</em></p>
+    <ul>
+    <li>Shravan is Observation: Direct or through others, such as seeing or hearing credible evidence.</li>
+    <li>Niradhyasana is Experience: Personal engagementand direct experience that makes the truth relevant.</li>
+    <li>Manan is Logical Consistency: Analysis to ensure the truth withstands scrutiny.</li>
+</ul>
+
+    <p><em>Stability of the Three-Pronged Approach</em></p>
+<p>The three-pronged approach—observation, experience, and logical analysis—ensures stable conclusions in realizing truth. 
+    The order of these steps is flexible: one does not always precede another. For instance, mathematicians like 
+    Einstein first analyzed the theory of relativity logically, later confirmed by Eddington’s observations. 
+    Conversely, a unique personal experience may be understood and recognized in others only after reflection.</p>
+<p>All three conditions must be satisfied for reliable understanding. Like a three-legged table, this approach provides optimal 
+    stability—four legs may cause wobbling, while fewer than three lead to instability.</p>
+
+    
+    <p><em>Example 1: Is the Sky Blue?</em></p>
+<p>Assume we know nothing about light refraction.</p>
+<ul>
+    <li>Listening and Observation: Pass. Stories and direct observation suggest the sky is blue.</li>
+    <li>Experience: Pass. It feels blue based on experience.</li>
+    <li>Examination: Fail. The sky is not blue at night, indicating blueness is due to external factors, not the sky itself.</li>
+
+
+</ul>
+<p>Result: Fail. Not all conditions are satisfied, so the sky’s blueness is not permanent.</p>
+
+    
+    <p><em>Example 2: Is the Air Inside an Open Pot the Same as Outside?</em></p>
+<ul>
+    <li>Listening and Observation: Pass. Visually, the air appears the same.</li>
+    <li>Experience: Pass. It feels identical based on experience.</li>
+    <li>Examination: Pass. Breaking the pot shows the air is indistinguishable, confirming it is the same.</li>
+</ul>
+<p>Result: Pass. All conditions are satisfied, indicating the air’s unity is permanent.</p>
+<p><em>Example 3: Is the Body Our Unchanging Self?</em></p>
+<ul>
+    <li>Listening and Observation: Fail. Haircuts or aging change our appearance, yet we remain recognizable.</li>
+    <li>Experience: Pass. It feels like the body is the self.</li>
+    <li>Examination: Fail. The body dies, proving its impermanence.</li>
+</ul>
+<p>Result: Fail. Not all conditions are satisfied, so the body is not the eternal Self.</p>
+<p><em>Transforming Understanding</em></p>
+<p>This three-pronged approach, combined with neti neti, transforms abstract concepts into lived understanding, guiding us to discern the temporary from the permanent and realize the true Self.</p>
+   
+  
+
+  
+ <a href="../index.html" class="vedanta-button">Back</a>
+ 
+<script>
+    function toggleVideoPlayer1() {
+        const video = document.getElementById('videoPlayer1');
+        const button = event.currentTarget;
+        if (video.paused) {
+            video.play();
+            button.textContent = '⏸️';
+        } else {
+            video.pause();
+            button.textContent = '▶️';
+        }
+    }
+
+    function toggleMenu() {
+        const menu = document.getElementById('menuContainer');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+
+    function closeMenu() {
+        const menu = document.getElementById('menuContainer');
+        menu.style.display = 'none';
+    }
+</script>
+
+
+</body>
+</html>

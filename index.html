@@ -60,15 +60,26 @@
         text-align: center;
         color: #929292;
     }
-    
-  .video-container iframe {
+    .fullscreen-video {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.fullscreen-video iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: none;
-  }
+}
+    
+
 
   .video-container p {
     position: absolute;
@@ -641,7 +652,7 @@ Ekam sad viprā bahudhā vadanti  <br>  <br>
         
       ... Vedant offers one path,not the only path, <br>but a very direct path to this realisation.
     </em>
-          <div class="video-container">
+         <div class="fullscreen-video">
   <iframe 
     src="https://www.youtube.com/embed/J_8cBByo2kE" 
     title="YouTube video player" 
@@ -649,7 +660,7 @@ Ekam sad viprā bahudhā vadanti  <br>  <br>
     allowfullscreen>
   </iframe>
   <p>Image above: All this will go. But I will remain</p>
-</div>
+</div> 
 
 
 
